@@ -160,69 +160,91 @@
   .meta-row { margin-top: 8px; font-size: 0.85rem; color: #555; display: flex; gap: 10px; flex-wrap: wrap; }
   .meta-row span { display: inline-flex; align-items: center; gap: 4px; }
 
-  .memoria-view {
-    display: grid;
-    grid-template-columns: 240px 1fr;
-    gap: 24px;
-    align-items: start;
+  /* ---- Memoria: elenco schematico per mese ---- */
+  .memoria-view { display: grid; grid-template-columns: 210px 1fr; gap: 20px; align-items: start; }
+  .mem-indice {
+    position: sticky; top: 16px; background: var(--card-bg); border-radius: 14px;
+    box-shadow: var(--ombra); padding: 14px; font-size: 0.85rem;
   }
-  .memoria-toc {
-    position: sticky;
-    top: 20px;
-    background: var(--card-bg);
-    border-radius: 14px;
-    box-shadow: var(--ombra);
-    padding: 16px;
-    max-height: calc(100vh - 60px);
-    overflow-y: auto;
+  .mem-indice h4 { margin: 0 0 8px; color: var(--verde-scuro); font-size: 0.75rem; text-transform: uppercase; letter-spacing: .06em; }
+  .mem-indice a { display: flex; justify-content: space-between; color: #333; text-decoration: none; padding: 6px 8px; border-radius: 8px; }
+  .mem-indice a:hover { background: #f0f5f1; color: var(--verde-scuro); }
+  .mem-indice a span { color: #888; font-variant-numeric: tabular-nums; }
+  .mem-indice .legenda { margin-top: 14px; padding-top: 12px; border-top: 1px solid #eef1ef; display: grid; gap: 5px; color: #555; font-size: 0.8rem; }
+  .mem-indice .legenda i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 6px; background: var(--c); }
+  .mem-main { display: grid; gap: 14px; min-width: 0; }
+  .mem-testa { background: var(--card-bg); border-radius: 14px; box-shadow: var(--ombra); padding: 18px 20px; }
+  .mem-testa h2 { margin: 0; color: var(--verde-scuro); font-size: 1.25rem; }
+  .mem-testa .desc { margin: 4px 0 12px; color: #666; font-size: 0.85rem; }
+  .mem-numeri { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .mem-numeri div { background: #f4f7f5; border-radius: 10px; padding: 8px 12px; font-size: 0.78rem; color: #666; }
+  .mem-numeri b { display: block; font-size: 1.1rem; color: var(--grigio-testo); }
+  .mem-barra { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .mem-barra input {
+    flex: 1 1 200px; min-width: 0; border: 1px solid #dfe6e1; border-radius: 10px; padding: 9px 12px; font: inherit; font-size: 0.9rem;
   }
-  .memoria-toc h4 {
-    margin: 0 0 10px;
-    color: var(--verde-scuro);
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
+  .mem-chip {
+    border: 1px solid #dfe6e1; background: #fff; border-radius: 999px; padding: 6px 11px; font: inherit;
+    font-size: 0.8rem; font-weight: 600; color: #444; cursor: pointer; display: inline-flex; gap: 6px; align-items: center;
   }
-  .memoria-toc a {
-    display: block;
-    font-size: 0.82rem;
-    color: #333;
-    text-decoration: none;
-    padding: 6px 8px;
-    border-radius: 8px;
-    margin-bottom: 2px;
-    line-height: 1.3;
+  .mem-chip i { width: 9px; height: 9px; border-radius: 3px; background: var(--c); }
+  .mem-chip small { color: #999; font-weight: 600; }
+  .mem-chip[aria-pressed="true"] { background: var(--grigio-testo); border-color: var(--grigio-testo); color: #fff; }
+  .mem-chip[aria-pressed="true"] small { color: #ccc; }
+  .mem-tutte { margin-left: auto; display: flex; gap: 6px; }
+  .mem-tutte button { border: none; background: none; color: var(--verde-campo); font: inherit; font-size: 0.8rem; font-weight: 600; cursor: pointer; padding: 4px 6px; }
+  .mem-mese { background: var(--card-bg); border-radius: 14px; box-shadow: var(--ombra); overflow: hidden; scroll-margin-top: 16px; }
+  .mem-mese h3 {
+    margin: 0; padding: 12px 18px; background: var(--verde-scuro); color: #fff; font-size: 0.95rem;
+    display: flex; justify-content: space-between; letter-spacing: .02em;
   }
-  .memoria-toc a:hover { background: #f0f5f1; color: var(--verde-scuro); }
-  .memoria-content {
-    background: var(--card-bg);
-    border-radius: 16px;
-    box-shadow: var(--ombra);
-    padding: 26px 30px;
+  .mem-mese h3 span { opacity: .75; font-weight: 500; font-size: 0.82rem; }
+  details.mv { border-top: 1px solid #eef1ef; }
+  details.mv:first-of-type { border-top: none; }
+  details.mv > summary {
+    list-style: none; cursor: pointer; padding: 10px 18px;
+    display: grid; grid-template-columns: 52px 118px 1fr 14px; gap: 12px; align-items: center;
   }
-  .memoria-header { margin-bottom: 18px; padding-bottom: 14px; border-bottom: 2px solid #f0f5f1; }
-  .memoria-header h2 { margin: 0 0 6px; color: var(--verde-scuro); }
-  .memoria-header p { margin: 0; color: #666; font-size: 0.9rem; }
-  .memoria-updated { font-size: 0.78rem; color: #999; margin-top: 6px; }
-  .memoria-p {
-    font-size: 0.92rem;
-    line-height: 1.65;
-    color: #2a2a2a;
-    margin-bottom: 16px;
-    scroll-margin-top: 20px;
+  details.mv > summary::-webkit-details-marker { display: none; }
+  details.mv > summary:hover { background: #f8faf9; }
+  .mv-data { font-size: 0.8rem; color: #777; font-variant-numeric: tabular-nums; font-weight: 600; }
+  .mv-tipo {
+    font-size: 0.72rem; font-weight: 700; padding: 3px 8px; border-radius: 6px; white-space: nowrap;
+    color: var(--c); background: var(--bg-c); justify-self: start;
   }
-  .memoria-p .wikilink {
-    display: inline-block;
-    background: #eef6f0;
-    color: var(--verde-scuro);
-    border-radius: 6px;
-    padding: 1px 6px;
-    font-size: 0.85em;
-    font-weight: 600;
+  .mv-titolo { font-size: 0.92rem; font-weight: 600; color: var(--grigio-testo); line-height: 1.35; }
+  .mv-freccia { color: #aaa; transition: transform .15s; font-size: 0.8rem; }
+  details.mv[open] .mv-freccia { transform: rotate(90deg); }
+  details.mv[open] > summary { background: #f8faf9; }
+  .mv-corpo {
+    margin: 0 18px 14px calc(18px + 52px + 12px); padding: 4px 0 4px 14px; border-left: 3px solid var(--c);
+    font-size: 0.88rem; line-height: 1.6; color: #333;
   }
+  .mv-corpo p { margin: 6px 0; }
+  .mv-corpo ul { margin: 6px 0; padding-left: 18px; }
+  .mv-corpo li { margin: 3px 0; }
+  .mv-corpo ul.frasi { list-style: none; padding-left: 0; }
+  .mv-corpo ul.frasi li { position: relative; padding-left: 16px; }
+  .mv-corpo ul.frasi li::before { content: ""; position: absolute; left: 2px; top: .62em; width: 6px; height: 6px; border-radius: 2px; background: var(--c); }
+  .mv-corpo li.sotto { margin-left: 18px; list-style: circle; }
+  .mv-corpo code { background: #f1f3f2; border-radius: 4px; padding: 0 4px; font-size: 0.85em; word-break: break-all; }
+  .mv-corpo a { color: var(--blu); word-break: break-all; }
+  .mv-corpo .wikilink { background: #eef6f0; color: var(--verde-scuro); border-radius: 6px; padding: 1px 6px; font-size: 0.85em; font-weight: 600; }
+  .mv-tab { overflow-x: auto; margin: 8px 0; }
+  .mv-tab table { border-collapse: collapse; font-size: 0.82rem; }
+  .mv-tab th, .mv-tab td { border-bottom: 1px solid #eef1ef; padding: 5px 8px; text-align: left; vertical-align: top; }
+  .mv-tab th { color: #666; font-size: 0.75rem; text-transform: uppercase; letter-spacing: .04em; }
+  mark { background: #fff1a8; border-radius: 3px; padding: 0 1px; }
   @media (max-width: 768px) {
     .memoria-view { grid-template-columns: 1fr; }
-    .memoria-toc { position: static; max-height: none; }
+    .mem-indice { display: none; }
+    details.mv > summary { grid-template-columns: 44px 1fr 14px; gap: 4px 10px; padding: 10px 14px; }
+    .mv-data { grid-row: 1 / 3; }
+    .mv-tipo { grid-column: 2; grid-row: 1; }
+    .mv-titolo { grid-column: 2; grid-row: 2; }
+    .mv-freccia { grid-column: 3; grid-row: 1 / 3; }
+    .mv-corpo { margin: 0 14px 14px 14px; }
+    .mem-tutte { margin-left: 0; }
   }
 
   .stato-pill {
@@ -593,8 +615,8 @@
   <div id="grid-calcio5" class="grid" style="display:none;"></div>
   <div id="view-numeri" class="numeri-view" style="display:none;"></div>
   <div id="view-memoria" class="memoria-view" style="display:none;">
-    <div class="memoria-toc" id="memoriaToc"></div>
-    <div class="memoria-content" id="memoriaContent"></div>
+    <nav class="mem-indice" id="memoriaToc" aria-label="Mesi"></nav>
+    <div class="mem-main" id="memoriaContent"></div>
   </div>
   <div id="view-radio" class="radio-view" style="display:none;">
     <div class="radio-testa"><h2>Dalla redazione sport di Radio Mugello</h2>
@@ -1021,33 +1043,110 @@ function render() {
   sel.appendChild(optgroup5);
 }
 
+const TIPI_MEMORIA = {
+  problema:  { nome: "⚠️ Problema",       c: "#c0392b", bg: "#fdecea" },
+  dafare:    { nome: "📌 Da fare",        c: "#b45309", bg: "#fff4e0" },
+  risolto:   { nome: "✅ Risolto",        c: "#1b7a3d", bg: "#e6f4ea" },
+  lezione:   { nome: "💡 Lezione",        c: "#2563eb", bg: "#e8efff" },
+  squadre:   { nome: "⚽ Squadre",        c: "#0d5225", bg: "#e3efe6" },
+  fonti:     { nome: "📚 Fonti",          c: "#0d9488", bg: "#dff4f1" },
+  strumenti: { nome: "🛠 App e task",     c: "#7c3aed", bg: "#f1eafe" },
+  nota:      { nome: "📝 Nota",           c: "#555",    bg: "#f0f0f0" },
+};
+const MESI_IT = ["gennaio","febbraio","marzo","aprile","maggio","giugno","luglio","agosto","settembre","ottobre","novembre","dicembre"];
+let memoriaDati = null;
+let memoriaFiltro = { tipo: "", testo: "" };
+
 function renderMemoria(mem) {
-  const toc = document.getElementById("memoriaToc");
+  memoriaDati = mem;
   const content = document.getElementById("memoriaContent");
-  if (!mem || !mem.paragraphs || !mem.paragraphs.length) {
+  if (!mem || !mem.voci || !mem.voci.length) {
     content.innerHTML = `<div class="empty">Nessuna memoria trovata.</div>`;
-    toc.innerHTML = "";
+    document.getElementById("memoriaToc").innerHTML = "";
     return;
   }
-  const tocEntries = mem.paragraphs.filter(p => p.lead);
-  toc.innerHTML = `<h4>Indice</h4>` + tocEntries.map(p =>
-    `<a href="#${p.id}">${escapeHtml(p.lead)}</a>`
-  ).join("");
-
-  let updated = "";
+  const voci = mem.voci;
+  const conta = {};
+  voci.forEach(v => conta[v.tipo] = (conta[v.tipo] || 0) + 1);
+  const date = voci.map(v => v.data).filter(Boolean);
+  let agg = "";
   if (mem.aggiornato) {
     const d = new Date(mem.aggiornato);
-    updated = isNaN(d) ? mem.aggiornato : d.toLocaleString("it-IT");
+    agg = isNaN(d) ? mem.aggiornato : d.toLocaleDateString("it-IT");
   }
-
+  const chip = (k, nome, n) => {
+    const t = TIPI_MEMORIA[k];
+    return `<button class="mem-chip" data-tipo="${k}" aria-pressed="${memoriaFiltro.tipo === k}"
+      >${nome} <small>${n}</small></button>`;
+  };
   content.innerHTML = `
-    <div class="memoria-header">
-      <h2>🧠 ${escapeHtml(mem.description || mem.name || "Memoria")}</h2>
-      <p>Diario tecnico del progetto — sola lettura, sempre sincronizzato con la memoria di Claude.</p>
-      ${updated ? `<div class="memoria-updated">Ultimo aggiornamento registrato: ${escapeHtml(updated)}</div>` : ""}
+    <div class="mem-testa">
+      <h2>🧠 Memoria del progetto</h2>
+      <p class="desc">${escapeHtml(mem.description || "")}</p>
+      <div class="mem-numeri">
+        <div><b>${voci.length}</b>voci</div>
+        <div><b>${conta.problema || 0}</b>problemi</div>
+        <div><b>${conta.dafare || 0}</b>da fare</div>
+        <div><b>${conta.risolto || 0}</b>risolti</div>
+        <div><b>${date.length ? date[date.length - 1].slice(0, 5) + " → " + date[0].slice(0, 5) : "—"}</b>periodo</div>
+        ${agg ? `<div><b>${escapeHtml(agg)}</b>ultima modifica</div>` : ""}
+      </div>
+      <div class="mem-barra">
+        <input type="search" id="memCerca" placeholder="Cerca nella memoria (squadra, fonte, parola…)" value="${escapeHtml(memoriaFiltro.testo)}">
+        <div class="mem-tutte"><button data-azione="apri">Apri tutte</button><button data-azione="chiudi">Chiudi tutte</button></div>
+      </div>
+      <div class="mem-barra" style="margin-top:10px">
+        ${chip("", "Tutte", voci.length)}
+        ${Object.keys(TIPI_MEMORIA).filter(k => conta[k]).map(k => chip(k, TIPI_MEMORIA[k].nome, conta[k])).join("")}
+      </div>
     </div>
-    ${mem.paragraphs.map(p => `<div class="memoria-p" id="${p.id}">${p.html}</div>`).join("")}
-  `;
+    <div id="memElenco" class="mem-main"></div>`;
+  content.querySelectorAll(".mem-chip").forEach(b => b.onclick = () => {
+    memoriaFiltro.tipo = b.dataset.tipo;
+    content.querySelectorAll(".mem-chip").forEach(x => x.setAttribute("aria-pressed", x === b));
+    disegnaElencoMemoria();
+  });
+  document.getElementById("memCerca").oninput = e => { memoriaFiltro.testo = e.target.value; disegnaElencoMemoria(); };
+  content.querySelectorAll(".mem-tutte button").forEach(b => b.onclick = () =>
+    content.querySelectorAll("details.mv").forEach(d => d.open = b.dataset.azione === "apri"));
+  disegnaElencoMemoria();
+}
+
+function disegnaElencoMemoria() {
+  const q = memoriaFiltro.testo.trim().toLowerCase();
+  const voci = memoriaDati.voci.filter(v =>
+    (!memoriaFiltro.tipo || v.tipo === memoriaFiltro.tipo) &&
+    (!q || (v.titolo + " " + v.html.replace(/<[^>]+>/g, " ")).toLowerCase().includes(q)));
+  const mesi = [];
+  voci.forEach(v => {
+    const chiave = v.iso ? v.iso.slice(0, 7) : "senza data";
+    let m = mesi.find(x => x.chiave === chiave);
+    if (!m) mesi.push(m = { chiave, voci: [] });
+    m.voci.push(v);
+  });
+  const nomeMese = k => k === "senza data" ? "Senza data" :
+    MESI_IT[+k.slice(5, 7) - 1].replace(/^./, c => c.toUpperCase()) + " " + k.slice(0, 4);
+  const evidenzia = h => {
+    if (!q) return h;
+    const rx = new RegExp("(" + q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "gi");
+    return h.split(/(<[^>]+>)/).map(p => p.startsWith("<") ? p : p.replace(rx, "<mark>$1</mark>")).join("");
+  };
+  document.getElementById("memElenco").innerHTML = mesi.length ? mesi.map(m => `
+    <section class="mem-mese" id="mese-${m.chiave}">
+      <h3>${nomeMese(m.chiave)} <span>${m.voci.length} ${m.voci.length === 1 ? "voce" : "voci"}</span></h3>
+      ${m.voci.map(v => {
+        const t = TIPI_MEMORIA[v.tipo] || TIPI_MEMORIA.nota;
+        const g = v.data ? +v.data.slice(0, 2) + " " + MESI_IT[+v.data.slice(3, 5) - 1].slice(0, 3) : "";
+        return `<details class="mv" style="--c:${t.c};--bg-c:${t.bg}"${q ? " open" : ""}>
+          <summary><span class="mv-data">${g}</span><span class="mv-tipo">${t.nome}</span>
+            <span class="mv-titolo">${evidenzia(escapeHtml(v.titolo))}</span><span class="mv-freccia">▶</span></summary>
+          <div class="mv-corpo">${evidenzia(v.html)}</div>
+        </details>`;
+      }).join("")}
+    </section>`).join("") : `<div class="mem-mese"><div class="empty">Nessuna voce trovata.</div></div>`;
+  document.getElementById("memoriaToc").innerHTML = `<h4>Mesi</h4>` +
+    mesi.map(m => `<a href="#mese-${m.chiave}">${nomeMese(m.chiave)} <span>${m.voci.length}</span></a>`).join("") +
+    `<div class="legenda">${Object.values(TIPI_MEMORIA).map(t => `<div><i style="--c:${t.c}"></i>${t.nome.replace(/^\S+\s/, "")}</div>`).join("")}</div>`;
 }
 
 async function loadMemoria() {
