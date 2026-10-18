@@ -162,7 +162,7 @@ footer a { color: inherit; }
 </footer>
 <script>
 (function () {
-  var OGNI = 120000; // ricarica i riquadri visibili ogni 2 minuti
+  var OGNI = 60000; // ricarica i riquadri visibili ogni minuto
   var visibili = new Set();
   var oss = "IntersectionObserver" in window ? new IntersectionObserver(function (voci) {
     voci.forEach(function (v) { v.isIntersecting ? visibili.add(v.target) : visibili.delete(v.target); });
@@ -194,7 +194,7 @@ footer a { color: inherit; }
     });
   });
 
-  // gol di oggi: data/gol.json (gol_live.py), letto ogni minuto; avviso per ogni gol nuovo
+  // gol di oggi: data/gol.json (gol_live.py), letto ogni 30 secondi; avviso per ogni gol nuovo
   var visti = null, schede = {};
   function testo(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : s; return d.innerHTML; }
   function chi(g) {
@@ -233,7 +233,7 @@ footer a { color: inherit; }
       .catch(function () {});
   }
   leggiGol();
-  setInterval(function () { if (!document.hidden) leggiGol(); }, 60000);
+  setInterval(function () { if (!document.hidden) leggiGol(); }, 30000);
   document.addEventListener("visibilitychange", function () { if (!document.hidden) leggiGol(); });
 
   // filtri per categoria (ricordati sul dispositivo)
