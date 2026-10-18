@@ -44,6 +44,7 @@ header.top h1 .live { display: inline-block; width: .32em; height: .32em; border
 @media (prefers-reduced-motion: reduce) { header.top h1 .live { animation: none; } }
 header.top p { margin: 8px 0 0; opacity: .88; font-size: .95rem; max-width: 60ch; }
 header.top .agg { color: var(--amber); font-weight: 700; }
+header.top .riservata { font-size: .8rem; opacity: .75; margin-top: 4px; }
 .filtri { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); padding-block: 10px; }
 .filtri .wrap { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; }
 .chip { flex: none; border: 1px solid var(--line); background: var(--surface); color: var(--ink);
@@ -66,7 +67,7 @@ header.top .agg { color: var(--amber); font-weight: 700; }
 .widget { background: #fff; }
 .widget iframe { display: block; width: 100%; height: 480px; border: 0; }
 .widget iframe.classifica { height: 690px; }
-/* gol di oggi (data/gol.json, scritto da gol_live.py) */
+/* gol di oggi (gol.json accanto alla pagina, scritto da gol_live.py) */
 .gol-oggi { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; margin-top: 18px; padding: 12px 14px; }
 .gol-oggi[hidden] { display: none; }
 .gol-oggi h2 { font: 700 1.2rem/1.1 "Barlow Condensed", "Arial Narrow", sans-serif; margin: 0 0 6px; }
@@ -96,6 +97,7 @@ footer a { color: inherit; }
 <body>
 <header class="top"><div class="wrap">
   <h1><span class="live" aria-hidden="true"></span>Domenica in diretta</h1>
+  <p class="riservata">Pagina riservata alla redazione di Radio Mugello: non condividere il link.</p>
   <p>I risultati dei gironi delle squadre di Mugello, Val di Sieve e Marradi, aggiornati via via durante le partite.
   Ultimo aggiornamento dei riquadri: <span class="agg" id="agg">adesso</span>.</p>
 </div></header>
@@ -194,7 +196,7 @@ footer a { color: inherit; }
     });
   });
 
-  // gol di oggi: data/gol.json (gol_live.py), letto ogni 30 secondi; avviso per ogni gol nuovo
+  // gol di oggi: gol.json accanto alla pagina (gol_live.py), letto ogni 30 secondi; avviso per ogni gol nuovo
   var visti = null, schede = {};
   function testo(s) { var d = document.createElement("div"); d.textContent = s == null ? "" : s; return d.innerHTML; }
   function chi(g) {
@@ -215,7 +217,7 @@ footer a { color: inherit; }
     a.addEventListener("click", function () { a.remove(); });
   }
   function leggiGol() {
-    fetch("/data/gol.json?t=" + Date.now(), { cache: "no-store" })
+    fetch("gol.json?t=" + Date.now(), { cache: "no-store" })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (d) {
         if (!d || d.data !== oggiISO() || !d.gol || !d.gol.length) return;
