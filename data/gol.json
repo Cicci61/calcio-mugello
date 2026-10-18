@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-18T18:48:58",
+ "aggiornato": "2026-10-18T18:54:42",
  "data": "2026-10-18",
  "partite": {
   "6.3_TO.P.A": {
@@ -392,10 +392,10 @@
    "idSquadra": 1028695,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Zanca Simone",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "18:54"
   },
   {
    "id": "5.4_TO.2.F-2-4",
@@ -410,10 +410,10 @@
    "idSquadra": 1028695,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Safina Michele",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "18:54"
   },
   {
    "id": "5.4_TO.2.F-2-3",
@@ -428,10 +428,10 @@
    "idSquadra": 1028695,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Puccini Tommaso",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "18:54"
   },
   {
    "id": "5.4_TO.2.F-2-2",
@@ -446,10 +446,10 @@
    "idSquadra": 1028695,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Puccini Tommaso",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "18:54"
   },
   {
    "id": "5.4_TO.2.F-2-1",
@@ -464,10 +464,10 @@
    "idSquadra": 1028695,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Puccini Tommaso",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "18:54"
   },
   {
    "id": "5.4_TO.2.F-2-0",
