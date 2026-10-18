@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-18T18:54:42",
+ "aggiornato": "2026-10-18T19:06:17",
  "data": "2026-10-18",
  "partite": {
   "6.3_TO.P.A": {
@@ -196,9 +196,60 @@
    "tuttocampo": "3-4",
    "almanacco": null,
    "verifica": false
+  },
+  "6.2_TO.E.B": {
+   "annunciati": [
+    1,
+    1
+   ],
+   "girone": "Eccellenza · Girone B",
+   "casa": "Audax Rufina",
+   "ospite": "Barberino Tavarnelle",
+   "ora": "15:00",
+   "stato": "Partita terminata",
+   "titoloAlmanacco": "Audax Rufina-Barberino Tavarnelle",
+   "tuttocampo": "1-1",
+   "almanacco": "1-1",
+   "verifica": false
   }
  },
  "gol": [
+  {
+   "id": "6.2_TO.E.B-1-1",
+   "ora": "19:06",
+   "partita": "6.2_TO.E.B",
+   "girone": "Eccellenza · Girone B",
+   "casa": "Audax Rufina",
+   "ospite": "Barberino Tavarnelle",
+   "punteggio": "1-1",
+   "totale": 2,
+   "squadra": "Barberino Tavarnelle",
+   "idSquadra": 1079701,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": "Seghi",
+   "minuto": "78'",
+   "fonteMarcatore": "Almanacco",
+   "trovato": "19:06"
+  },
+  {
+   "id": "6.2_TO.E.B-1-0",
+   "ora": "19:06",
+   "partita": "6.2_TO.E.B",
+   "girone": "Eccellenza · Girone B",
+   "casa": "Audax Rufina",
+   "ospite": "Barberino Tavarnelle",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Audax Rufina",
+   "idSquadra": 4190,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Ceramelli (rig.)",
+   "minuto": "54'",
+   "fonteMarcatore": "Almanacco",
+   "trovato": "19:06"
+  },
   {
    "id": "6.1_ER.2.M.RA-3-4",
    "ora": "18:48",
@@ -626,10 +677,10 @@
    "idSquadra": 69460,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Ermini Mattia",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "19:06"
   },
   {
    "id": "5.1_TO.1.C-2-0",
@@ -847,5 +898,9 @@
    "fonteMarcatore": "Almanacco",
    "trovato": "18:48"
   }
- ]
+ ],
+ "almanacco": {
+  "ecc": "https://almanaccocalciotoscano.it/live-diretta-e-tabellini-della-6a-giornata-di-eccellenza-domenica-18-ottobre-2026/",
+  "pro": "https://almanaccocalciotoscano.it/live-diretta-e-tabellini-della-6a-giornata-di-promozione-domenica-18-ottobre-2026/"
+ }
 }

@@ -63,6 +63,7 @@ header.top .riservata { font-size: .8rem; opacity: .75; margin-top: 4px; }
 .vista { display: flex; gap: 6px; margin-top: 10px; }
 .vista button { border: 1px solid var(--line); background: transparent; color: var(--ink); border-radius: 8px;
   font: 600 .85rem "Source Sans 3", system-ui, sans-serif; padding: 4px 10px; cursor: pointer; }
+.vista a.alm { margin-left: auto; align-self: center; font-size: .85rem; font-weight: 600; color: var(--ink); }
 .vista button[aria-pressed="true"] { background: var(--c); border-color: var(--c); color: #fff; }
 .widget { background: #fff; }
 .widget iframe { display: block; width: 100%; height: 480px; border: 0; }
@@ -77,6 +78,7 @@ header.top .riservata { font-size: .8rem; opacity: .75; margin-top: 4px; }
 .gol-oggi .quando { color: var(--muted); font-variant-numeric: tabular-nums; }
 .gol-oggi .chi { grid-column: 2; color: var(--muted); }
 .gol-oggi li.nostra .chi { color: var(--ink); font-weight: 600; }
+.fonte { font-size: .75rem; font-weight: 400; opacity: .75; white-space: nowrap; }
 .gol-oggi .punti { font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .verifica { display: inline-block; font-size: .72rem; font-weight: 700; color: #8a5a00; background: #fbf1dc;
   border-radius: 6px; padding: 0 6px; margin-left: 6px; vertical-align: 1px; }
@@ -115,17 +117,17 @@ footer a { color: inherit; }
 <main class="wrap griglia">
 <section class="girone" data-cat="ecc" data-titolo="Eccellenza · Girone B" style="--c: var(--cat-ecc)">
   <div class="testa"><h2>Eccellenza · Girone B</h2><p class="nostre">Le nostre: <b>Audax Rufina</b></p>
-    <div class="vista" role="group" aria-label="Cosa mostrare"><button data-tipo="Risultati" aria-pressed="true">Risultati</button><button data-tipo="Classifica" aria-pressed="false">Classifica</button></div></div>
+    <div class="vista" role="group" aria-label="Cosa mostrare"><button data-tipo="Risultati" aria-pressed="true">Risultati</button><button data-tipo="Classifica" aria-pressed="false">Classifica</button><a class="alm" data-cat="ecc" href="https://almanaccocalciotoscano.it/category/notizie/notizie-live/notizie-live-eccellenza/" target="_blank" rel="noopener">Diretta Almanacco ↗</a></div></div>
   <div class="widget"><iframe src="https://www.tuttocampo.it/WidgetV2/Risultati/b807cdae-0536-45dd-b08e-3f5d90fc5c3e" data-base="https://www.tuttocampo.it/WidgetV2/__TIPO__/b807cdae-0536-45dd-b08e-3f5d90fc5c3e" title="Eccellenza · Girone B · Risultati" loading="lazy" scrolling="no"></iframe></div>
 </section>
 <section class="girone" data-cat="pro" data-titolo="Promozione · Girone A" style="--c: var(--cat-pro)">
   <div class="testa"><h2>Promozione · Girone A</h2><p class="nostre">Le nostre: <b>Fortis Juventus 1909, Luco</b></p>
-    <div class="vista" role="group" aria-label="Cosa mostrare"><button data-tipo="Risultati" aria-pressed="true">Risultati</button><button data-tipo="Classifica" aria-pressed="false">Classifica</button></div></div>
+    <div class="vista" role="group" aria-label="Cosa mostrare"><button data-tipo="Risultati" aria-pressed="true">Risultati</button><button data-tipo="Classifica" aria-pressed="false">Classifica</button><a class="alm" data-cat="pro" href="https://almanaccocalciotoscano.it/category/notizie/notizie-live/notizie-live-promozione/" target="_blank" rel="noopener">Diretta Almanacco ↗</a></div></div>
   <div class="widget"><iframe src="https://www.tuttocampo.it/WidgetV2/Risultati/131f2cf7-9c31-447c-b4c4-2c20e1050563" data-base="https://www.tuttocampo.it/WidgetV2/__TIPO__/131f2cf7-9c31-447c-b4c4-2c20e1050563" title="Promozione · Girone A · Risultati" loading="lazy" scrolling="no"></iframe></div>
 </section>
 <section class="girone" data-cat="pro" data-titolo="Promozione · Girone C" style="--c: var(--cat-pro)">
   <div class="testa"><h2>Promozione · Girone C</h2><p class="nostre">Le nostre: <b>Alleanza Giovanile Dicomano, Pontassieve</b></p>
-    <div class="vista" role="group" aria-label="Cosa mostrare"><button data-tipo="Risultati" aria-pressed="true">Risultati</button><button data-tipo="Classifica" aria-pressed="false">Classifica</button></div></div>
+    <div class="vista" role="group" aria-label="Cosa mostrare"><button data-tipo="Risultati" aria-pressed="true">Risultati</button><button data-tipo="Classifica" aria-pressed="false">Classifica</button><a class="alm" data-cat="pro" href="https://almanaccocalciotoscano.it/category/notizie/notizie-live/notizie-live-promozione/" target="_blank" rel="noopener">Diretta Almanacco ↗</a></div></div>
   <div class="widget"><iframe src="https://www.tuttocampo.it/WidgetV2/Risultati/fed94f68-d18c-429c-ad19-98688adfe232" data-base="https://www.tuttocampo.it/WidgetV2/__TIPO__/fed94f68-d18c-429c-ad19-98688adfe232" title="Promozione · Girone C · Risultati" loading="lazy" scrolling="no"></iframe></div>
 </section>
 <section class="girone" data-cat="pri" data-titolo="Prima Categoria · Girone C" style="--c: var(--cat-pri)">
@@ -157,6 +159,8 @@ footer a { color: inherit; }
 <footer class="wrap">
   Punteggi e classifiche dai widget di <a href="https://www.tuttocampo.it/" target="_blank" rel="noopener">Tuttocampo</a>,
   inseriti da società e collaboratori durante le partite: possono arrivare con qualche minuto di ritardo.
+  Marcatori e minuti di Eccellenza e Promozione dalla diretta dell'<a href="https://almanaccocalciotoscano.it/category/notizie/notizie-live/" target="_blank" rel="noopener">Almanacco del Calcio Toscano</a>;
+  quando le due fonti non coincidono il gol è segnato "da verificare".
   Risultati definitivi, marcatori e tabellini a fine giornata su
   <a href="https://www.radiomugello.it/sport/" target="_blank" rel="noopener">Radio Mugello</a>
   e nella pagina <a href="/risultati/">risultati e classifiche</a>.<br>
@@ -203,6 +207,9 @@ footer a { color: inherit; }
     if (!g.marcatore) return "marcatore in arrivo";
     return (g.minuto ? g.minuto + " " : "") + g.marcatore;
   }
+  function fonte(g) {
+    return g.fonteMarcatore ? ' <span class="fonte">fonte: ' + testo(g.fonteMarcatore) + "</span>" : "";
+  }
   function oggiISO() {
     var d = new Date(), z = function (n) { return (n < 10 ? "0" : "") + n; };
     return d.getFullYear() + "-" + z(d.getMonth() + 1) + "-" + z(d.getDate());
@@ -211,7 +218,7 @@ footer a { color: inherit; }
     var a = document.createElement("div");
     a.className = "avviso";
     a.innerHTML = "<b>⚽ GOL · " + testo(g.squadra) + "</b><p>" + testo(g.casa) + "-" + testo(g.ospite) + " <b>" +
-      testo(g.punteggio) + "</b><br>" + testo(chi(g)) + "</p><small>" + testo(g.girone) + " · ore " + testo(g.ora) + "</small>";
+      testo(g.punteggio) + "</b><br>" + testo(chi(g)) + fonte(g) + "</p><small>" + testo(g.girone) + " · ore " + testo(g.ora) + "</small>";
     document.getElementById("avvisi").appendChild(a);
     setTimeout(function () { a.remove(); }, 12000);
     a.addEventListener("click", function () { a.remove(); });
@@ -222,12 +229,15 @@ footer a { color: inherit; }
       .then(function (d) {
         if (!d || d.data !== oggiISO() || !d.gol || !d.gol.length) return;
         schede = d.partite || {};
+        Object.keys(d.almanacco || {}).forEach(function (cat) {
+          document.querySelectorAll('a.alm[data-cat="' + cat + '"]').forEach(function (a) { a.href = d.almanacco[cat]; });
+        });
         document.getElementById("golOggi").hidden = false;
         document.getElementById("golLista").innerHTML = d.gol.map(function (g) {
           var v = (schede[g.partita] || {}).verifica ? '<span class="verifica">da verificare</span>' : "";
           return '<li class="' + (g.nostra ? "nostra" : "") + '"><span class="quando">' + testo(g.ora) + "</span><span>" +
             testo(g.casa) + "-" + testo(g.ospite) + ' <span class="punti">' + testo(g.punteggio) + "</span>" + v +
-            '</span><span class="chi">' + testo(g.squadra) + ": " + testo(chi(g)) + "</span></li>";
+            '</span><span class="chi">' + testo(g.squadra) + ": " + testo(chi(g)) + fonte(g) + "</span></li>";
         }).join("");
         if (visti === null) { visti = {}; d.gol.forEach(function (g) { visti[g.id] = 1; }); return; }
         d.gol.slice().reverse().forEach(function (g) { if (!visti[g.id]) { visti[g.id] = 1; mostraAvviso(g); } });
