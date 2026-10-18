@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Domenica in diretta | Calcio Mugello</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="I risultati della domenica dei gironi delle squadre di Mugello, Val di Sieve e Marradi, aggiornati via via durante le partite.">
+<link rel="icon" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+:root {
+  --bg: #f3f5f0; --surface: #ffffff; --ink: #16241d; --muted: #5d6b63; --line: #dde3dc;
+  --pitch: #134232; --pitch-ink: #f3f5f0; --amber: #b7791f;
+  --cat-ecc: #6b3fa0; --cat-pro: #2c5fb3; --cat-pri: #237a4b; --cat-sec: #c26a1c; --cat-ter: #b3372f;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #0f1713; --surface: #16211b; --ink: #e6ece7; --muted: #9aa8a0; --line: #2a3a31;
+    --pitch: #0b2b20; --pitch-ink: #e6ece7; --amber: #e2a94a;
+    --cat-ecc: #b18be0; --cat-pro: #7ea6ef; --cat-pri: #5cc48a; --cat-sec: #eb9a55; --cat-ter: #ef7a70;
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0f1713; --surface: #16211b; --ink: #e6ece7; --muted: #9aa8a0; --line: #2a3a31;
+  --pitch: #0b2b20; --pitch-ink: #e6ece7; --amber: #e2a94a;
+  --cat-ecc: #b18be0; --cat-pro: #7ea6ef; --cat-pri: #5cc48a; --cat-sec: #eb9a55; --cat-ter: #ef7a70;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 16px/1.5 "Source Sans 3", "Segoe UI", system-ui, sans-serif; }
+.wrap { max-width: 1100px; margin: 0 auto; padding-inline: 16px; }
+header.top { background: var(--pitch); color: var(--pitch-ink); padding-block: 26px 20px;
+  background-image: repeating-linear-gradient(90deg, transparent 0 56px, rgba(255,255,255,.035) 56px 112px); }
+header.top h1 { font: 700 2.3rem/1 "Barlow Condensed", "Arial Narrow", sans-serif; margin: 0; }
+header.top h1 .live { display: inline-block; width: .32em; height: .32em; border-radius: 50%;
+  background: #e5484d; vertical-align: middle; margin-right: .25em; animation: pulsa 1.6s infinite; }
+@keyframes pulsa { 50% { opacity: .35; } }
+@media (prefers-reduced-motion: reduce) { header.top h1 .live { animation: none; } }
+header.top p { margin: 8px 0 0; opacity: .88; font-size: .95rem; max-width: 60ch; }
+header.top .agg { color: var(--amber); font-weight: 700; }
+.filtri { position: sticky; top: 0; z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); padding-block: 10px; }
+.filtri .wrap { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; }
+.chip { flex: none; border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+  font: 600 .88rem "Source Sans 3", system-ui, sans-serif; padding: 6px 12px; border-radius: 999px; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.chip:focus-visible, .vista button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.griglia { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 480px), 1fr));
+  gap: 18px; padding-block: 18px 40px; align-items: start; }
+.girone { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
+  border-top: 4px solid var(--c); display: flex; flex-direction: column; }
+.girone[hidden] { display: none; }
+.testa { padding: 12px 14px 10px; }
+.testa h2 { font: 700 1.25rem/1.1 "Barlow Condensed", "Arial Narrow", sans-serif; margin: 0; }
+.testa .nostre { margin: 4px 0 0; font-size: .86rem; color: var(--muted); }
+.testa .nostre b { color: var(--ink); font-weight: 600; }
+.vista { display: flex; gap: 6px; margin-top: 10px; }
+.vista button { border: 1px solid var(--line); background: transparent; color: var(--ink); border-radius: 8px;
+  font: 600 .85rem "Source Sans 3", system-ui, sans-serif; padding: 4px 10px; cursor: pointer; }
+.vista button[aria-pressed="true"] { background: var(--c); border-color: var(--c); color: #fff; }
+.widget { background: #fff; }
+.widget iframe { display: block; width: 100%; height: 480px; border: 0; }
+.widget iframe.classifica { height: 690px; }
+footer { color: var(--muted); font-size: .85rem; padding-block: 0 40px; }
+footer a { color: inherit; }
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <h1><span class="live" aria-hidden="true"></span>Domenica in diretta</h1>
+  <p>I risultati dei gironi delle squadre di Mugello, Val di Sieve e Marradi, aggiornati via via durante le partite.
+  Ultimo aggiornamento dei riquadri: <span class="agg" id="agg">adesso</span>.</p>
+</div></header>
+<nav class="filtri" aria-label="Filtra per categoria"><div class="wrap">
+<button class="chip" data-cat="tutti" aria-pressed="false">Tutti</button>
+<button class="chip" data-cat="ecc" aria-pressed="false">Eccellenza</button>
+<button class="chip" data-cat="pro" aria-pressed="false">Promozione</button>
+<button class="chip" data-cat="pri" aria-pressed="false">Prima</button>
+<button class="chip" data-cat="sec" aria-pressed="false">Seconda</button>
+<button class="chip" data-cat="ter" aria-pressed="false">Terza</button>
+</div></nav>
+<main class="wrap griglia">
+<section class="girone" data-cat="ecc" data-titolo="Eccellenza · Girone B" style="--c: var(--cat-ecc)">
+  <div class="testa"><h2>Eccellenza · Girone B</h2><p class="nostre">Le nostre: <b>Audax Rufina</b></p>
+    <div class="vista" role="group" aria-label="Cosa mostrare"><button data-tipo="Risultati" aria-pressed="true">Risultati</button><button data-tipo="Classifica" aria-pressed="false">Classifica</button></div></div>
+  <div class="widget"><iframe src="https://www.tuttocampo.it/WidgetV2/Risultati/b807cdae-0536-45dd-b08e-3f5d90fc5c3e" data-base="https://www.tuttocampo.it/WidgetV2/__TIPO__/b807cdae-0536-45dd-b08e-3f5d90fc5c3e" title="Eccellenza · Girone B · Risultati" loading="lazy" scrolling="no"></iframe></div>
+</section>
+<section class="girone" data-cat="pro" data-titolo="Promozione · Girone A" style="--c: var(--cat-pro)">
+  <div class="testa"><h2>Promozione · Girone A</h2><p class="nostre">Le nostre: <b>Fortis Juventus 1909, Luco</b></p>
+    <div class="vista" role="group" aria-label="Cosa mostrare"><button data-tipo="Risultati" aria-pressed="true">Risultati</button><button data-tipo="Classifica" aria-pressed="false">Classifica</button></div></div>
+  <div class="widget"><iframe src="https://www.tuttocampo.it/WidgetV2/Risultati/131f2cf7-9c31-447c-b4c4-2c20e1050563" data-base="https://www.tuttocampo.it/WidgetV2/__TIPO__/131f2cf7-9c31-447c-b4c4-2c20e1050563" title="Promozione · Girone A · Risultati" loading="lazy" scrolling="no"></iframe></div>
+</section>
+<section class="girone" data-cat="pro" data-titolo="Promozione · Girone C" style="--c: var(--cat-pro)">
+  <div class="testa"><h2>Promozione · Girone C</h2><p class="nostre">Le nostre: <b>Alleanza Giovanile Dicomano, Pontassieve</b></p>
+    <div class="vista" role="group" aria-label="Cosa mostrare"><button data-tipo="Risultati" aria-pressed="true">Risultati</button><button data-tipo="Classifica" aria-pressed="false">Classifica</button></div></div>
+  <div class="widget"><iframe src="https://www.tuttocampo.it/WidgetV2/Risultati/fed94f68-d18c-429c-ad19-98688adfe232" data-base="https://www.tuttocampo.it/WidgetV2/__TIPO__/fed94f68-d18c-429c-ad19-98688adfe232" title="Promozione · Girone C · Risultati" loading="lazy" scrolling="no"></iframe></div>
+</section>
+<section class="girone" data-cat="pri" data-titolo="Prima Categoria · Girone C" style="--c: var(--cat-pri)">
+  <div class="testa"><h2>Prima Categoria · Girone C</h2><p class="nostre">Le nostre: <b>Barberino del Mugello, Gallianese, Sagginale, San Godenzo, San Piero a Sieve</b></p>
+    <div class="vista" role="group" aria-label="Cosa mostrare"><button data-tipo="Risultati" aria-pressed="true">Risultati</button><button data-tipo="Classifica" aria-pressed="false">Classifica</button></div></div>
+  <div class="widget"><iframe src="https://www.tuttocampo.it/WidgetV2/Risultati/228bd06f-a142-496f-ac7f-6cb166859024" data-base="https://www.tuttocampo.it/WidgetV2/__TIPO__/228bd06f-a142-496f-ac7f-6cb166859024" title="Prima Categoria · Girone C · Risultati" loading="lazy" scrolling="no"></iframe></div>
+</section>
+<section class="girone" data-cat="sec" data-titolo="Seconda Categoria · Girone D" style="--c: var(--cat-sec)">
+  <div class="testa"><h2>Seconda Categoria · Girone D</h2><p class="nostre">Le nostre: <b>Londa 1974</b></p>
+    <div class="vista" role="group" aria-label="Cosa mostrare"><button data-tipo="Risultati" aria-pressed="true">Risultati</button><button data-tipo="Classifica" aria-pressed="false">Classifica</button></div></div>
+  <div class="widget"><iframe src="https://www.tuttocampo.it/WidgetV2/Risultati/4c6a7581-258e-4cbe-88e3-c5ae386e1aad" data-base="https://www.tuttocampo.it/WidgetV2/__TIPO__/4c6a7581-258e-4cbe-88e3-c5ae386e1aad" title="Seconda Categoria · Girone D · Risultati" loading="lazy" scrolling="no"></iframe></div>
+</section>
+<section class="girone" data-cat="sec" data-titolo="Seconda Categoria · Girone F" style="--c: var(--cat-sec)">
+  <div class="testa"><h2>Seconda Categoria · Girone F</h2><p class="nostre">Le nostre: <b>Firenzuola, Reconquista, Scarperia 1920, Vaglia</b></p>
+    <div class="vista" role="group" aria-label="Cosa mostrare"><button data-tipo="Risultati" aria-pressed="true">Risultati</button><button data-tipo="Classifica" aria-pressed="false">Classifica</button></div></div>
+  <div class="widget"><iframe src="https://www.tuttocampo.it/WidgetV2/Risultati/57a67696-9dc7-4d5c-822c-231cbbb53995" data-base="https://www.tuttocampo.it/WidgetV2/__TIPO__/57a67696-9dc7-4d5c-822c-231cbbb53995" title="Seconda Categoria · Girone F · Risultati" loading="lazy" scrolling="no"></iframe></div>
+</section>
+<section class="girone" data-cat="sec" data-titolo="Seconda Categoria · Girone M Ravenna" style="--c: var(--cat-sec)">
+  <div class="testa"><h2>Seconda Categoria · Girone M Ravenna</h2><p class="nostre">Le nostre: <b>C.S.C. Marradese</b></p>
+    <div class="vista" role="group" aria-label="Cosa mostrare"><button data-tipo="Risultati" aria-pressed="true">Risultati</button><button data-tipo="Classifica" aria-pressed="false">Classifica</button></div></div>
+  <div class="widget"><iframe src="https://www.tuttocampo.it/WidgetV2/Risultati/c3ca6b69-1744-4ba8-82b3-d87b36f36fcd" data-base="https://www.tuttocampo.it/WidgetV2/__TIPO__/c3ca6b69-1744-4ba8-82b3-d87b36f36fcd" title="Seconda Categoria · Girone M Ravenna · Risultati" loading="lazy" scrolling="no"></iframe></div>
+</section>
+<section class="girone" data-cat="ter" data-titolo="Terza Categoria · Girone B Firenze" style="--c: var(--cat-ter)">
+  <div class="testa"><h2>Terza Categoria · Girone B Firenze</h2><p class="nostre">Le nostre: <b>Cavallina, Lions Fortis Juventus, Rontese, Vicchio</b></p>
+    <div class="vista" role="group" aria-label="Cosa mostrare"><button data-tipo="Risultati" aria-pressed="true">Risultati</button><button data-tipo="Classifica" aria-pressed="false">Classifica</button></div></div>
+  <div class="widget"><iframe src="https://www.tuttocampo.it/WidgetV2/Risultati/5e4a51a8-6edb-4679-af99-4e7de49527c2" data-base="https://www.tuttocampo.it/WidgetV2/__TIPO__/5e4a51a8-6edb-4679-af99-4e7de49527c2" title="Terza Categoria · Girone B Firenze · Risultati" loading="lazy" scrolling="no"></iframe></div>
+</section>
+</main>
+<footer class="wrap">
+  Punteggi e classifiche dai widget di <a href="https://www.tuttocampo.it/" target="_blank" rel="noopener">Tuttocampo</a>,
+  inseriti da società e collaboratori durante le partite: possono arrivare con qualche minuto di ritardo.
+  Risultati definitivi, marcatori e tabellini a fine giornata su
+  <a href="https://www.radiomugello.it/sport/" target="_blank" rel="noopener">Radio Mugello</a>
+  e nella pagina <a href="/risultati/">risultati e classifiche</a>.<br>
+  <a href="/">← calciomugello.it</a> · A cura di <a href="https://fabioceseri.it/">Fabio Ceseri</a> · Radio Mugello.
+</footer>
+<script>
+(function () {
+  var OGNI = 120000; // ricarica i riquadri visibili ogni 2 minuti
+  var visibili = new Set();
+  var oss = "IntersectionObserver" in window ? new IntersectionObserver(function (voci) {
+    voci.forEach(function (v) { v.isIntersecting ? visibili.add(v.target) : visibili.delete(v.target); });
+  }, { rootMargin: "200px" }) : null;
+  var cornici = Array.prototype.slice.call(document.querySelectorAll(".widget iframe"));
+  cornici.forEach(function (f) { oss ? oss.observe(f) : visibili.add(f); });
+
+  function ora() {
+    var d = new Date();
+    document.getElementById("agg").textContent = "ore " + d.toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" });
+  }
+  ora();
+  setInterval(function () {
+    if (document.hidden) return;
+    visibili.forEach(function (f) { if (!f.closest("[hidden]")) f.src = f.src; });
+    ora();
+  }, OGNI);
+
+  // Risultati / Classifica per ogni girone
+  document.querySelectorAll(".girone").forEach(function (g) {
+    var f = g.querySelector("iframe");
+    g.querySelectorAll(".vista button").forEach(function (b) {
+      b.addEventListener("click", function () {
+        g.querySelectorAll(".vista button").forEach(function (x) { x.setAttribute("aria-pressed", x === b); });
+        f.className = b.dataset.tipo === "Classifica" ? "classifica" : "";
+        f.title = g.dataset.titolo + " · " + b.textContent;
+        f.src = f.dataset.base.replace("__TIPO__", b.dataset.tipo);
+      });
+    });
+  });
+
+  // filtri per categoria (ricordati sul dispositivo)
+  var chips = document.querySelectorAll(".chip");
+  function filtra(cat) {
+    chips.forEach(function (c) { c.setAttribute("aria-pressed", c.dataset.cat === cat); });
+    document.querySelectorAll(".girone").forEach(function (g) { g.hidden = cat !== "tutti" && g.dataset.cat !== cat; });
+    try { localStorage.setItem("live-cat", cat); } catch (e) {}
+  }
+  chips.forEach(function (c) { c.addEventListener("click", function () { filtra(c.dataset.cat); }); });
+  var salvato = "tutti";
+  try { salvato = localStorage.getItem("live-cat") || "tutti"; } catch (e) {}
+  filtra(document.querySelector('.chip[data-cat="' + salvato + '"]') ? salvato : "tutti");
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c3d1efb37b4743fd94dd1b3652e3d3d8"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
