@@ -601,6 +601,40 @@
   table.numeri-tab th { background: #f0f5f1; color: var(--verde-scuro); }
   table.numeri-tab td:first-child, table.numeri-tab th:first-child { text-align: left; }
   .numeri-scroll { overflow-x: auto; }
+  .gir-view { max-width: 1100px; margin: 0 auto; }
+  /* con Classifiche e Calendari le schede sono 7: sul telefono vanno su due righe */
+  @media (max-width: 760px) {
+    .tabs { flex-wrap: wrap; }
+    .tab-btn { flex: 1 1 calc(25% - 6px); max-width: none; }
+  }
+  .gir-testa h2 { color: var(--verde-scuro); margin: 8px 0 4px; font-size: 1.2rem; }
+  .gir-testa p { color: #666; font-size: 0.85rem; margin: 0 0 16px; }
+  .gir-griglia { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; align-items: start; }
+  .gir-card { background: var(--card-bg); border-radius: 16px; box-shadow: var(--ombra); padding: 14px 16px; min-width: 0; }
+  .gir-card h3 { margin: 0; color: var(--verde-scuro); font-size: 1rem; }
+  .gir-meta { font-size: 0.75rem; color: #777; margin: 2px 0 10px; }
+  table.gir-tab { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+  table.gir-tab td { padding: 4px 6px; border-bottom: 1px solid #eef2ef; }
+  table.gir-tab td.pos { width: 2em; color: #888; text-align: right; font-variant-numeric: tabular-nums; }
+  table.gir-tab td.pt { width: 3em; text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; }
+  table.gir-tab tr.nostra td { background: #e8f5ec; color: var(--verde-scuro); font-weight: 700; }
+  .gir-nota { font-size: 0.75rem; color: #8a5a00; margin: 8px 0 0; }
+  .gir-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 12px; }
+  .gir-chip { border: 1px solid #cfe0d4; background: #fff; color: var(--verde-scuro); border-radius: 999px;
+    padding: 6px 12px; font: inherit; font-size: 0.82rem; font-weight: 600; cursor: pointer; }
+  .gir-chip.attivo { background: var(--verde-campo); color: #fff; border-color: var(--verde-campo); }
+  .gir-giornata { border-top: 1px solid #eef2ef; padding: 8px 0; }
+  .gir-giornata:first-of-type { border-top: 0; }
+  .gir-giornata.prossima { background: #fff7ef; border-radius: 10px; padding: 8px 10px; margin: 4px -10px; border-top: 0; }
+  .gir-g { font-size: 0.75rem; font-weight: 700; color: #777; text-transform: uppercase; letter-spacing: .03em; }
+  .gir-giornata.prossima .gir-g { color: var(--arancio); }
+  .gir-match { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; font-size: 0.9rem; padding: 2px 0; }
+  .gir-match .ris { font-weight: 800; color: var(--verde-scuro); font-variant-numeric: tabular-nums; }
+  .gir-match .info { font-size: 0.75rem; color: #777; flex-basis: 100%; }
+  .gir-match .tag { font-size: 0.68rem; font-weight: 700; color: var(--arancio); text-transform: uppercase; }
+  .gir-prossimo { margin-bottom: 8px; }
+  .gir-prossimo .gir-match { border-bottom: 1px solid #eef2ef; padding: 6px 0; }
+  .gir-prossimo .chi { font-size: 0.72rem; color: #777; flex-basis: 100%; }
   .radio-view { max-width: 1100px; margin: 0 auto; }
   .radio-testa { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; margin: 8px 0 16px; }
   .radio-testa h2 { color: var(--verde-scuro); margin: 0; font-size: 1.2rem; }
@@ -631,6 +665,8 @@
 <div class="tabs">
   <button class="tab-btn active" data-tab="calcio11">⚽ Calcio a 11</button>
   <button class="tab-btn" data-tab="calcio5">⚽ Calcio a 5</button>
+  <button class="tab-btn" data-tab="classifiche">🏆 Classifiche</button>
+  <button class="tab-btn" data-tab="calendari">📅 Calendari</button>
   <button class="tab-btn" data-tab="numeri">📊 Numeri</button>
   <button class="tab-btn" data-tab="radio">📻 Radio Mugello</button>
   <button class="tab-btn" data-tab="bolle">🔥 Cosa bolle in campo</button>
@@ -649,6 +685,16 @@
     <div class="radio-testa"><h2>Dalla redazione sport di Radio Mugello</h2>
       <a href="https://www.radiomugello.it/sport/" target="_blank" rel="noopener">Tutto lo sport su radiomugello.it ›</a></div>
     <div class="radio-griglia" id="radioGriglia"><div class="empty">Caricamento…</div></div>
+  </div>
+  <div id="view-classifiche" class="gir-view" style="display:none;">
+    <div class="gir-testa"><h2>Classifiche dei gironi</h2>
+      <p>In verde le squadre di Mugello e Val di Sieve. Fonte e data di ogni classifica sotto il titolo del girone.</p></div>
+    <div class="gir-griglia" id="girClassifiche"><div class="empty">Caricamento…</div></div>
+  </div>
+  <div id="view-calendari" class="gir-view" style="display:none;">
+    <div class="gir-testa"><h2>Calendari</h2>
+      <p>Le partite delle squadre di Mugello e Val di Sieve, giornata per giornata. Date del calendario ufficiale; anticipi e posticipi sono indicati accanto alla partita.</p></div>
+    <div id="girCalendari"><div class="empty">Caricamento…</div></div>
   </div>
 </main>
 <p style="text-align:center;font-size:0.8rem;color:#777;margin:24px 16px 40px">Dati dai comunicati ufficiali LND (Comitato Regionale Toscana, Delegazione di Firenze, Comitato di Ravenna) e da Radio Mugello. A cura di <a href="https://fabioceseri.it/" style="color:inherit">Fabio Ceseri</a>. <a href="squadre/" style="color:inherit">Elenco delle squadre in testo</a> · <a href="risultati/" style="color:inherit">Tutti i risultati in una pagina</a>.<br>Nessun cookie: le visite sono contate in forma aggregata con Cloudflare Web Analytics, senza dati personali dei visitatori.</p>
@@ -1422,6 +1468,86 @@ async function salvaNota() {
 loadData();
 </script>
 
+<script>
+(function () {
+  let gironi = null;
+  const esc = s => String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const titolo = g => g.categoria + " · Girone " + g.girone + (g.comitato ? " (" + g.comitato + ")" : "") + (g.sport === "Calcio a 5" ? " · Calcio a 5" : "");
+  async function carica() {
+    if (gironi) return gironi;
+    gironi = await (await fetch("data/gironi.json", {cache: "no-cache"})).json();
+    return gironi;
+  }
+  function partitaHtml(p, conGiornata) {
+    const ris = p.risultato ? '<span class="ris">' + esc(p.risultato) + (p.tavolino ? " (a tavolino)" : "") + "</span>" : "";
+    return '<div class="gir-match">' + (conGiornata ? '<span class="gir-g">' + esc(p.data) + "</span>" : "") +
+      "<span>" + (p.casaNostra ? "<b>" + esc(p.casa) + "</b>" : esc(p.casa)) + " - " +
+      (p.ospiteNostra ? "<b>" + esc(p.ospite) + "</b>" : esc(p.ospite)) + "</span>" + ris +
+      (p.derby ? '<span class="tag">derby</span>' : "") +
+      (p.info ? '<span class="info">' + esc(p.info) + "</span>" : "") + "</div>";
+  }
+  async function classifiche() {
+    const box = document.getElementById("girClassifiche");
+    try {
+      const lista = (await carica()).filter(g => g.classifica);
+      box.innerHTML = lista.map(g => {
+        const c = g.classifica;
+        return '<div class="gir-card"><h3>' + esc(titolo(g)) + '</h3><div class="gir-meta">Dopo ' + c.giornate +
+          " giornate · " + esc(c.fonte) + '</div><table class="gir-tab">' +
+          c.righe.map(r => '<tr' + (r.nostra ? ' class="nostra"' : "") + '><td class="pos">' + r.pos + "</td><td>" +
+            esc(r.squadra) + '</td><td class="pt">' + r.punti + "</td></tr>").join("") +
+          "</table>" + (c.nota ? '<p class="gir-nota">' + esc(c.nota) + "</p>" : "") + "</div>";
+      }).join("") || '<div class="empty">Classifiche non disponibili.</div>';
+    } catch (e) { box.innerHTML = '<div class="empty">Classifiche non disponibili ora.</div>'; }
+  }
+  async function calendari() {
+    const box = document.getElementById("girCalendari");
+    try {
+      const lista = (await carica()).filter(g => g.partite.length);
+      const prossime = [];
+      lista.forEach(g => g.partite.forEach(p => { if (p.g === g.prossima) prossime.push([g, p]); }));
+      let html = '<div class="gir-card gir-prossimo"><h3>Prossimo turno</h3><div class="gir-meta">La prossima partita di ogni squadra di Mugello e Val di Sieve</div>' +
+        prossime.map(([g, p]) => partitaHtml(Object.assign({}, p, {info: (p.info ? p.info + " · " : "") + titolo(g) + ", " + p.g + "ª giornata"}), true)).join("") + "</div>";
+      html += '<div class="gir-chips">' + lista.map((g, i) => '<button class="gir-chip' + (i ? "" : " attivo") + '" data-i="' + i + '">' + esc(titolo(g)) + "</button>").join("") + "</div>";
+      html += '<div class="gir-card" id="girCalCorpo"></div>';
+      box.innerHTML = html;
+      const corpo = document.getElementById("girCalCorpo");
+      const mostra = i => {
+        const g = lista[i];
+        const perG = {};
+        g.partite.forEach(p => (perG[p.g] = perG[p.g] || []).push(p));
+        corpo.innerHTML = "<h3>" + esc(titolo(g)) + '</h3><div class="gir-meta">Squadre del territorio: ' + esc(g.nostre.join(", ")) + "</div>" +
+          Object.keys(perG).sort((a, b) => a - b).map(n => '<div class="gir-giornata' + (+n === g.prossima ? " prossima" : "") + '"><div class="gir-g">' +
+            n + "ª giornata · " + esc(perG[n][0].data) + (+n === g.prossima ? " · prossima" : "") + "</div>" + perG[n].map(p => partitaHtml(p, false)).join("") + "</div>").join("") +
+          (g.ritorno ? '<p class="gir-meta" style="margin-top:10px">' + esc(g.ritorno) + "</p>" : "");
+        box.querySelectorAll(".gir-chip").forEach(b => b.classList.toggle("attivo", +b.dataset.i === i));
+      };
+      box.querySelectorAll(".gir-chip").forEach(b => b.addEventListener("click", () => mostra(+b.dataset.i)));
+      mostra(0);
+    } catch (e) { box.innerHTML = '<div class="empty">Calendari non disponibili ora.</div>'; }
+  }
+  const fatto = {};
+  document.querySelectorAll(".tab-btn[data-tab]").forEach(b => b.addEventListener("click", () => {
+    for (const t of ["classifiche", "calendari"]) {
+      const si = b.dataset.tab === t;
+      document.getElementById("view-" + t).style.display = si ? "block" : "none";
+      if (si && !fatto[t]) { fatto[t] = 1; (t === "classifiche" ? classifiche : calendari)(); }
+    }
+    if (["classifiche", "calendari"].includes(b.dataset.tab)) history.replaceState(null, "", "#" + b.dataset.tab);
+    else if (location.hash === "#classifiche" || location.hash === "#calendari") history.replaceState(null, "", location.pathname);
+  }));
+  // link diretti da condividere: calciomugello.it/#classifiche e /#calendari
+  function daHash() {
+    const h = location.hash.slice(1);
+    if (h !== "classifiche" && h !== "calendari") return;
+    const b = document.querySelector('.tab-btn[data-tab="' + h + '"]');
+    if (b && !b.classList.contains("active")) b.click();
+  }
+  window.addEventListener("hashchange", daHash);
+  // dopo gli altri script della pagina, così anche la scheda Radio ha già il suo ascoltatore
+  window.addEventListener("load", daHash);
+})();
+</script>
 <script>
 (function () {
   let caricato = false;
