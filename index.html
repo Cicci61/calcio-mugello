@@ -1332,13 +1332,17 @@ async function loadData() {
     return;
   }
   try {
-    const res = await fetch("data/squadre.json");
+    let res;
+    for (let i = 0; ; i++) {
+      try { res = await fetch("data/squadre.json", {cache: "no-cache"}); if (res.ok) break; throw new Error(res.status); }
+      catch (err) { if (i >= 2) throw err; await new Promise(r => setTimeout(r, 1500 * (i + 1))); }
+    }
     DATA = await res.json();
     render();
     loadStats();
   } catch (e) {
     document.getElementById("grid-calcio11").innerHTML =
-      `<div class="empty">Impossibile contattare il server (${e}).<br>Verifica che il server sia acceso (lanciatore "Apri Calcio Mugello.command" sul Desktop).</div>`;
+      `<div class="empty">Non riesco a caricare i dati in questo momento.<br><a href="" onclick="location.reload();return false">Ricarica la pagina</a> tra qualche secondo.</div>`;
   }
 }
 
