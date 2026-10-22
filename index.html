@@ -167,6 +167,8 @@
   .bolle-testa h2 { margin: 0; color: var(--verde-scuro); font-size: 1.3rem; }
   .bolle-testa p { margin: 0; color: #555; font-size: 0.92rem; line-height: 1.5; }
   .bolle-testa .bolle-cu { font-size: 0.8rem; color: #777; }
+  .bolle-avviso { background: #fff6ec; border-left: 4px solid var(--arancio); border-radius: 8px; padding: 9px 12px; font-size: 0.92rem; color: #333; }
+  .bolle-avviso span { display: block; font-size: 0.75rem; color: #888; margin-top: 2px; }
   .bolle-filtri { display: flex; flex-wrap: wrap; gap: 8px; }
   .bolle-filtri button { border: 1px solid #dfe6e1; background: #fff; border-radius: 999px; padding: 6px 12px;
     font: inherit; font-size: 0.82rem; font-weight: 600; color: #444; cursor: pointer; }
@@ -1296,6 +1298,7 @@ function renderBolle() {
     <div class="bolle-testa">
       <h2>🔥 Cosa bolle in campo</h2>
       <p>Ogni settimana, squadra per squadra, quello che dicono i comunicati ufficiali della LND sulla prima squadra: prossima gara, gare spostate, squalificati, diffidati e multe. Nessuno deve più sfogliare il bollettino.</p>
+      ${(dati.avvisi || []).map(a => `<div class="bolle-avviso">📢 <b>${escapeHtml(a.testo)}</b> <span>${escapeHtml(a.fonte)}</span></div>`).join("")}
       <div class="bolle-cu">Comunicati letti: ${dati.cu.map(escapeHtml).join(" · ")} · aggiornato il ${escapeHtml(dati.aggiornato)}</div>
       <div class="bolle-filtri">
         <button data-cat="" aria-pressed="${!bolleCat}">Tutte</button>
