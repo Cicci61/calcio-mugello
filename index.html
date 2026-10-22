@@ -161,6 +161,30 @@
   .meta-row { margin-top: 8px; font-size: 0.85rem; color: #555; display: flex; gap: 10px; flex-wrap: wrap; }
   .meta-row span { display: inline-flex; align-items: center; gap: 4px; }
 
+  /* ---- Cosa bolle in campo: le notizie dei CU per la prima squadra ---- */
+  .bolle-view { max-width: 1100px; margin: 0 auto; display: grid; gap: 14px; }
+  .bolle-testa { background: var(--card-bg); border-radius: 16px; box-shadow: var(--ombra); padding: 18px 20px; display: grid; gap: 8px; }
+  .bolle-testa h2 { margin: 0; color: var(--verde-scuro); font-size: 1.3rem; }
+  .bolle-testa p { margin: 0; color: #555; font-size: 0.92rem; line-height: 1.5; }
+  .bolle-testa .bolle-cu { font-size: 0.8rem; color: #777; }
+  .bolle-filtri { display: flex; flex-wrap: wrap; gap: 8px; }
+  .bolle-filtri button { border: 1px solid #dfe6e1; background: #fff; border-radius: 999px; padding: 6px 12px;
+    font: inherit; font-size: 0.82rem; font-weight: 600; color: #444; cursor: pointer; }
+  .bolle-filtri button[aria-pressed="true"] { background: var(--verde-scuro); border-color: var(--verde-scuro); color: #fff; }
+  .bolle-griglia { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; align-items: start; }
+  .bolle-card { background: var(--card-bg); border-radius: 14px; box-shadow: var(--ombra); overflow: hidden; border-top: 4px solid #dfe6e1; }
+  .bolle-card.calda { border-top-color: var(--arancio); }
+  .bolle-card h3 { margin: 0; padding: 12px 16px 2px; font-size: 1.05rem; color: var(--grigio-testo); }
+  .bolle-card .bolle-cat { padding: 0 16px 10px; font-size: 0.78rem; color: #777; }
+  .bolle-voce { display: grid; grid-template-columns: 26px 1fr; gap: 8px; padding: 9px 16px; border-top: 1px solid #eef1ef; font-size: 0.88rem; line-height: 1.45; color: #333; }
+  .bolle-voce .ico { font-size: 1rem; line-height: 1.3; }
+  .bolle-voce b { color: var(--grigio-testo); }
+  .bolle-voce .fonte { display: block; font-size: 0.74rem; color: #888; margin-top: 2px; }
+  .bolle-voce.avviso { background: #fff6ec; }
+  .bolle-voce.tranquilla { color: #2d6a3e; }
+  .bolle-piede { background: var(--card-bg); border-radius: 14px; box-shadow: var(--ombra); padding: 14px 18px; font-size: 0.86rem; color: #555; line-height: 1.5; }
+  .bolle-piede a { color: var(--verde-campo); font-weight: 600; }
+
   /* ---- Memoria: elenco schematico per mese ---- */
   .memoria-view { display: grid; grid-template-columns: 210px 1fr; gap: 20px; align-items: start; }
   .mem-indice {
@@ -609,12 +633,14 @@
   <button class="tab-btn" data-tab="calcio5">⚽ Calcio a 5</button>
   <button class="tab-btn" data-tab="numeri">📊 Numeri</button>
   <button class="tab-btn" data-tab="radio">📻 Radio Mugello</button>
+  <button class="tab-btn" data-tab="bolle">🔥 Cosa bolle in campo</button>
 </div>
 
 <main>
   <div id="grid-calcio11" class="grid"></div>
   <div id="grid-calcio5" class="grid" style="display:none;"></div>
   <div id="view-numeri" class="numeri-view" style="display:none;"></div>
+  <div id="view-bolle" class="bolle-view" style="display:none;"><div class="empty">Caricamento…</div></div>
   <div id="view-memoria" class="memoria-view" style="display:none;">
     <nav class="mem-indice" id="memoriaToc" aria-label="Mesi"></nav>
     <div class="mem-main" id="memoriaContent"></div>
@@ -1150,6 +1176,93 @@ function disegnaElencoMemoria() {
     `<div class="legenda">${Object.values(TIPI_MEMORIA).map(t => `<div><i style="--c:${t.c}"></i>${t.nome.replace(/^\S+\s/, "")}</div>`).join("")}</div>`;
 }
 
+let BOLLE = null, bolleCat = "";
+const BOLLE_ORDINE = ["Eccellenza", "Promozione", "Prima Categoria", "Seconda Categoria", "Terza Categoria", "Serie C2"];
+
+async function loadBolle() {
+  const box = document.getElementById("view-bolle");
+  if (!BOLLE) {
+    try {
+      BOLLE = await (await fetch("data/cosabolle.json", {cache: "no-cache"})).json();
+    } catch (e) {
+      box.innerHTML = `<div class="empty">Notizie non disponibili ora (${escapeHtml(String(e))}).</div>`;
+      return;
+    }
+  }
+  renderBolle();
+}
+
+function voceBolle(ico, html, fonte, cls) {
+  return `<div class="bolle-voce${cls ? " " + cls : ""}"><span class="ico">${ico}</span><div>${html}${fonte ? `<span class="fonte">${escapeHtml(fonte)}</span>` : ""}</div></div>`;
+}
+
+function partitaBolle(casa, ospite) {
+  const t = s => escapeHtml(s.toLowerCase().replace(/(^|[\s.'(-])\S/g, c => c.toUpperCase()));
+  return `${t(casa)} – ${t(ospite)}`;
+}
+
+function renderBolle() {
+  const box = document.getElementById("view-bolle");
+  const dati = BOLLE;
+  const cats = BOLLE_ORDINE.filter(c => dati.squadre.some(s => s.categoria === c));
+  const lista = dati.squadre
+    .filter(s => !bolleCat || s.categoria === bolleCat)
+    .sort((a, b) => (BOLLE_ORDINE.indexOf(a.categoria) - BOLLE_ORDINE.indexOf(b.categoria)) || a.squadra.localeCompare(b.squadra));
+  const card = s => {
+    const v = [];
+    for (const g of s.prossime) {
+      const dove = [g.impianto, g.localita].filter(Boolean).join(", ");
+      v.push(voceBolle("⚽", `<b>${partitaBolle(g.casa, g.ospite)}</b><br>${escapeHtml(g.quando)}${g.ora ? " ore " + escapeHtml(g.ora) : ""}${dove ? " · " + escapeHtml(dove) : ""}${/coppa/i.test(g.competizione) ? " · " + escapeHtml(g.competizione) : ""}`, g.fonte));
+    }
+    if (!s.prossime.length && s.calendario) {
+      v.push(voceBolle("⚽", `<b>${escapeHtml(s.calendario.partita)}</b><br>${escapeHtml(s.calendario.quando)} · orario e campo nel prossimo comunicato`, "dal calendario ufficiale"));
+    }
+    for (const a of s.anticipi) {
+      v.push(voceBolle("⏩", `<b>Gara spostata:</b> ${partitaBolle(a.casa, a.ospite)}, giornata di ${escapeHtml(a.giornata)}, si gioca <b>${escapeHtml(a.nuova)}</b>`, a.fonte, "avviso"));
+    }
+    for (const q of s.squalifiche) {
+      const quante = q.resta != null ? `${q.resta} ${q.resta === 1 ? "giornata" : "giornate"} da scontare` + (q.resta !== q.n ? ` su ${q.n}` : "") : `${q.n} ${q.n === 1 ? "gara" : "gare"} in ${escapeHtml(q.dove)}`;
+      v.push(voceBolle("🟥", `<b>${escapeHtml(q.nome)}</b>${q.ruolo && q.ruolo !== "Calciatore" && q.ruolo !== "Calciatore espulso" ? " (" + escapeHtml(q.ruolo.toLowerCase()) + ")" : ""}: ${quante}${q.recidiva ? " (recidiva in ammonizione)" : ""}`, `${q.cu} del ${q.data_cu.slice(0, 5)}`, "avviso"));
+    }
+    const perGara = {};
+    for (const d of s.diffidati) (perGara[d.dove] = perGara[d.dove] || []).push(d);
+    for (const [dove, lista] of Object.entries(perGara)) {
+      const nomi = lista.map(d => escapeHtml(d.nome) + (d.ruolo === "Dirigente" || d.ruolo === "Allenatore" ? " (" + d.ruolo.toLowerCase() + ")" : "")).join(", ");
+      v.push(voceBolle("🟨", `<b>Diffidati${dove !== "campionato" ? " in " + escapeHtml(dove) : ""}:</b> ${nomi}`, [...new Set(lista.map(d => d.cu))].join(", ")));
+    }
+    for (const q of s.inibizioni) {
+      v.push(voceBolle("🚫", `<b>${escapeHtml(q.nome)}</b> (${escapeHtml(q.ruolo.toLowerCase())}): inibito fino al ${escapeHtml(q.fino)}`, `${q.cu} del ${q.data_cu.slice(0, 5)}`));
+    }
+    for (const q of s.multe) {
+      v.push(voceBolle("💶", `<b>Multa ${escapeHtml(q.importo)}</b>${q.motivo ? ": " + escapeHtml(q.motivo) : ""}${q.dove ? ` (${escapeHtml(q.dove)})` : ""}`, `${q.cu} del ${q.data_cu.slice(0, 5)}`));
+    }
+    for (const q of s.decisioni) {
+      v.push(voceBolle("⚖️", escapeHtml(q.testo), `${q.cu} del ${q.data_cu.slice(0, 5)}`, "avviso"));
+    }
+    if (!s.squalifiche.length && !s.diffidati.length && !s.inibizioni.length && !s.multe.length && !s.decisioni.length) {
+      v.push(voceBolle("✅", "Nessuna squalifica, diffida o multa in corso", "", "tranquilla"));
+    }
+    const calda = s.anticipi.length || s.squalifiche.length || s.decisioni.length;
+    return `<article class="bolle-card${calda ? " calda" : ""}"><h3>${escapeHtml(s.squadra)}</h3>
+      <div class="bolle-cat">${escapeHtml(s.categoria)}${s.girone ? " · girone " + escapeHtml(s.girone) : ""}${s.comitato && s.comitato !== "Toscana" ? " · Comitato di " + escapeHtml(s.comitato) : ""}</div>${v.join("")}</article>`;
+  };
+  box.innerHTML = `
+    <div class="bolle-testa">
+      <h2>🔥 Cosa bolle in campo</h2>
+      <p>Ogni settimana, squadra per squadra, quello che dicono i comunicati ufficiali della LND sulla prima squadra: prossima gara, gare spostate, squalificati, diffidati e multe. Nessuno deve più sfogliare il bollettino.</p>
+      <div class="bolle-cu">Comunicati letti: ${dati.cu.map(escapeHtml).join(" · ")} · aggiornato il ${escapeHtml(dati.aggiornato)}</div>
+      <div class="bolle-filtri">
+        <button data-cat="" aria-pressed="${!bolleCat}">Tutte</button>
+        ${cats.map(c => `<button data-cat="${escapeHtml(c)}" aria-pressed="${bolleCat === c}">${escapeHtml(c)}</button>`).join("")}
+      </div>
+    </div>
+    <div class="bolle-griglia">${lista.map(card).join("")}</div>
+    <div class="bolle-piede">In caso di differenze fa fede il Comunicato Ufficiale: ogni voce indica da quale comunicato viene.
+      <b>Per la tua società</b>: tutte le squadre, giovanili comprese, con orari, campi e il messaggio pronto per il gruppo WhatsApp.
+      Scrivi a <a href="https://fabioceseri.it/" target="_blank" rel="noopener">Fabio Ceseri</a>.</div>`;
+  box.querySelectorAll(".bolle-filtri button").forEach(b => b.onclick = () => { bolleCat = b.dataset.cat; renderBolle(); });
+}
+
 async function loadMemoria() {
   try {
     const res = await fetch("/api/memoria");
@@ -1192,6 +1305,8 @@ document.querySelectorAll(".tab-btn").forEach(btn => {
     document.getElementById("grid-calcio5").style.display = tab === "calcio5" ? "grid" : "none";
     document.getElementById("view-memoria").style.display = tab === "memoria" ? "grid" : "none";
     document.getElementById("view-numeri").style.display = tab === "numeri" ? "block" : "none";
+    document.getElementById("view-bolle").style.display = tab === "bolle" ? "grid" : "none";
+    if (tab === "bolle") loadBolle();
     if (tab === "memoria") loadMemoria();
     if (tab === "numeri") renderNumeri();
   });
