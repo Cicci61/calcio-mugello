@@ -1521,8 +1521,13 @@ loadData();
         const perG = {};
         g.partite.forEach(p => (perG[p.g] = perG[p.g] || []).push(p));
         corpo.innerHTML = "<h3>" + esc(titolo(g)) + '</h3><div class="gir-meta">Squadre del territorio: ' + esc(g.nostre.join(", ")) + "</div>" +
-          Object.keys(perG).sort((a, b) => a - b).map(n => '<div class="gir-giornata' + (+n === g.prossima ? " prossima" : "") + '"><div class="gir-g">' +
-            n + "ª giornata · " + esc(perG[n][0].data) + (+n === g.prossima ? " · prossima" : "") + "</div>" + perG[n].map(p => partitaHtml(p, false)).join("") + "</div>").join("") +
+          Object.keys(perG).sort((a, b) => a - b).map(n => {
+            // calcio a 5: le gare della stessa giornata cadono in giorni diversi, allora la data va accanto a ogni partita
+            const diverse = new Set(perG[n].map(p => p.data)).size > 1;
+            return '<div class="gir-giornata' + (+n === g.prossima ? " prossima" : "") + '"><div class="gir-g">' +
+              n + "ª giornata" + (diverse ? "" : " · " + esc(perG[n][0].data)) + (+n === g.prossima ? " · prossima" : "") + "</div>" +
+              perG[n].map(p => partitaHtml(p, diverse)).join("") + "</div>";
+          }).join("") +
           (g.ritorno ? '<p class="gir-meta" style="margin-top:10px">' + esc(g.ritorno) + "</p>" : "");
         box.querySelectorAll(".gir-chip").forEach(b => b.classList.toggle("attivo", +b.dataset.i === i));
       };
