@@ -1,24 +1,42 @@
 {
- "aggiornato": "2026-10-24T20:17:46",
+ "aggiornato": "2026-10-24T20:22:54",
  "data": "2026-10-24",
  "partite": {
   "6.3_TO.3.B.FI": {
    "annunciati": [
     1,
-    5
+    6
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Cobra Kai",
    "ospite": "Rontese",
    "ora": "18:30",
-   "stato": "Partita in corso (88')",
+   "stato": "Partita in corso (90+')",
    "titoloAlmanacco": null,
-   "tuttocampo": "1-5",
+   "tuttocampo": "1-6",
    "almanacco": null,
    "verifica": false
   }
  },
  "gol": [
+  {
+   "id": "6.3_TO.3.B.FI-1-6",
+   "ora": "20:22",
+   "partita": "6.3_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Cobra Kai",
+   "ospite": "Rontese",
+   "punteggio": "1-6",
+   "totale": 7,
+   "squadra": "Rontese",
+   "idSquadra": 60915,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Guerra Manuel",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "20:22"
+  },
   {
    "id": "6.3_TO.3.B.FI-1-5",
    "ora": "20:17",
@@ -32,10 +50,10 @@
    "idSquadra": 60915,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Paoli Matteo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "20:22"
   },
   {
    "id": "6.3_TO.3.B.FI-1-4",
