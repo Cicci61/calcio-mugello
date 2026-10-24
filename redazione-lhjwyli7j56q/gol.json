@@ -1,24 +1,60 @@
 {
- "aggiornato": "2026-10-24T18:45:54",
+ "aggiornato": "2026-10-24T18:56:10",
  "data": "2026-10-24",
  "partite": {
   "6.3_TO.3.B.FI": {
    "annunciati": [
-    0,
-    1
+    1,
+    2
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Cobra Kai",
    "ospite": "Rontese",
    "ora": "18:30",
-   "stato": "Partita in corso (14')",
+   "stato": "Partita in corso (26')",
    "titoloAlmanacco": null,
-   "tuttocampo": "0-1",
+   "tuttocampo": "1-2",
    "almanacco": null,
    "verifica": false
   }
  },
  "gol": [
+  {
+   "id": "6.3_TO.3.B.FI-1-2",
+   "ora": "18:56",
+   "partita": "6.3_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Cobra Kai",
+   "ospite": "Rontese",
+   "punteggio": "1-2",
+   "totale": 3,
+   "squadra": "Rontese",
+   "idSquadra": 60915,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Rosari Cesare",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "18:56"
+  },
+  {
+   "id": "6.3_TO.3.B.FI-1-1",
+   "ora": "18:56",
+   "partita": "6.3_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Cobra Kai",
+   "ospite": "Rontese",
+   "punteggio": "1-1",
+   "totale": 2,
+   "squadra": "Cobra Kai",
+   "idSquadra": 934485,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": "Torrini Samuele",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "18:56"
+  },
   {
    "id": "6.3_TO.3.B.FI-0-1",
    "ora": "18:45",
