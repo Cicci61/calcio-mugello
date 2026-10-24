@@ -1,24 +1,42 @@
 {
- "aggiornato": "2026-10-24T18:56:10",
+ "aggiornato": "2026-10-24T20:02:27",
  "data": "2026-10-24",
  "partite": {
   "6.3_TO.3.B.FI": {
    "annunciati": [
     1,
-    2
+    3
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Cobra Kai",
    "ospite": "Rontese",
    "ora": "18:30",
-   "stato": "Partita in corso (26')",
+   "stato": "Partita in corso (74')",
    "titoloAlmanacco": null,
-   "tuttocampo": "1-2",
+   "tuttocampo": "1-3",
    "almanacco": null,
    "verifica": false
   }
  },
  "gol": [
+  {
+   "id": "6.3_TO.3.B.FI-1-3",
+   "ora": "20:02",
+   "partita": "6.3_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Cobra Kai",
+   "ospite": "Rontese",
+   "punteggio": "1-3",
+   "totale": 4,
+   "squadra": "Rontese",
+   "idSquadra": 60915,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Brocchi Saul",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "20:02"
+  },
   {
    "id": "6.3_TO.3.B.FI-1-2",
    "ora": "18:56",
