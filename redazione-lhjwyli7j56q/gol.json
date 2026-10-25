@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T14:37:09",
+ "aggiornato": "2026-10-25T14:41:04",
  "data": "2026-10-25",
  "partite": {
   "7.2_TO.E.B": {
@@ -11,7 +11,7 @@
    "casa": "Audax Rufina",
    "ospite": "Figline 1965",
    "ora": "14:30",
-   "stato": "Partita in corso (4')",
+   "stato": "Partita in corso (10')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -56,7 +56,7 @@
    "casa": "AG Dicomano",
    "ospite": "Cortona Camucia Calcio",
    "ora": "14:30",
-   "stato": "Partita in corso (4')",
+   "stato": "Partita in corso (10')",
    "titoloAlmanacco": "A.g. Dicomano-Cortona Camucia",
    "tuttocampo": "0-0",
    "almanacco": "0-0",
@@ -71,9 +71,9 @@
    "casa": "Nuova Foiano",
    "ospite": "Pontassieve",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (10')",
    "titoloAlmanacco": "Foiano-Pontassieve",
-   "tuttocampo": null,
+   "tuttocampo": "1-0",
    "almanacco": "1-0",
    "verifica": false
   },
@@ -101,7 +101,7 @@
    "casa": "Ginestra Fiorentina",
    "ospite": "Barberino Calcio 1927",
    "ora": "14:30",
-   "stato": "Partita in corso (6')",
+   "stato": "Partita in corso (10')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -146,9 +146,9 @@
    "casa": "San Piero a Sieve",
    "ospite": "Novoli",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (10')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
@@ -257,10 +257,10 @@
    "idSquadra": 18630,
    "nostra": false,
    "fonte": "Almanacco",
-   "marcatore": null,
+   "marcatore": "Lombardi Francesco",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:41"
   }
  ],
  "almanacco": {
