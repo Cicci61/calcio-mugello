@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T14:15:06",
+ "aggiornato": "2026-10-25T14:37:09",
  "data": "2026-10-25",
  "partite": {
   "7.2_TO.E.B": {
@@ -11,9 +11,9 @@
    "casa": "Audax Rufina",
    "ospite": "Figline 1965",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (4')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
@@ -27,9 +27,9 @@
    "ospite": "Atletico Lucca",
    "ora": "14:30",
    "stato": "",
-   "titoloAlmanacco": null,
+   "titoloAlmanacco": "Luco-Atletico Lucca",
    "tuttocampo": null,
-   "almanacco": null,
+   "almanacco": "0-0",
    "verifica": false
   },
   "7.7_TO.P.A": {
@@ -42,9 +42,9 @@
    "ospite": "Fortis Juventus 1909",
    "ora": "14:30",
    "stato": "",
-   "titoloAlmanacco": null,
+   "titoloAlmanacco": "Montelupo-Fortis Juventus",
    "tuttocampo": null,
-   "almanacco": null,
+   "almanacco": "0-0",
    "verifica": false
   },
   "7.2_TO.P.C": {
@@ -56,15 +56,15 @@
    "casa": "AG Dicomano",
    "ospite": "Cortona Camucia Calcio",
    "ora": "14:30",
-   "stato": "",
-   "titoloAlmanacco": null,
-   "tuttocampo": null,
-   "almanacco": null,
+   "stato": "Partita in corso (4')",
+   "titoloAlmanacco": "A.g. Dicomano-Cortona Camucia",
+   "tuttocampo": "0-0",
+   "almanacco": "0-0",
    "verifica": false
   },
   "7.8_TO.P.C": {
    "annunciati": [
-    0,
+    1,
     0
    ],
    "girone": "Promozione · Girone C",
@@ -72,9 +72,9 @@
    "ospite": "Pontassieve",
    "ora": "14:30",
    "stato": "",
-   "titoloAlmanacco": null,
+   "titoloAlmanacco": "Foiano-Pontassieve",
    "tuttocampo": null,
-   "almanacco": null,
+   "almanacco": "1-0",
    "verifica": false
   },
   "6.4_TO.1.C": {
@@ -101,9 +101,9 @@
    "casa": "Ginestra Fiorentina",
    "ospite": "Barberino Calcio 1927",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (6')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
@@ -243,7 +243,26 @@
    "verifica": false
   }
  },
- "gol": [],
+ "gol": [
+  {
+   "id": "7.8_TO.P.C-1-0",
+   "ora": "14:37",
+   "partita": "7.8_TO.P.C",
+   "girone": "Promozione · Girone C",
+   "casa": "Nuova Foiano",
+   "ospite": "Pontassieve",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Nuova Foiano",
+   "idSquadra": 18630,
+   "nostra": false,
+   "fonte": "Almanacco",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  }
+ ],
  "almanacco": {
   "ecc": "https://almanaccocalciotoscano.it/live-diretta-e-tabellini-della-7a-giornata-di-eccellenza-domenica-25-ottobre-2026/",
   "pro": "https://almanaccocalciotoscano.it/live-diretta-e-tabellini-della-7a-giornata-di-promozione-domenica-25-ottobre-2026/"
