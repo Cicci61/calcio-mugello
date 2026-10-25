@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T16:10:00",
+ "aggiornato": "2026-10-25T16:11:26",
  "data": "2026-10-25",
  "partite": {
   "7.2_TO.E.B": {
@@ -19,7 +19,7 @@
   },
   "7.6_TO.P.A": {
    "annunciati": [
-    0,
+    1,
     1
    ],
    "girone": "Promozione · Girone A",
@@ -29,7 +29,7 @@
    "stato": "Partita in corso (72')",
    "titoloAlmanacco": "Luco-Atletico Lucca",
    "tuttocampo": "0-1",
-   "almanacco": "0-1",
+   "almanacco": "1-1",
    "verifica": false
   },
   "7.7_TO.P.A": {
@@ -274,6 +274,24 @@
   }
  },
  "gol": [
+  {
+   "id": "7.6_TO.P.A-1-1",
+   "ora": "16:11",
+   "partita": "7.6_TO.P.A",
+   "girone": "Promozione · Girone A",
+   "casa": "Luco",
+   "ospite": "Atletico Lucca",
+   "punteggio": "1-1",
+   "totale": 2,
+   "squadra": "Luco",
+   "idSquadra": 67707,
+   "nostra": true,
+   "fonte": "Almanacco",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "7.2_TO.P.C-4-2",
    "ora": "16:10",
