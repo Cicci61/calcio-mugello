@@ -1,11 +1,11 @@
 {
- "aggiornato": "2026-10-25T16:01:42",
+ "aggiornato": "2026-10-25T16:10:00",
  "data": "2026-10-25",
  "partite": {
   "7.2_TO.E.B": {
    "annunciati": [
     0,
-    0
+    1
    ],
    "girone": "Eccellenza · Girone B",
    "casa": "Audax Rufina",
@@ -14,7 +14,7 @@
    "stato": "Partita in corso (72')",
    "titoloAlmanacco": "Audax Rufina-Figline 1965",
    "tuttocampo": "0-0",
-   "almanacco": "0-0",
+   "almanacco": "0-1",
    "verifica": false
   },
   "7.6_TO.P.A": {
@@ -45,11 +45,11 @@
    "titoloAlmanacco": "Montelupo-Fortis Juventus",
    "tuttocampo": "1-0",
    "almanacco": "0-0",
-   "verifica": false
+   "verifica": true
   },
   "7.2_TO.P.C": {
    "annunciati": [
-    3,
+    4,
     2
    ],
    "girone": "Promozione · Girone C",
@@ -59,7 +59,7 @@
    "stato": "Partita in corso (72')",
    "titoloAlmanacco": "A.g. Dicomano-Cortona Camucia",
    "tuttocampo": "3-2",
-   "almanacco": "3-1",
+   "almanacco": "4-2",
    "verifica": false
   },
   "7.8_TO.P.C": {
@@ -74,7 +74,7 @@
    "stato": "Partita in corso (72')",
    "titoloAlmanacco": "Foiano-Pontassieve",
    "tuttocampo": "4-2",
-   "almanacco": "3-2",
+   "almanacco": "4-2",
    "verifica": false
   },
   "6.4_TO.1.C": {
@@ -251,7 +251,7 @@
    "casa": "Cavallina Calcio",
    "ospite": "Sales",
    "ora": "15:30",
-   "stato": "Partita in corso (28')",
+   "stato": "Partita in corso (40')",
    "titoloAlmanacco": null,
    "tuttocampo": "1-0",
    "almanacco": null,
@@ -266,14 +266,50 @@
    "casa": "SV Vicchio",
    "ospite": "Lions Fortis Juventus",
    "ora": "15:30",
-   "stato": "",
+   "stato": "Partita in corso (40')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   }
  },
  "gol": [
+  {
+   "id": "7.2_TO.P.C-4-2",
+   "ora": "16:10",
+   "partita": "7.2_TO.P.C",
+   "girone": "Promozione · Girone C",
+   "casa": "AG Dicomano",
+   "ospite": "Cortona Camucia Calcio",
+   "punteggio": "4-2",
+   "totale": 6,
+   "squadra": "AG Dicomano",
+   "idSquadra": 1028179,
+   "nostra": true,
+   "fonte": "Almanacco",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
+   "id": "7.2_TO.E.B-0-1",
+   "ora": "16:10",
+   "partita": "7.2_TO.E.B",
+   "girone": "Eccellenza · Girone B",
+   "casa": "Audax Rufina",
+   "ospite": "Figline 1965",
+   "punteggio": "0-1",
+   "totale": 1,
+   "squadra": "Figline 1965",
+   "idSquadra": 1034695,
+   "nostra": false,
+   "fonte": "Almanacco",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "7.4_ER.2.M.RA-0-2",
    "ora": "16:01",
