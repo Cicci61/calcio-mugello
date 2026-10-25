@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T16:23:50",
+ "aggiornato": "2026-10-25T16:35:22",
  "data": "2026-10-25",
  "partite": {
   "7.2_TO.E.B": {
@@ -11,8 +11,8 @@
    "casa": "Audax Rufina",
    "ospite": "Figline 1965",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
-   "titoloAlmanacco": "Audax Rufina-Figline 1965",
+   "stato": "Partita terminata",
+   "titoloAlmanacco": "Audax Rufina-Figline",
    "tuttocampo": "0-2",
    "almanacco": "0-2",
    "verifica": false
@@ -26,7 +26,7 @@
    "casa": "Luco",
    "ospite": "Atletico Lucca",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": "Luco-Atletico Lucca",
    "tuttocampo": "1-1",
    "almanacco": "1-1",
@@ -41,10 +41,10 @@
    "casa": "Montelupo",
    "ospite": "Fortis Juventus 1909",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": "Montelupo-Fortis Juventus",
    "tuttocampo": "2-0",
-   "almanacco": "0-0",
+   "almanacco": "2-0",
    "verifica": false
   },
   "7.2_TO.P.C": {
@@ -57,7 +57,7 @@
    "ospite": "Cortona Camucia Calcio",
    "ora": "14:30",
    "stato": "Partita terminata",
-   "titoloAlmanacco": "A.g. Dicomano-Cortona Camucia",
+   "titoloAlmanacco": "A.G.Dicomano-Cortona Camucia",
    "tuttocampo": "4-2",
    "almanacco": "4-2",
    "verifica": false
@@ -71,7 +71,7 @@
    "casa": "Nuova Foiano",
    "ospite": "Pontassieve",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": "Foiano-Pontassieve",
    "tuttocampo": "4-2",
    "almanacco": "4-2",
@@ -116,7 +116,7 @@
    "casa": "Isolotto",
    "ospite": "Sagginale",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "1-1",
    "almanacco": null,
@@ -131,7 +131,7 @@
    "casa": "San Godenzo",
    "ospite": "Fiesole Calcio",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -146,7 +146,7 @@
    "casa": "San Piero a Sieve",
    "ospite": "Novoli",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "1-0",
    "almanacco": null,
@@ -176,7 +176,7 @@
    "casa": "Firenzuola",
    "ospite": "Sesto Calcio 2010",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -191,7 +191,7 @@
    "casa": "Naldi",
    "ospite": "Reconquista",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "4-3",
    "almanacco": null,
@@ -206,7 +206,7 @@
    "casa": "Rinascita Doccia",
    "ospite": "Scarperia 1920",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -221,7 +221,7 @@
    "casa": "Vaglia",
    "ospite": "Mezzana",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "2-1",
    "almanacco": null,
@@ -230,15 +230,15 @@
   "7.4_ER.2.M.RA": {
    "annunciati": [
     1,
-    2
+    6
    ],
    "girone": "Seconda Categoria · Girone M Ravenna",
    "casa": "Marradese",
    "ospite": "Borgo Tuliero",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita in corso",
    "titoloAlmanacco": null,
-   "tuttocampo": "1-2",
+   "tuttocampo": "1-6",
    "almanacco": null,
    "verifica": false
   },
@@ -274,6 +274,78 @@
   }
  },
  "gol": [
+  {
+   "id": "7.4_ER.2.M.RA-1-6",
+   "ora": "16:35",
+   "partita": "7.4_ER.2.M.RA",
+   "girone": "Seconda Categoria · Girone M Ravenna",
+   "casa": "Marradese",
+   "ospite": "Borgo Tuliero",
+   "punteggio": "1-6",
+   "totale": 7,
+   "squadra": "Borgo Tuliero",
+   "idSquadra": 630063,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
+   "id": "7.4_ER.2.M.RA-1-5",
+   "ora": "16:35",
+   "partita": "7.4_ER.2.M.RA",
+   "girone": "Seconda Categoria · Girone M Ravenna",
+   "casa": "Marradese",
+   "ospite": "Borgo Tuliero",
+   "punteggio": "1-5",
+   "totale": 6,
+   "squadra": "Borgo Tuliero",
+   "idSquadra": 630063,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
+   "id": "7.4_ER.2.M.RA-1-4",
+   "ora": "16:35",
+   "partita": "7.4_ER.2.M.RA",
+   "girone": "Seconda Categoria · Girone M Ravenna",
+   "casa": "Marradese",
+   "ospite": "Borgo Tuliero",
+   "punteggio": "1-4",
+   "totale": 5,
+   "squadra": "Borgo Tuliero",
+   "idSquadra": 630063,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
+   "id": "7.4_ER.2.M.RA-1-3",
+   "ora": "16:35",
+   "partita": "7.4_ER.2.M.RA",
+   "girone": "Seconda Categoria · Girone M Ravenna",
+   "casa": "Marradese",
+   "ospite": "Borgo Tuliero",
+   "punteggio": "1-3",
+   "totale": 4,
+   "squadra": "Borgo Tuliero",
+   "idSquadra": 630063,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "6.4_TO.2.F-4-3",
    "ora": "16:23",
@@ -323,10 +395,10 @@
    "idSquadra": 1124964,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Nuti Fabio",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:35"
   },
   {
    "id": "6.8_TO.1.C-1-0",
@@ -395,10 +467,10 @@
    "idSquadra": 750463,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
-   "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "marcatore": "Gargiulo",
+   "minuto": "89'",
+   "fonteMarcatore": "Almanacco",
+   "trovato": "16:35"
   },
   {
    "id": "7.4_ER.2.M.RA-1-2",
@@ -521,10 +593,10 @@
    "idSquadra": 67707,
    "nostra": true,
    "fonte": "Almanacco",
-   "marcatore": null,
-   "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "marcatore": "Buzzigoli",
+   "minuto": "75'",
+   "fonteMarcatore": "Almanacco",
+   "trovato": "16:35"
   },
   {
    "id": "7.2_TO.P.C-4-2",
@@ -719,10 +791,10 @@
    "idSquadra": 750463,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
-   "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "marcatore": "Ulivieri",
+   "minuto": "59'",
+   "fonteMarcatore": "Almanacco",
+   "trovato": "16:35"
   },
   {
    "id": "7.2_TO.P.C-3-1",
@@ -827,10 +899,10 @@
    "idSquadra": 750657,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
-   "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "marcatore": "Cragno",
+   "minuto": "40'",
+   "fonteMarcatore": "Almanacco",
+   "trovato": "16:35"
   },
   {
    "id": "7.2_TO.P.C-1-1",
@@ -1025,10 +1097,10 @@
    "idSquadra": 920661,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Tartoni Marco",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:35"
   },
   {
    "id": "6.6_TO.2.F-0-1",
