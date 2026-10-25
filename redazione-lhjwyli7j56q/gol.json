@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T14:41:04",
+ "aggiornato": "2026-10-25T14:46:25",
  "data": "2026-10-25",
  "partite": {
   "7.2_TO.E.B": {
@@ -11,7 +11,7 @@
    "casa": "Audax Rufina",
    "ospite": "Figline 1965",
    "ora": "14:30",
-   "stato": "Partita in corso (10')",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -50,31 +50,31 @@
   "7.2_TO.P.C": {
    "annunciati": [
     0,
-    0
+    1
    ],
    "girone": "Promozione · Girone C",
    "casa": "AG Dicomano",
    "ospite": "Cortona Camucia Calcio",
    "ora": "14:30",
-   "stato": "Partita in corso (10')",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": "A.g. Dicomano-Cortona Camucia",
-   "tuttocampo": "0-0",
+   "tuttocampo": "0-1",
    "almanacco": "0-0",
    "verifica": false
   },
   "7.8_TO.P.C": {
    "annunciati": [
-    1,
+    2,
     0
    ],
    "girone": "Promozione · Girone C",
    "casa": "Nuova Foiano",
    "ospite": "Pontassieve",
    "ora": "14:30",
-   "stato": "Partita in corso (10')",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": "Foiano-Pontassieve",
-   "tuttocampo": "1-0",
-   "almanacco": "1-0",
+   "tuttocampo": "2-0",
+   "almanacco": "2-0",
    "verifica": false
   },
   "6.4_TO.1.C": {
@@ -95,15 +95,15 @@
   "6.5_TO.1.C": {
    "annunciati": [
     0,
-    0
+    1
    ],
    "girone": "Prima Categoria · Girone C",
    "casa": "Ginestra Fiorentina",
    "ospite": "Barberino Calcio 1927",
    "ora": "14:30",
-   "stato": "Partita in corso (10')",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": null,
-   "tuttocampo": "0-0",
+   "tuttocampo": "0-1",
    "almanacco": null,
    "verifica": false
   },
@@ -146,7 +146,7 @@
    "casa": "San Piero a Sieve",
    "ospite": "Novoli",
    "ora": "14:30",
-   "stato": "Partita in corso (10')",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -161,9 +161,9 @@
    "casa": "Londa 1974",
    "ospite": "Virtus Bronzetto 1963",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
@@ -185,45 +185,45 @@
   "6.4_TO.2.F": {
    "annunciati": [
     0,
-    0
+    1
    ],
    "girone": "Seconda Categoria · Girone F",
    "casa": "Naldi",
    "ospite": "Reconquista",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-1",
    "almanacco": null,
    "verifica": false
   },
   "6.6_TO.2.F": {
    "annunciati": [
     0,
-    0
+    1
    ],
    "girone": "Seconda Categoria · Girone F",
    "casa": "Rinascita Doccia",
    "ospite": "Scarperia 1920",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-1",
    "almanacco": null,
    "verifica": false
   },
   "6.5_TO.2.F": {
    "annunciati": [
     0,
-    0
+    1
    ],
    "girone": "Seconda Categoria · Girone F",
    "casa": "Vaglia",
    "ospite": "Mezzana",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-1",
    "almanacco": null,
    "verifica": false
   },
@@ -244,6 +244,114 @@
   }
  },
  "gol": [
+  {
+   "id": "6.5_TO.2.F-0-1",
+   "ora": "14:46",
+   "partita": "6.5_TO.2.F",
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Vaglia",
+   "ospite": "Mezzana",
+   "punteggio": "0-1",
+   "totale": 1,
+   "squadra": "Mezzana",
+   "idSquadra": 920661,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
+   "id": "6.6_TO.2.F-0-1",
+   "ora": "14:46",
+   "partita": "6.6_TO.2.F",
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Rinascita Doccia",
+   "ospite": "Scarperia 1920",
+   "punteggio": "0-1",
+   "totale": 1,
+   "squadra": "Scarperia 1920",
+   "idSquadra": 48480,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Innocenti Pietro",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:46"
+  },
+  {
+   "id": "6.4_TO.2.F-0-1",
+   "ora": "14:46",
+   "partita": "6.4_TO.2.F",
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Naldi",
+   "ospite": "Reconquista",
+   "punteggio": "0-1",
+   "totale": 1,
+   "squadra": "Reconquista",
+   "idSquadra": 1103441,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
+   "id": "6.5_TO.1.C-0-1",
+   "ora": "14:46",
+   "partita": "6.5_TO.1.C",
+   "girone": "Prima Categoria · Girone C",
+   "casa": "Ginestra Fiorentina",
+   "ospite": "Barberino Calcio 1927",
+   "punteggio": "0-1",
+   "totale": 1,
+   "squadra": "Barberino Calcio 1927",
+   "idSquadra": 935709,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Murgia Alessio",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:46"
+  },
+  {
+   "id": "7.8_TO.P.C-2-0",
+   "ora": "14:46",
+   "partita": "7.8_TO.P.C",
+   "girone": "Promozione · Girone C",
+   "casa": "Nuova Foiano",
+   "ospite": "Pontassieve",
+   "punteggio": "2-0",
+   "totale": 2,
+   "squadra": "Nuova Foiano",
+   "idSquadra": 18630,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": "Pratesi Iago",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:46"
+  },
+  {
+   "id": "7.2_TO.P.C-0-1",
+   "ora": "14:46",
+   "partita": "7.2_TO.P.C",
+   "girone": "Promozione · Girone C",
+   "casa": "AG Dicomano",
+   "ospite": "Cortona Camucia Calcio",
+   "punteggio": "0-1",
+   "totale": 1,
+   "squadra": "Cortona Camucia Calcio",
+   "idSquadra": 57743,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": "Cacioppini Jacopo",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:46"
+  },
   {
    "id": "7.8_TO.P.C-1-0",
    "ora": "14:37",
