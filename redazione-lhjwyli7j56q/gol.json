@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T16:57:02",
+ "aggiornato": "2026-10-25T17:19:02",
  "data": "2026-10-25",
  "partite": {
   "7.2_TO.E.B": {
@@ -413,10 +413,10 @@
    "idSquadra": 44770,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Razzauti Diego",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "17:19"
   },
   {
    "id": "6.4_TO.1.C-1-2",
