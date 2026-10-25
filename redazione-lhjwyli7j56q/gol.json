@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T14:57:04",
+ "aggiornato": "2026-10-25T15:01:05",
  "data": "2026-10-25",
  "partite": {
   "7.2_TO.E.B": {
@@ -64,7 +64,7 @@
   },
   "7.8_TO.P.C": {
    "annunciati": [
-    2,
+    3,
     1
    ],
    "girone": "Promozione · Girone C",
@@ -74,7 +74,7 @@
    "stato": "Partita in corso (26')",
    "titoloAlmanacco": "Foiano-Pontassieve",
    "tuttocampo": "2-1",
-   "almanacco": "2-1",
+   "almanacco": "3-1",
    "verifica": false
   },
   "6.4_TO.1.C": {
@@ -244,6 +244,24 @@
   }
  },
  "gol": [
+  {
+   "id": "7.8_TO.P.C-3-1",
+   "ora": "15:01",
+   "partita": "7.8_TO.P.C",
+   "girone": "Promozione · Girone C",
+   "casa": "Nuova Foiano",
+   "ospite": "Pontassieve",
+   "punteggio": "3-1",
+   "totale": 4,
+   "squadra": "Nuova Foiano",
+   "idSquadra": 18630,
+   "nostra": false,
+   "fonte": "Almanacco",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "7.4_ER.2.M.RA-0-1",
    "ora": "14:57",
