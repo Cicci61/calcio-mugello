@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T14:46:25",
+ "aggiornato": "2026-10-25T14:55:40",
  "data": "2026-10-25",
  "partite": {
   "7.2_TO.E.B": {
@@ -12,9 +12,9 @@
    "ospite": "Figline 1965",
    "ora": "14:30",
    "stato": "Partita in corso (16')",
-   "titoloAlmanacco": null,
+   "titoloAlmanacco": "Audax Rufina-Figline 1965",
    "tuttocampo": "0-0",
-   "almanacco": null,
+   "almanacco": "0-0",
    "verifica": false
   },
   "7.6_TO.P.A": {
@@ -65,7 +65,7 @@
   "7.8_TO.P.C": {
    "annunciati": [
     2,
-    0
+    1
    ],
    "girone": "Promozione · Girone C",
    "casa": "Nuova Foiano",
@@ -74,7 +74,7 @@
    "stato": "Partita in corso (16')",
    "titoloAlmanacco": "Foiano-Pontassieve",
    "tuttocampo": "2-0",
-   "almanacco": "2-0",
+   "almanacco": "2-1",
    "verifica": false
   },
   "6.4_TO.1.C": {
@@ -244,6 +244,24 @@
   }
  },
  "gol": [
+  {
+   "id": "7.8_TO.P.C-2-1",
+   "ora": "14:55",
+   "partita": "7.8_TO.P.C",
+   "girone": "Promozione · Girone C",
+   "casa": "Nuova Foiano",
+   "ospite": "Pontassieve",
+   "punteggio": "2-1",
+   "totale": 3,
+   "squadra": "Pontassieve",
+   "idSquadra": 750657,
+   "nostra": true,
+   "fonte": "Almanacco",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "6.5_TO.2.F-0-1",
    "ora": "14:46",
