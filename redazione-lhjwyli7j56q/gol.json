@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T16:35:22",
+ "aggiornato": "2026-10-25T16:46:11",
  "data": "2026-10-25",
  "partite": {
   "7.2_TO.E.B": {
@@ -236,9 +236,9 @@
    "casa": "Marradese",
    "ospite": "Borgo Tuliero",
    "ora": "14:30",
-   "stato": "Partita in corso",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
-   "tuttocampo": "1-6",
+   "tuttocampo": "1-2",
    "almanacco": null,
    "verifica": false
   },
@@ -251,7 +251,7 @@
    "casa": "Cavallina Calcio",
    "ospite": "Sales",
    "ora": "15:30",
-   "stato": "Partita in corso (Int.)",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "1-0",
    "almanacco": null,
@@ -266,7 +266,7 @@
    "casa": "SV Vicchio",
    "ospite": "Lions Fortis Juventus",
    "ora": "15:30",
-   "stato": "Partita in corso (Int.)",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -449,10 +449,10 @@
    "idSquadra": 20520,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Vastola Alessio",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:46"
   },
   {
    "id": "7.7_TO.P.A-2-0",
@@ -485,10 +485,10 @@
    "idSquadra": 1137150,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Casalone Andrea",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:46"
   },
   {
    "id": "6.4_TO.2.F-4-1",
@@ -539,10 +539,10 @@
    "idSquadra": 932322,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Taiuti Taddeo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:46"
   },
   {
    "id": "6.4_TO.2.D-2-1",
