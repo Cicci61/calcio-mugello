@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-25T16:46:11",
+ "aggiornato": "2026-10-25T16:57:02",
  "data": "2026-10-25",
  "partite": {
   "7.2_TO.E.B": {
@@ -240,7 +240,7 @@
    "titoloAlmanacco": null,
    "tuttocampo": "1-2",
    "almanacco": null,
-   "verifica": false
+   "verifica": true
   },
   "6.2_TO.3.B.FI": {
    "annunciati": [
@@ -683,10 +683,10 @@
    "idSquadra": 69460,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Paggetti Lorenzo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:57"
   },
   {
    "id": "6.6_TO.1.C-1-0",
@@ -701,10 +701,10 @@
    "idSquadra": 64391,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Pollini Lorenzo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:57"
   },
   {
    "id": "6.5_TO.1.C-2-2",
