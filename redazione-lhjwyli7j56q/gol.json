@@ -1,150 +1,251 @@
 {
- "aggiornato": "2026-10-24T20:22:54",
- "data": "2026-10-24",
+ "aggiornato": "2026-10-25T14:15:06",
+ "data": "2026-10-25",
  "partite": {
-  "6.3_TO.3.B.FI": {
+  "7.2_TO.E.B": {
    "annunciati": [
-    1,
-    6
+    0,
+    0
    ],
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Cobra Kai",
-   "ospite": "Rontese",
-   "ora": "18:30",
-   "stato": "Partita in corso (90+')",
+   "girone": "Eccellenza · Girone B",
+   "casa": "Audax Rufina",
+   "ospite": "Figline 1965",
+   "ora": "14:30",
+   "stato": "",
    "titoloAlmanacco": null,
-   "tuttocampo": "1-6",
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "7.6_TO.P.A": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Promozione · Girone A",
+   "casa": "Luco",
+   "ospite": "Atletico Lucca",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "7.7_TO.P.A": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Promozione · Girone A",
+   "casa": "Montelupo",
+   "ospite": "Fortis Juventus 1909",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "7.2_TO.P.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Promozione · Girone C",
+   "casa": "AG Dicomano",
+   "ospite": "Cortona Camucia Calcio",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "7.8_TO.P.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Promozione · Girone C",
+   "casa": "Nuova Foiano",
+   "ospite": "Pontassieve",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "6.4_TO.1.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Prima Categoria · Girone C",
+   "casa": "Gallianese",
+   "ospite": "Chianti Nord",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "6.5_TO.1.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Prima Categoria · Girone C",
+   "casa": "Ginestra Fiorentina",
+   "ospite": "Barberino Calcio 1927",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "6.6_TO.1.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Prima Categoria · Girone C",
+   "casa": "Isolotto",
+   "ospite": "Sagginale",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "6.7_TO.1.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Prima Categoria · Girone C",
+   "casa": "San Godenzo",
+   "ospite": "Fiesole Calcio",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "6.8_TO.1.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Prima Categoria · Girone C",
+   "casa": "San Piero a Sieve",
+   "ospite": "Novoli",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "6.4_TO.2.D": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone D",
+   "casa": "Londa 1974",
+   "ospite": "Virtus Bronzetto 1963",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "6.2_TO.2.F": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Firenzuola",
+   "ospite": "Sesto Calcio 2010",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "6.4_TO.2.F": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Naldi",
+   "ospite": "Reconquista",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "6.6_TO.2.F": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Rinascita Doccia",
+   "ospite": "Scarperia 1920",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "6.5_TO.2.F": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Vaglia",
+   "ospite": "Mezzana",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "7.4_ER.2.M.RA": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone M Ravenna",
+   "casa": "Marradese",
+   "ospite": "Borgo Tuliero",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
    "almanacco": null,
    "verifica": false
   }
  },
- "gol": [
-  {
-   "id": "6.3_TO.3.B.FI-1-6",
-   "ora": "20:22",
-   "partita": "6.3_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Cobra Kai",
-   "ospite": "Rontese",
-   "punteggio": "1-6",
-   "totale": 7,
-   "squadra": "Rontese",
-   "idSquadra": 60915,
-   "nostra": true,
-   "fonte": "Tuttocampo",
-   "marcatore": "Guerra Manuel",
-   "minuto": null,
-   "fonteMarcatore": "Tuttocampo",
-   "trovato": "20:22"
-  },
-  {
-   "id": "6.3_TO.3.B.FI-1-5",
-   "ora": "20:17",
-   "partita": "6.3_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Cobra Kai",
-   "ospite": "Rontese",
-   "punteggio": "1-5",
-   "totale": 6,
-   "squadra": "Rontese",
-   "idSquadra": 60915,
-   "nostra": true,
-   "fonte": "Tuttocampo",
-   "marcatore": "Paoli Matteo",
-   "minuto": null,
-   "fonteMarcatore": "Tuttocampo",
-   "trovato": "20:22"
-  },
-  {
-   "id": "6.3_TO.3.B.FI-1-4",
-   "ora": "20:17",
-   "partita": "6.3_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Cobra Kai",
-   "ospite": "Rontese",
-   "punteggio": "1-4",
-   "totale": 5,
-   "squadra": "Rontese",
-   "idSquadra": 60915,
-   "nostra": true,
-   "fonte": "Tuttocampo",
-   "marcatore": "Paoli Matteo",
-   "minuto": null,
-   "fonteMarcatore": "Tuttocampo",
-   "trovato": "20:17"
-  },
-  {
-   "id": "6.3_TO.3.B.FI-1-3",
-   "ora": "20:02",
-   "partita": "6.3_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Cobra Kai",
-   "ospite": "Rontese",
-   "punteggio": "1-3",
-   "totale": 4,
-   "squadra": "Rontese",
-   "idSquadra": 60915,
-   "nostra": true,
-   "fonte": "Tuttocampo",
-   "marcatore": "Brocchi Saul",
-   "minuto": null,
-   "fonteMarcatore": "Tuttocampo",
-   "trovato": "20:02"
-  },
-  {
-   "id": "6.3_TO.3.B.FI-1-2",
-   "ora": "18:56",
-   "partita": "6.3_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Cobra Kai",
-   "ospite": "Rontese",
-   "punteggio": "1-2",
-   "totale": 3,
-   "squadra": "Rontese",
-   "idSquadra": 60915,
-   "nostra": true,
-   "fonte": "Tuttocampo",
-   "marcatore": "Rosari Cesare",
-   "minuto": null,
-   "fonteMarcatore": "Tuttocampo",
-   "trovato": "18:56"
-  },
-  {
-   "id": "6.3_TO.3.B.FI-1-1",
-   "ora": "18:56",
-   "partita": "6.3_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Cobra Kai",
-   "ospite": "Rontese",
-   "punteggio": "1-1",
-   "totale": 2,
-   "squadra": "Cobra Kai",
-   "idSquadra": 934485,
-   "nostra": false,
-   "fonte": "Tuttocampo",
-   "marcatore": "Torrini Samuele",
-   "minuto": null,
-   "fonteMarcatore": "Tuttocampo",
-   "trovato": "18:56"
-  },
-  {
-   "id": "6.3_TO.3.B.FI-0-1",
-   "ora": "18:45",
-   "partita": "6.3_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Cobra Kai",
-   "ospite": "Rontese",
-   "punteggio": "0-1",
-   "totale": 1,
-   "squadra": "Rontese",
-   "idSquadra": 60915,
-   "nostra": true,
-   "fonte": "Tuttocampo",
-   "marcatore": "Brocchi Saul",
-   "minuto": null,
-   "fonteMarcatore": "Tuttocampo",
-   "trovato": "18:45"
-  }
- ],
- "almanacco": {}
+ "gol": [],
+ "almanacco": {
+  "ecc": "https://almanaccocalciotoscano.it/live-diretta-e-tabellini-della-7a-giornata-di-eccellenza-domenica-25-ottobre-2026/",
+  "pro": "https://almanaccocalciotoscano.it/live-diretta-e-tabellini-della-7a-giornata-di-promozione-domenica-25-ottobre-2026/"
+ }
 }
