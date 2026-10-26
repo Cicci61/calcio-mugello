@@ -638,6 +638,46 @@
   .gir-prossimo { margin-bottom: 8px; }
   .gir-prossimo .gir-match { border-bottom: 1px solid #eef2ef; padding: 6px 0; }
   .gir-prossimo .chi { font-size: 0.72rem; color: #777; flex-basis: 100%; }
+  /* Calendari pensati per tutti (26/10/2026): prima si sceglie la squadra, testo grande, date con il giorno */
+  .cal-titolo { font-size: 1.15rem; color: var(--verde-scuro); margin: 6px 0 10px; }
+  .gir-card h3.cal-titolo { font-size: 1.2rem; }
+  .cal-squadre { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; margin-bottom: 26px; }
+  .cal-sq { text-align: left; border: 2px solid #cfe0d4; background: #fff; border-radius: 14px; padding: 12px 14px; font: inherit;
+    cursor: pointer; color: var(--verde-scuro); min-height: 64px; }
+  .cal-sq b { display: block; font-size: 1.02rem; line-height: 1.2; }
+  .cal-sq small { display: block; font-size: 0.8rem; color: #555; margin-top: 3px; }
+  .cal-sq:hover, .cal-sq:focus-visible { border-color: var(--verde-campo); outline: none; }
+  .cal-sq.attivo { background: var(--verde-campo); border-color: var(--verde-campo); color: #fff; }
+  .cal-sq.attivo small { color: #e6f4ea; }
+  .cal-scheda { margin-bottom: 26px; scroll-margin-top: 12px; }
+  .cal-scheda h3 { font-size: 1.3rem; }
+  .cal-scheda .sotto { font-size: 0.95rem; color: #444; margin: 2px 0 14px; }
+  .cal-chiudi { float: right; border: 0; background: #eef4f0; color: var(--verde-scuro); border-radius: 999px; padding: 8px 14px;
+    font: inherit; font-size: 0.9rem; font-weight: 700; cursor: pointer; }
+  .cal-next { background: #fff4e8; border: 2px solid #f6c48f; border-radius: 14px; padding: 12px 14px; margin-bottom: 16px; }
+  .cal-next .et { font-size: 0.8rem; font-weight: 800; color: var(--arancio); text-transform: uppercase; letter-spacing: .04em; }
+  .cal-riga { display: grid; grid-template-columns: 9.5em 1fr auto; gap: 4px 12px; align-items: baseline; padding: 10px 0;
+    border-top: 1px solid #e6ece7; font-size: 1.02rem; }
+  .cal-riga:first-child { border-top: 0; }
+  .cal-riga .quando { font-size: 0.9rem; color: #444; }
+  .cal-riga .quando b { color: var(--verde-scuro); }
+  .cal-riga .ris { font-weight: 800; font-size: 1.05rem; font-variant-numeric: tabular-nums; padding: 2px 8px; border-radius: 8px; background: #eef4f0; color: var(--verde-scuro); }
+  .cal-riga .ris.v { background: #dff3e5; color: #17663a; } .cal-riga .ris.s { background: #fbe4e4; color: #a12828; } .cal-riga .ris.n { background: #eef0f2; color: #444; }
+  .cal-riga .nota { grid-column: 2 / -1; font-size: 0.85rem; color: #555; }
+  .cal-riga.prossima { background: #fff4e8; border-radius: 10px; padding: 10px; margin: 0 -10px; border-top: 0; }
+  .cal-derby { font-size: 0.72rem; font-weight: 800; color: #fff; background: var(--arancio); border-radius: 6px; padding: 2px 6px; margin-left: 6px; vertical-align: 2px; }
+  .cal-giorno { font-size: 1.05rem; font-weight: 800; color: var(--verde-scuro); margin: 18px 0 4px; padding-bottom: 4px; border-bottom: 2px solid var(--verde-campo); }
+  .cal-giorno:first-of-type { margin-top: 4px; }
+  .cal-cat { font-size: 0.82rem; font-weight: 800; color: #555; text-transform: uppercase; letter-spacing: .04em; margin: 12px 0 2px; }
+  .cal-p { padding: 7px 0; border-top: 1px solid #eef2ef; font-size: 1.02rem; }
+  .cal-p .nota { display: block; font-size: 0.85rem; color: #555; }
+  .cal-p button { all: unset; cursor: pointer; } .cal-p button:hover b, .cal-p button:hover span { text-decoration: underline; }
+  @media (max-width: 560px) {
+    .cal-squadre { grid-template-columns: 1fr 1fr; }
+    .cal-riga { grid-template-columns: 1fr auto; }
+    .cal-riga .quando { grid-column: 1 / -1; }
+    .cal-riga .nota { grid-column: 1 / -1; }
+  }
   .radio-view { max-width: 1100px; margin: 0 auto; }
   .radio-testa { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; margin: 8px 0 16px; }
   .radio-testa h2 { color: var(--verde-scuro); margin: 0; font-size: 1.2rem; }
@@ -697,7 +737,7 @@
   </div>
   <div id="view-calendari" class="gir-view" style="display:none;">
     <div class="gir-testa"><h2>Calendari</h2>
-      <p>Le partite delle squadre di Mugello e Val di Sieve, giornata per giornata. Date del calendario ufficiale; anticipi e posticipi sono indicati accanto alla partita.</p></div>
+      <p>Tocca la tua squadra per vedere tutte le sue partite. Più sotto, le partite del prossimo turno giorno per giorno.</p></div>
     <div id="girCalendari"><div class="empty">Caricamento…</div></div>
   </div>
 </main>
@@ -1517,35 +1557,87 @@ loadData();
       box.innerHTML = lista.map(g => cardClassifica(g)).join("");
     } catch (e) { box.innerHTML = '<div class="empty">Classifica non disponibile ora.</div>'; }
   }
+  // "01/11/26" → "Domenica 1 novembre": si capisce subito che giorno è
+  const GIORNI = ["Domenica", "Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato"];
+  const MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
+  const quando = d => {
+    const m = /^(\d{1,2})\/(\d{1,2})\/(\d{2,4})$/.exec(d || "");
+    if (!m) return { testo: d || "", chiave: d || "", t: 0 };
+    const y = +m[3] < 100 ? 2000 + +m[3] : +m[3], dt = new Date(y, +m[2] - 1, +m[1]);
+    return { testo: GIORNI[dt.getDay()] + " " + dt.getDate() + " " + MESI[dt.getMonth()], chiave: d, t: dt.getTime() };
+  };
+  // la data vera: "anticipata a sabato 31/10", "giocata dom 11/10" spostano il giorno del calendario
+  const dataDi = p => {
+    const m = /(?:giocata|anticipata a|posticipata a|rinviata a|recupero)\s+(?:[a-zà-ù]+\.?\s+)?(\d{1,2})\/(\d{1,2})/i.exec(p.info || "");
+    const anno = (/\/(\d{2,4})$/.exec(p.data || "") || [, "26"])[1];
+    return m ? m[1] + "/" + m[2] + "/" + anno : p.data;
+  };
+  const ora = p => { const m = /ore\s+(\d{1,2}[:.]\d{2})/i.exec(p.info || ""); return m ? ", ore " + m[1].replace(".", ":") : ""; };
+  const slug = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const nomePartita = p => (p.casaNostra ? "<b>" + esc(p.casa) + "</b>" : "<span>" + esc(p.casa) + "</span>") + " - " +
+    (p.ospiteNostra ? "<b>" + esc(p.ospite) + "</b>" : "<span>" + esc(p.ospite) + "</span>") + (p.derby ? '<span class="cal-derby">DERBY</span>' : "");
+  // esito visto dalla squadra scelta: v vinta, n pari, s persa
+  function esito(p, sq) {
+    const m = /^(\d+)-(\d+)$/.exec(p.risultato || "");
+    if (!m || p.derby || (!p.casaNostra && !p.ospiteNostra)) return "";
+    const casa = p.casaNostra;  // fuori dai derby la squadra del territorio è una sola
+    const a = +m[1], b = +m[2];
+    if (a === b) return "n";
+    return (a > b) === casa ? "v" : "s";
+  }
   async function calendari() {
     const box = document.getElementById("girCalendari");
     try {
       const lista = (await carica()).filter(g => g.partite.length);
+      // una voce per ogni squadra del territorio, con il suo campionato
+      const squadre = [];
+      lista.forEach(g => g.nostre.forEach(n => squadre.push({ nome: n, g, id: slug(n) })));
+      squadre.sort((a, b) => a.nome.localeCompare(b.nome, "it"));
+      let html = '<h3 class="cal-titolo">Scegli la squadra</h3><div class="cal-squadre">' +
+        squadre.map(q => '<button class="cal-sq" data-id="' + q.id + '"><b>' + esc(q.nome) + "</b><small>" + esc(titolo(q.g)) + "</small></button>").join("") +
+        '</div><div id="calScheda"></div>';
+      // prossimo turno: giorno per giorno, poi per categoria
       const prossime = [];
       lista.forEach(g => g.partite.forEach(p => { if (p.g === g.prossima) prossime.push([g, p]); }));
-      let html = '<div class="gir-card gir-prossimo"><h3>Prossimo turno</h3><div class="gir-meta">La prossima partita di ogni squadra di Mugello e Val di Sieve</div>' +
-        prossime.map(([g, p]) => partitaHtml(Object.assign({}, p, {info: (p.info ? p.info + " · " : "") + titolo(g) + ", " + p.g + "ª giornata"}), true)).join("") + "</div>";
-      html += '<div class="gir-chips">' + lista.map((g, i) => '<button class="gir-chip' + (i ? "" : " attivo") + '" data-i="' + i + '">' + esc(titolo(g)) + "</button>").join("") + "</div>";
-      html += '<div class="gir-card" id="girCalCorpo"></div>';
+      const perGiorno = {};
+      prossime.forEach(([g, p]) => { const q = quando(dataDi(p)); (perGiorno[q.chiave] = perGiorno[q.chiave] || { q, voci: [] }).voci.push([g, p]); });
+      html += '<div class="gir-card"><h3 class="cal-titolo" style="margin-top:0">Prossimo turno</h3>' +
+        Object.values(perGiorno).sort((a, b) => a.q.t - b.q.t).map(({ q, voci }) => {
+          let ultima = "", out = '<div class="cal-giorno">' + esc(q.testo) + "</div>";
+          voci.forEach(([g, p]) => {
+            if (titolo(g) !== ultima) { ultima = titolo(g); out += '<div class="cal-cat">' + esc(ultima) + "</div>"; }
+            const chi = p.nostre[0] ? slug(p.nostre[0]) : "";
+            out += '<div class="cal-p"><button data-id="' + chi + '" title="Tutte le partite">' + nomePartita(p) + "</button>" +
+              (p.info ? '<span class="nota">' + esc(p.info) + "</span>" : "") + "</div>";
+          });
+          return out;
+        }).join("") + '<p class="gir-meta" style="margin-top:12px">Date del calendario ufficiale; anticipi e posticipi sono scritti sotto la partita. Tocca una partita per vedere il calendario della squadra.</p></div>';
       box.innerHTML = html;
-      const corpo = document.getElementById("girCalCorpo");
-      const mostra = i => {
-        const g = lista[i];
-        const perG = {};
-        g.partite.forEach(p => (perG[p.g] = perG[p.g] || []).push(p));
-        corpo.innerHTML = "<h3>" + esc(titolo(g)) + '</h3><div class="gir-meta">Squadre del territorio: ' + esc(g.nostre.join(", ")) + "</div>" +
-          Object.keys(perG).sort((a, b) => a - b).map(n => {
-            // calcio a 5: le gare della stessa giornata cadono in giorni diversi, allora la data va accanto a ogni partita
-            const diverse = new Set(perG[n].map(p => p.data)).size > 1;
-            return '<div class="gir-giornata' + (+n === g.prossima ? " prossima" : "") + '"><div class="gir-g">' +
-              n + "ª giornata" + (diverse ? "" : " · " + esc(perG[n][0].data)) + (+n === g.prossima ? " · prossima" : "") + "</div>" +
-              perG[n].map(p => partitaHtml(p, diverse)).join("") + "</div>";
-          }).join("") +
-          (g.ritorno ? '<p class="gir-meta" style="margin-top:10px">' + esc(g.ritorno) + "</p>" : "");
-        box.querySelectorAll(".gir-chip").forEach(b => b.classList.toggle("attivo", +b.dataset.i === i));
+      const scheda = document.getElementById("calScheda");
+      const mostra = (id, scorri) => {
+        const q = squadre.find(x => x.id === id);
+        box.querySelectorAll(".cal-sq").forEach(b => b.classList.toggle("attivo", b.dataset.id === id));
+        if (!q) { scheda.innerHTML = ""; return; }
+        const sue = q.g.partite.filter(p => p.nostre.includes(q.nome));
+        const next = sue.find(p => !p.risultato);
+        const riga = p => {
+          const e = esito(p, q.nome), d = quando(dataDi(p));
+          return '<div class="cal-riga' + (p === next ? " prossima" : "") + '"><span class="quando"><b>' + esc(p.g) + "ª</b> · " + esc(d.testo + ora(p)) +
+            "</span><span>" + nomePartita(p) + "</span>" + (p.risultato ? '<span class="ris ' + e + '">' + esc(p.risultato) + (p.tavolino ? " (tav.)" : "") + "</span>" : "<span></span>") +
+            (p.info ? '<span class="nota">' + esc(p.info) + "</span>" : "") + "</div>";
+        };
+        scheda.innerHTML = '<div class="gir-card cal-scheda"><button class="cal-chiudi">✕ Chiudi</button><h3>' + esc(q.nome) + '</h3><div class="sotto">' + esc(titolo(q.g)) + "</div>" +
+          (next ? '<div class="cal-next"><div class="et">Prossima partita · ' + esc(quando(dataDi(next)).testo + ora(next)) + '</div><div style="font-size:1.15rem;margin-top:4px">' + nomePartita(next) + "</div>" +
+            (next.info ? '<div class="gir-meta" style="margin:4px 0 0;color:#555">' + esc(next.info) + "</div>" : "") + "</div>" : "") +
+          sue.map(riga).join("") + (q.g.ritorno ? '<p class="gir-meta" style="margin-top:10px;color:#555">' + esc(q.g.ritorno) + "</p>" : "") + "</div>";
+        scheda.querySelector(".cal-chiudi").onclick = () => { history.replaceState(null, "", "#calendari"); mostra(""); };
+        if (scorri) scheda.scrollIntoView({ behavior: "smooth", block: "start" });
       };
-      box.querySelectorAll(".gir-chip").forEach(b => b.addEventListener("click", () => mostra(+b.dataset.i)));
-      mostra(0);
+      const scegli = id => { history.replaceState(null, "", "#calendari-" + id); mostra(id, true); };
+      box.querySelectorAll("[data-id]").forEach(b => b.addEventListener("click", () => scegli(b.dataset.id)));
+      // link diretto a una squadra: calciomugello.it/#calendari-fortis-juventus-1909
+      const h = location.hash.slice(1);
+      if (h.startsWith("calendari-")) mostra(h.slice(10), true);
     } catch (e) { box.innerHTML = '<div class="empty">Calendari non disponibili ora.</div>'; }
   }
   const fatto = {};
@@ -1558,12 +1650,12 @@ loadData();
       document.getElementById("view-" + t).style.display = si ? "block" : "none";
       if (si && !fatto[t]) { fatto[t] = 1; (t === "classifiche" ? classifiche : calendari)(); }
     }
-    if (["classifiche", "calendari"].includes(b.dataset.tab)) history.replaceState(null, "", "#" + b.dataset.tab);
-    else if (location.hash === "#classifiche" || location.hash === "#calendari") history.replaceState(null, "", location.pathname);
+    if (["classifiche", "calendari"].includes(b.dataset.tab)) { if (!location.hash.startsWith("#" + b.dataset.tab)) history.replaceState(null, "", "#" + b.dataset.tab); }
+    else if (location.hash === "#classifiche" || location.hash.startsWith("#calendari")) history.replaceState(null, "", location.pathname);
   }));
   // link diretti da condividere: calciomugello.it/#classifiche e /#calendari
   function daHash() {
-    const h = location.hash.slice(1);
+    const h = location.hash.slice(1).replace(/^calendari-.*/, "calendari");
     if (h !== "classifiche" && h !== "calendari") return;
     const b = document.querySelector('.tab-btn[data-tab="' + h + '"]');
     if (b && !b.classList.contains("active")) b.click();
