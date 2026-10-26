@@ -613,6 +613,7 @@
   .gir-testa p { color: #666; font-size: 0.85rem; margin: 0 0 16px; }
   .gir-griglia { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; align-items: start; }
   .gir-card { background: var(--card-bg); border-radius: 16px; box-shadow: var(--ombra); padding: 14px 16px; min-width: 0; }
+  .gir-c5 { margin: 20px 0 0; max-width: 560px; }
   .gir-card h3 { margin: 0; color: var(--verde-scuro); font-size: 1rem; }
   .gir-meta { font-size: 0.75rem; color: #777; margin: 2px 0 10px; }
   table.gir-tab { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
@@ -677,6 +678,7 @@
 <main>
   <div id="grid-calcio11" class="grid"></div>
   <div id="grid-calcio5" class="grid" style="display:none;"></div>
+  <div id="clas-calcio5" class="gir-view gir-c5" style="display:none;"></div>
   <div id="view-numeri" class="numeri-view" style="display:none;"></div>
   <div id="view-bolle" class="bolle-view" style="display:none;"><div class="empty">Caricamento…</div></div>
   <div id="view-memoria" class="memoria-view" style="display:none;">
@@ -1493,19 +1495,27 @@ loadData();
       (p.derby ? '<span class="tag">derby</span>' : "") +
       (p.info ? '<span class="info">' + esc(p.info) + "</span>" : "") + "</div>";
   }
-  async function classifiche() {
-    const box = document.getElementById("girClassifiche");
-    try {
-      const lista = (await carica()).filter(g => g.classifica);
-      box.innerHTML = lista.map(g => {
+  function cardClassifica(g, extra) {
         const c = g.classifica;
-        return '<div class="gir-card"><h3>' + esc(titolo(g)) + '</h3><div class="gir-meta">Dopo ' + c.giornate +
+        return '<div class="gir-card"><h3>' + esc(titolo(g)) + (extra || "") + '</h3><div class="gir-meta">Dopo ' + c.giornate +
           " giornate · " + esc(c.fonte) + '</div><table class="gir-tab">' +
           c.righe.map(r => '<tr' + (r.nostra ? ' class="nostra"' : "") + '><td class="pos">' + r.pos + "</td><td>" +
             esc(r.squadra) + '</td><td class="pt">' + r.punti + "</td></tr>").join("") +
           "</table>" + (c.nota ? '<p class="gir-nota">' + esc(c.nota) + "</p>" : "") + "</div>";
-      }).join("") || '<div class="empty">Classifiche non disponibili.</div>';
+  }
+  async function classifiche() {
+    const box = document.getElementById("girClassifiche");
+    try {
+      const lista = (await carica()).filter(g => g.classifica);
+      box.innerHTML = lista.map(g => cardClassifica(g)).join("") || '<div class="empty">Classifiche non disponibili.</div>';
     } catch (e) { box.innerHTML = '<div class="empty">Classifiche non disponibili ora.</div>'; }
+  }
+  async function classificaC5() {
+    const box = document.getElementById("clas-calcio5");
+    try {
+      const lista = (await carica()).filter(g => g.sport === "Calcio a 5" && g.classifica);
+      box.innerHTML = lista.map(g => cardClassifica(g)).join("");
+    } catch (e) { box.innerHTML = '<div class="empty">Classifica non disponibile ora.</div>'; }
   }
   async function calendari() {
     const box = document.getElementById("girCalendari");
@@ -1540,6 +1550,9 @@ loadData();
   }
   const fatto = {};
   document.querySelectorAll(".tab-btn[data-tab]").forEach(b => b.addEventListener("click", () => {
+    const c5 = document.getElementById("clas-calcio5");
+    c5.style.display = b.dataset.tab === "calcio5" ? "block" : "none";
+    if (b.dataset.tab === "calcio5" && !fatto.c5) { fatto.c5 = 1; classificaC5(); }
     for (const t of ["classifiche", "calendari"]) {
       const si = b.dataset.tab === t;
       document.getElementById("view-" + t).style.display = si ? "block" : "none";
