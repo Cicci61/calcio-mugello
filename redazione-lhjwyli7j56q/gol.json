@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-30T22:52:39",
+ "aggiornato": "2026-10-30T23:33:24",
  "data": "2026-10-30",
  "partite": {
   "7.4_TO.3.B.FI": {
@@ -11,7 +11,7 @@
    "casa": "Pian di San Bartolo",
    "ospite": "SV Vicchio",
    "ora": "21:00",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "3-1",
    "almanacco": null,
@@ -50,10 +50,10 @@
    "idSquadra": 1124962,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Borselli Andrea",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "23:33"
   },
   {
    "id": "7.4_TO.3.B.FI-2-0",
