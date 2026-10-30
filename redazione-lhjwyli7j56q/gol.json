@@ -1,24 +1,42 @@
 {
- "aggiornato": "2026-10-30T22:01:37",
+ "aggiornato": "2026-10-30T22:21:59",
  "data": "2026-10-30",
  "partite": {
   "7.4_TO.3.B.FI": {
    "annunciati": [
     2,
-    0
+    1
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Pian di San Bartolo",
    "ospite": "SV Vicchio",
    "ora": "21:00",
-   "stato": "Partita in corso (Int.)",
+   "stato": "Partita in corso (62')",
    "titoloAlmanacco": null,
-   "tuttocampo": "2-0",
+   "tuttocampo": "2-1",
    "almanacco": null,
    "verifica": false
   }
  },
  "gol": [
+  {
+   "id": "7.4_TO.3.B.FI-2-1",
+   "ora": "22:21",
+   "partita": "7.4_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Pian di San Bartolo",
+   "ospite": "SV Vicchio",
+   "punteggio": "2-1",
+   "totale": 3,
+   "squadra": "SV Vicchio",
+   "idSquadra": 1124962,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "7.4_TO.3.B.FI-2-0",
    "ora": "22:01",
