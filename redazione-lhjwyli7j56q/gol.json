@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-31T15:12:39",
+ "aggiornato": "2026-10-31T15:23:12",
  "data": "2026-10-31",
  "partite": {
   "8.2_TO.P.C": {
@@ -11,7 +11,7 @@
    "casa": "Affrico",
    "ospite": "Pontassieve",
    "ora": "14:30",
-   "stato": "Partita in corso (42')",
+   "stato": "Partita in corso (Int.)",
    "titoloAlmanacco": null,
    "tuttocampo": "1-1",
    "almanacco": null,
@@ -26,7 +26,7 @@
    "casa": "AG Dicomano",
    "ospite": "Casentino",
    "ora": "14:30",
-   "stato": "Partita in corso (42')",
+   "stato": "Partita in corso (Int.)",
    "titoloAlmanacco": null,
    "tuttocampo": "1-0",
    "almanacco": null,
@@ -56,7 +56,7 @@
    "casa": "Rontese",
    "ospite": "Caldine",
    "ora": "14:30",
-   "stato": "Partita in corso (42')",
+   "stato": "Partita in corso (Int.)",
    "titoloAlmanacco": null,
    "tuttocampo": "1-0",
    "almanacco": null,
@@ -71,7 +71,7 @@
    "casa": "Barberino Calcio 1927",
    "ospite": "San Piero a Sieve",
    "ora": "15:00",
-   "stato": "Partita in corso (6')",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -92,10 +92,10 @@
    "idSquadra": 1028179,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Bachi Matteo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "15:23"
   },
   {
    "id": "7.6_TO.3.B.FI-1-0",
