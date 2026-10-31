@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-31T16:16:22",
+ "aggiornato": "2026-10-31T16:26:53",
  "data": "2026-10-31",
  "partite": {
   "8.2_TO.P.C": {
@@ -11,7 +11,7 @@
    "casa": "Affrico",
    "ospite": "Pontassieve",
    "ora": "14:30",
-   "stato": "Partita in corso (88')",
+   "stato": "Partita in corso (90+')",
    "titoloAlmanacco": null,
    "tuttocampo": "1-1",
    "almanacco": null,
@@ -19,16 +19,16 @@
   },
   "8.3_TO.P.C": {
    "annunciati": [
-    2,
+    3,
     1
    ],
    "girone": "Promozione · Girone C",
    "casa": "AG Dicomano",
    "ospite": "Casentino",
    "ora": "14:30",
-   "stato": "Partita in corso (88')",
+   "stato": "Partita in corso (90+')",
    "titoloAlmanacco": null,
-   "tuttocampo": "2-1",
+   "tuttocampo": "3-1",
    "almanacco": null,
    "verifica": false
   },
@@ -56,7 +56,7 @@
    "casa": "Rontese",
    "ospite": "Caldine",
    "ora": "14:30",
-   "stato": "Partita in corso (88')",
+   "stato": "Partita in corso (90+')",
    "titoloAlmanacco": null,
    "tuttocampo": "2-0",
    "almanacco": null,
@@ -71,7 +71,7 @@
    "casa": "Barberino Calcio 1927",
    "ospite": "San Piero a Sieve",
    "ora": "15:00",
-   "stato": "Partita in corso (52')",
+   "stato": "Partita in corso (62')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -79,6 +79,24 @@
   }
  },
  "gol": [
+  {
+   "id": "8.3_TO.P.C-3-1",
+   "ora": "16:26",
+   "partita": "8.3_TO.P.C",
+   "girone": "Promozione · Girone C",
+   "casa": "AG Dicomano",
+   "ospite": "Casentino",
+   "punteggio": "3-1",
+   "totale": 4,
+   "squadra": "AG Dicomano",
+   "idSquadra": 1028179,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Bachi Matteo",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:26"
+  },
   {
    "id": "7.6_TO.3.B.FI-2-0",
    "ora": "16:16",
