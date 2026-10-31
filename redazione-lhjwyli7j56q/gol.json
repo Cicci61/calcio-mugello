@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-31T19:47:39",
+ "aggiornato": "2026-10-31T20:02:57",
  "data": "2026-10-31",
  "partite": {
   "8.2_TO.P.C": {
@@ -34,16 +34,16 @@
   },
   "7.3_TO.3.B.FI": {
    "annunciati": [
-    2,
+    3,
     2
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Lions Fortis Juventus",
    "ospite": "San Salvi Sancat",
    "ora": "18:30",
-   "stato": "Partita in corso (58')",
+   "stato": "Partita in corso (74')",
    "titoloAlmanacco": null,
-   "tuttocampo": "2-2",
+   "tuttocampo": "3-2",
    "almanacco": null,
    "verifica": false
   },
@@ -80,6 +80,24 @@
  },
  "gol": [
   {
+   "id": "7.3_TO.3.B.FI-3-2",
+   "ora": "20:02",
+   "partita": "7.3_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Lions Fortis Juventus",
+   "ospite": "San Salvi Sancat",
+   "punteggio": "3-2",
+   "totale": 5,
+   "squadra": "Lions Fortis Juventus",
+   "idSquadra": 1325836,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
    "id": "7.3_TO.3.B.FI-2-2",
    "ora": "19:47",
    "partita": "7.3_TO.3.B.FI",
@@ -110,10 +128,10 @@
    "idSquadra": 1325836,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Casini Benvenuti Lorenzo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "20:02"
   },
   {
    "id": "7.3_TO.3.B.FI-1-1",
