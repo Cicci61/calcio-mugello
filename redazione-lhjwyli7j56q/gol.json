@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-31T19:22:08",
+ "aggiornato": "2026-10-31T19:37:27",
  "data": "2026-10-31",
  "partite": {
   "8.2_TO.P.C": {
@@ -41,7 +41,7 @@
    "casa": "Lions Fortis Juventus",
    "ospite": "San Salvi Sancat",
    "ora": "18:30",
-   "stato": "Partita in corso (Int.)",
+   "stato": "Partita in corso (48')",
    "titoloAlmanacco": null,
    "tuttocampo": "2-1",
    "almanacco": null,
@@ -110,10 +110,10 @@
    "idSquadra": 1200875,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Quadri Niccolò",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "19:37"
   },
   {
    "id": "7.3_TO.3.B.FI-1-0",
