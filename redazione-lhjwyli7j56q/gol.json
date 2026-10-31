@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-31T16:26:53",
+ "aggiornato": "2026-10-31T16:31:07",
  "data": "2026-10-31",
  "partite": {
   "8.2_TO.P.C": {
@@ -64,21 +64,39 @@
   },
   "7.1_TO.1.C": {
    "annunciati": [
-    0,
+    1,
     0
    ],
    "girone": "Prima Categoria · Girone C",
    "casa": "Barberino Calcio 1927",
    "ospite": "San Piero a Sieve",
    "ora": "15:00",
-   "stato": "Partita in corso (62')",
+   "stato": "Partita in corso (72')",
    "titoloAlmanacco": null,
-   "tuttocampo": "0-0",
+   "tuttocampo": "1-0",
    "almanacco": null,
    "verifica": false
   }
  },
  "gol": [
+  {
+   "id": "7.1_TO.1.C-1-0",
+   "ora": "16:31",
+   "partita": "7.1_TO.1.C",
+   "girone": "Prima Categoria · Girone C",
+   "casa": "Barberino Calcio 1927",
+   "ospite": "San Piero a Sieve",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Barberino Calcio 1927",
+   "idSquadra": 935709,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Comelli Tommaso",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:31"
+  },
   {
    "id": "8.3_TO.P.C-3-1",
    "ora": "16:26",
