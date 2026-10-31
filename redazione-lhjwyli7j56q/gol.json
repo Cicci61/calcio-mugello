@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-31T14:51:26",
+ "aggiornato": "2026-10-31T15:02:06",
  "data": "2026-10-31",
  "partite": {
   "8.2_TO.P.C": {
@@ -11,7 +11,7 @@
    "casa": "Affrico",
    "ospite": "Pontassieve",
    "ora": "14:30",
-   "stato": "Partita in corso (20')",
+   "stato": "Partita in corso (32')",
    "titoloAlmanacco": null,
    "tuttocampo": "1-1",
    "almanacco": null,
@@ -26,9 +26,9 @@
    "casa": "AG Dicomano",
    "ospite": "Casentino",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (32')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
@@ -49,16 +49,16 @@
   },
   "7.6_TO.3.B.FI": {
    "annunciati": [
-    0,
+    1,
     0
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Rontese",
    "ospite": "Caldine",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (32')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "1-0",
    "almanacco": null,
    "verifica": false
   },
@@ -79,6 +79,24 @@
   }
  },
  "gol": [
+  {
+   "id": "7.6_TO.3.B.FI-1-0",
+   "ora": "15:02",
+   "partita": "7.6_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Rontese",
+   "ospite": "Caldine",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Rontese",
+   "idSquadra": 60915,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "8.2_TO.P.C-1-1",
    "ora": "14:51",
