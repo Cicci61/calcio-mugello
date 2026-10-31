@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-31T16:05:48",
+ "aggiornato": "2026-10-31T16:16:22",
  "data": "2026-10-31",
  "partite": {
   "8.2_TO.P.C": {
@@ -11,7 +11,7 @@
    "casa": "Affrico",
    "ospite": "Pontassieve",
    "ora": "14:30",
-   "stato": "Partita in corso (76')",
+   "stato": "Partita in corso (88')",
    "titoloAlmanacco": null,
    "tuttocampo": "1-1",
    "almanacco": null,
@@ -26,7 +26,7 @@
    "casa": "AG Dicomano",
    "ospite": "Casentino",
    "ora": "14:30",
-   "stato": "Partita in corso (76')",
+   "stato": "Partita in corso (88')",
    "titoloAlmanacco": null,
    "tuttocampo": "2-1",
    "almanacco": null,
@@ -40,7 +40,7 @@
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Lions Fortis Juventus",
    "ospite": "San Salvi Sancat",
-   "ora": "14:30",
+   "ora": "18:30",
    "stato": "",
    "titoloAlmanacco": null,
    "tuttocampo": null,
@@ -49,16 +49,16 @@
   },
   "7.6_TO.3.B.FI": {
    "annunciati": [
-    1,
+    2,
     0
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Rontese",
    "ospite": "Caldine",
    "ora": "14:30",
-   "stato": "Partita in corso (76')",
+   "stato": "Partita in corso (88')",
    "titoloAlmanacco": null,
-   "tuttocampo": "1-0",
+   "tuttocampo": "2-0",
    "almanacco": null,
    "verifica": false
   },
@@ -71,7 +71,7 @@
    "casa": "Barberino Calcio 1927",
    "ospite": "San Piero a Sieve",
    "ora": "15:00",
-   "stato": "Partita in corso (Int.)",
+   "stato": "Partita in corso (52')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -79,6 +79,24 @@
   }
  },
  "gol": [
+  {
+   "id": "7.6_TO.3.B.FI-2-0",
+   "ora": "16:16",
+   "partita": "7.6_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Rontese",
+   "ospite": "Caldine",
+   "punteggio": "2-0",
+   "totale": 2,
+   "squadra": "Rontese",
+   "idSquadra": 60915,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Paoli Matteo",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:16"
+  },
   {
    "id": "8.3_TO.P.C-2-1",
    "ora": "16:05",
