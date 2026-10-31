@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-31T19:37:27",
+ "aggiornato": "2026-10-31T19:47:39",
  "data": "2026-10-31",
  "partite": {
   "8.2_TO.P.C": {
@@ -35,15 +35,15 @@
   "7.3_TO.3.B.FI": {
    "annunciati": [
     2,
-    1
+    2
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Lions Fortis Juventus",
    "ospite": "San Salvi Sancat",
    "ora": "18:30",
-   "stato": "Partita in corso (48')",
+   "stato": "Partita in corso (58')",
    "titoloAlmanacco": null,
-   "tuttocampo": "2-1",
+   "tuttocampo": "2-2",
    "almanacco": null,
    "verifica": false
   },
@@ -79,6 +79,24 @@
   }
  },
  "gol": [
+  {
+   "id": "7.3_TO.3.B.FI-2-2",
+   "ora": "19:47",
+   "partita": "7.3_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Lions Fortis Juventus",
+   "ospite": "San Salvi Sancat",
+   "punteggio": "2-2",
+   "totale": 4,
+   "squadra": "San Salvi Sancat",
+   "idSquadra": 1200875,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": "Baccini Lorenzo",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "19:47"
+  },
   {
    "id": "7.3_TO.3.B.FI-2-1",
    "ora": "19:22",
