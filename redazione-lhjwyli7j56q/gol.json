@@ -1,19 +1,19 @@
 {
- "aggiornato": "2026-10-31T14:15:04",
+ "aggiornato": "2026-10-31T14:51:26",
  "data": "2026-10-31",
  "partite": {
   "8.2_TO.P.C": {
    "annunciati": [
-    0,
-    0
+    1,
+    1
    ],
    "girone": "Promozione · Girone C",
    "casa": "Affrico",
    "ospite": "Pontassieve",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (20')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "1-1",
    "almanacco": null,
    "verifica": false
   },
@@ -61,8 +61,60 @@
    "tuttocampo": null,
    "almanacco": null,
    "verifica": false
+  },
+  "7.1_TO.1.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Prima Categoria · Girone C",
+   "casa": "Barberino Calcio 1927",
+   "ospite": "San Piero a Sieve",
+   "ora": "15:00",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
   }
  },
- "gol": [],
+ "gol": [
+  {
+   "id": "8.2_TO.P.C-1-1",
+   "ora": "14:51",
+   "partita": "8.2_TO.P.C",
+   "girone": "Promozione · Girone C",
+   "casa": "Affrico",
+   "ospite": "Pontassieve",
+   "punteggio": "1-1",
+   "totale": 2,
+   "squadra": "Pontassieve",
+   "idSquadra": 750657,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Patrignani Niccolò",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:51"
+  },
+  {
+   "id": "8.2_TO.P.C-1-0",
+   "ora": "14:51",
+   "partita": "8.2_TO.P.C",
+   "girone": "Promozione · Girone C",
+   "casa": "Affrico",
+   "ospite": "Pontassieve",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Affrico",
+   "idSquadra": 740,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": "Tanini Flavio",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:51"
+  }
+ ],
  "almanacco": {}
 }
