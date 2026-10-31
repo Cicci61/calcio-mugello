@@ -1,96 +1,68 @@
 {
- "aggiornato": "2026-10-30T23:38:34",
- "data": "2026-10-30",
+ "aggiornato": "2026-10-31T14:15:04",
+ "data": "2026-10-31",
  "partite": {
-  "7.4_TO.3.B.FI": {
+  "8.2_TO.P.C": {
    "annunciati": [
-    3,
-    1
+    0,
+    0
+   ],
+   "girone": "Promozione · Girone C",
+   "casa": "Affrico",
+   "ospite": "Pontassieve",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "8.3_TO.P.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Promozione · Girone C",
+   "casa": "AG Dicomano",
+   "ospite": "Casentino",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "7.3_TO.3.B.FI": {
+   "annunciati": [
+    0,
+    0
    ],
    "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Pian di San Bartolo",
-   "ospite": "SV Vicchio",
-   "ora": "21:00",
-   "stato": "Partita terminata",
+   "casa": "Lions Fortis Juventus",
+   "ospite": "San Salvi Sancat",
+   "ora": "14:30",
+   "stato": "",
    "titoloAlmanacco": null,
-   "tuttocampo": "3-1",
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "7.6_TO.3.B.FI": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Rontese",
+   "ospite": "Caldine",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
    "almanacco": null,
    "verifica": false
   }
  },
- "gol": [
-  {
-   "id": "7.4_TO.3.B.FI-3-1",
-   "ora": "22:52",
-   "partita": "7.4_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Pian di San Bartolo",
-   "ospite": "SV Vicchio",
-   "punteggio": "3-1",
-   "totale": 4,
-   "squadra": "Pian di San Bartolo",
-   "idSquadra": 1079698,
-   "nostra": false,
-   "fonte": "Tuttocampo",
-   "marcatore": null,
-   "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
-  },
-  {
-   "id": "7.4_TO.3.B.FI-2-1",
-   "ora": "22:21",
-   "partita": "7.4_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Pian di San Bartolo",
-   "ospite": "SV Vicchio",
-   "punteggio": "2-1",
-   "totale": 3,
-   "squadra": "SV Vicchio",
-   "idSquadra": 1124962,
-   "nostra": true,
-   "fonte": "Tuttocampo",
-   "marcatore": "Borselli Andrea",
-   "minuto": null,
-   "fonteMarcatore": "Tuttocampo",
-   "trovato": "23:33"
-  },
-  {
-   "id": "7.4_TO.3.B.FI-2-0",
-   "ora": "22:01",
-   "partita": "7.4_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Pian di San Bartolo",
-   "ospite": "SV Vicchio",
-   "punteggio": "2-0",
-   "totale": 2,
-   "squadra": "Pian di San Bartolo",
-   "idSquadra": 1079698,
-   "nostra": false,
-   "fonte": "Tuttocampo",
-   "marcatore": "Bonciani Leonardo",
-   "minuto": null,
-   "fonteMarcatore": "Tuttocampo",
-   "trovato": "23:38"
-  },
-  {
-   "id": "7.4_TO.3.B.FI-1-0",
-   "ora": "21:26",
-   "partita": "7.4_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Pian di San Bartolo",
-   "ospite": "SV Vicchio",
-   "punteggio": "1-0",
-   "totale": 1,
-   "squadra": "Pian di San Bartolo",
-   "idSquadra": 1079698,
-   "nostra": false,
-   "fonte": "Tuttocampo",
-   "marcatore": "Isiksun Niccolò",
-   "minuto": null,
-   "fonteMarcatore": "Tuttocampo",
-   "trovato": "23:38"
-  }
- ],
+ "gol": [],
  "almanacco": {}
 }
