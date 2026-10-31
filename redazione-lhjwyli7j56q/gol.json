@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-31T16:37:27",
+ "aggiornato": "2026-10-31T19:17:01",
  "data": "2026-10-31",
  "partite": {
   "8.2_TO.P.C": {
@@ -34,16 +34,16 @@
   },
   "7.3_TO.3.B.FI": {
    "annunciati": [
-    0,
-    0
+    1,
+    1
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Lions Fortis Juventus",
    "ospite": "San Salvi Sancat",
    "ora": "18:30",
-   "stato": "",
+   "stato": "Partita in corso (45+')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "1-1",
    "almanacco": null,
    "verifica": false
   },
@@ -71,7 +71,7 @@
    "casa": "Barberino Calcio 1927",
    "ospite": "San Piero a Sieve",
    "ora": "15:00",
-   "stato": "Partita in corso (72')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "1-0",
    "almanacco": null,
@@ -79,6 +79,42 @@
   }
  },
  "gol": [
+  {
+   "id": "7.3_TO.3.B.FI-1-1",
+   "ora": "19:17",
+   "partita": "7.3_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Lions Fortis Juventus",
+   "ospite": "San Salvi Sancat",
+   "punteggio": "1-1",
+   "totale": 2,
+   "squadra": "San Salvi Sancat",
+   "idSquadra": 1200875,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
+   "id": "7.3_TO.3.B.FI-1-0",
+   "ora": "19:17",
+   "partita": "7.3_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Lions Fortis Juventus",
+   "ospite": "San Salvi Sancat",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Lions Fortis Juventus",
+   "idSquadra": 1325836,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "7.1_TO.1.C-1-0",
    "ora": "16:31",
