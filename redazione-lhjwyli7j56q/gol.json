@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-01T14:15:57",
+ "aggiornato": "2026-11-01T14:36:28",
  "data": "2026-11-01",
  "partite": {
   "8.6_TO.E.B": {
@@ -11,9 +11,9 @@
    "casa": "Poggibonsi",
    "ospite": "Audax Rufina",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (6')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
@@ -80,15 +80,15 @@
   "7.5_TO.2.F": {
    "annunciati": [
     0,
-    0
+    1
    ],
    "girone": "Seconda Categoria · Girone F",
    "casa": "Reconquista",
    "ospite": "Firenzuola",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (6')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-1",
    "almanacco": null,
    "verifica": false
   },
@@ -109,16 +109,16 @@
   },
   "8.6_ER.2.M.RA": {
    "annunciati": [
-    0,
+    1,
     0
    ],
    "girone": "Seconda Categoria · Girone M Ravenna",
    "casa": "Sesto Imolese",
    "ospite": "Marradese",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (6')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "1-0",
    "almanacco": null,
    "verifica": false
   },
@@ -138,7 +138,44 @@
    "verifica": false
   }
  },
- "gol": [],
+ "gol": [
+  {
+   "id": "8.6_ER.2.M.RA-1-0",
+   "ora": "14:36",
+   "partita": "8.6_ER.2.M.RA",
+   "girone": "Seconda Categoria · Girone M Ravenna",
+   "casa": "Sesto Imolese",
+   "ospite": "Marradese",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Sesto Imolese",
+   "idSquadra": 912107,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": "Betivu Edy Constantin",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:36"
+  },
+  {
+   "id": "7.5_TO.2.F-0-1",
+   "ora": "14:36",
+   "partita": "7.5_TO.2.F",
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Reconquista",
+   "ospite": "Firenzuola",
+   "punteggio": "0-1",
+   "totale": 1,
+   "squadra": "Firenzuola",
+   "idSquadra": 65937,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Caleca Enzo",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:36"
+  }
+ ],
  "almanacco": {
   "ecc": "https://almanaccocalciotoscano.it/live-diretta-e-tabellini-della-8a-giornata-di-eccellenza-domenica-1-novembre-2026/",
   "pro": "https://almanaccocalciotoscano.it/live-diretta-e-tabellini-della-8a-giornata-di-promozione-domenica-1-novembre-2026/"
