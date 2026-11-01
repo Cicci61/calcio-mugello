@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-01T14:46:52",
+ "aggiornato": "2026-11-01T14:57:20",
  "data": "2026-11-01",
  "partite": {
   "8.6_TO.E.B": {
@@ -11,7 +11,7 @@
    "casa": "Poggibonsi",
    "ospite": "Audax Rufina",
    "ora": "14:30",
-   "stato": "Partita in corso (16')",
+   "stato": "Partita in corso (26')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -26,9 +26,9 @@
    "casa": "Fortis Juventus 1909",
    "ospite": "Luco",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (26')",
    "titoloAlmanacco": "Fortis Juventus-Luco",
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": "0-0",
    "verifica": false
   },
@@ -50,15 +50,15 @@
   "7.7_TO.1.C": {
    "annunciati": [
     1,
-    0
+    1
    ],
    "girone": "Prima Categoria · Girone C",
    "casa": "Sagginale",
    "ospite": "San Godenzo",
    "ora": "14:30",
-   "stato": "Partita in corso (16')",
+   "stato": "Partita in corso (26')",
    "titoloAlmanacco": null,
-   "tuttocampo": "1-0",
+   "tuttocampo": "1-1",
    "almanacco": null,
    "verifica": false
   },
@@ -71,7 +71,7 @@
    "casa": "Leccese",
    "ospite": "Londa 1974",
    "ora": "14:30",
-   "stato": "Partita in corso (16')",
+   "stato": "Partita in corso (26')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -86,7 +86,7 @@
    "casa": "Reconquista",
    "ospite": "Firenzuola",
    "ora": "14:30",
-   "stato": "Partita in corso (16')",
+   "stato": "Partita in corso (26')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -116,7 +116,7 @@
    "casa": "Sesto Imolese",
    "ospite": "Marradese",
    "ora": "14:30",
-   "stato": "Partita in corso (16')",
+   "stato": "Partita in corso (26')",
    "titoloAlmanacco": null,
    "tuttocampo": "1-0",
    "almanacco": null,
@@ -131,7 +131,7 @@
    "casa": "Quinto",
    "ospite": "Cavallina Calcio",
    "ora": "14:30",
-   "stato": "Partita in corso (16')",
+   "stato": "Partita in corso (26')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-2",
    "almanacco": null,
@@ -139,6 +139,24 @@
   }
  },
  "gol": [
+  {
+   "id": "7.7_TO.1.C-1-1",
+   "ora": "14:57",
+   "partita": "7.7_TO.1.C",
+   "girone": "Prima Categoria · Girone C",
+   "casa": "Sagginale",
+   "ospite": "San Godenzo",
+   "punteggio": "1-1",
+   "totale": 2,
+   "squadra": "San Godenzo",
+   "idSquadra": 61259,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Camara Tjian",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:57"
+  },
   {
    "id": "7.5_TO.3.B.FI-0-2",
    "ora": "14:46",
@@ -152,10 +170,10 @@
    "idSquadra": 1099296,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Bentalha Federico",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:57"
   },
   {
    "id": "7.5_TO.3.B.FI-0-1",
