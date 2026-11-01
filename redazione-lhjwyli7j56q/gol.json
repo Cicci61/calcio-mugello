@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-01T16:11:03",
+ "aggiornato": "2026-11-01T16:21:36",
  "data": "2026-11-01",
  "partite": {
   "8.6_TO.E.B": {
@@ -11,7 +11,7 @@
    "casa": "Poggibonsi",
    "ospite": "Audax Rufina",
    "ora": "14:30",
-   "stato": "Partita in corso (82')",
+   "stato": "Partita in corso (90+')",
    "titoloAlmanacco": "Poggibonsi-Audax Rufina",
    "tuttocampo": "1-0",
    "almanacco": "1-0",
@@ -26,7 +26,7 @@
    "casa": "Fortis Juventus 1909",
    "ospite": "Luco",
    "ora": "14:30",
-   "stato": "Partita in corso (82')",
+   "stato": "Partita in corso (90+')",
    "titoloAlmanacco": "Fortis Juventus-Luco",
    "tuttocampo": "0-0",
    "almanacco": "0-0",
@@ -41,7 +41,7 @@
    "casa": "Real Peretola",
    "ospite": "Gallianese",
    "ora": "14:30",
-   "stato": "Partita in corso (82')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "3-1",
    "almanacco": null,
@@ -56,7 +56,7 @@
    "casa": "Sagginale",
    "ospite": "San Godenzo",
    "ora": "14:30",
-   "stato": "Partita in corso (82')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "5-1",
    "almanacco": null,
@@ -71,7 +71,7 @@
    "casa": "Leccese",
    "ospite": "Londa 1974",
    "ora": "14:30",
-   "stato": "Partita in corso (82')",
+   "stato": "Partita in corso (90+')",
    "titoloAlmanacco": null,
    "tuttocampo": "2-1",
    "almanacco": null,
@@ -80,15 +80,15 @@
   "7.5_TO.2.F": {
    "annunciati": [
     0,
-    1
+    2
    ],
    "girone": "Seconda Categoria · Girone F",
    "casa": "Reconquista",
    "ospite": "Firenzuola",
    "ora": "14:30",
-   "stato": "Partita in corso (82')",
+   "stato": "Partita in corso (90+')",
    "titoloAlmanacco": null,
-   "tuttocampo": "0-1",
+   "tuttocampo": "0-2",
    "almanacco": null,
    "verifica": false
   },
@@ -101,7 +101,7 @@
    "casa": "Scarperia 1920",
    "ospite": "Vaglia",
    "ora": "14:30",
-   "stato": "Partita in corso (82')",
+   "stato": "Partita in corso (90+')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -116,7 +116,7 @@
    "casa": "Sesto Imolese",
    "ospite": "Marradese",
    "ora": "14:30",
-   "stato": "Partita in corso (82')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "3-0",
    "almanacco": null,
@@ -131,7 +131,7 @@
    "casa": "Quinto",
    "ospite": "Cavallina Calcio",
    "ora": "14:30",
-   "stato": "Partita in corso (82')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "1-2",
    "almanacco": null,
@@ -139,6 +139,24 @@
   }
  },
  "gol": [
+  {
+   "id": "7.5_TO.2.F-0-2",
+   "ora": "16:21",
+   "partita": "7.5_TO.2.F",
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Reconquista",
+   "ospite": "Firenzuola",
+   "punteggio": "0-2",
+   "totale": 2,
+   "squadra": "Firenzuola",
+   "idSquadra": 65937,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Vettori Andrea",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:21"
+  },
   {
    "id": "7.6_TO.1.C-3-1",
    "ora": "16:11",
