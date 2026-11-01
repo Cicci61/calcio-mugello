@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-01T14:41:39",
+ "aggiornato": "2026-11-01T14:46:52",
  "data": "2026-11-01",
  "partite": {
   "8.6_TO.E.B": {
@@ -11,7 +11,7 @@
    "casa": "Poggibonsi",
    "ospite": "Audax Rufina",
    "ora": "14:30",
-   "stato": "Partita in corso (10')",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -56,7 +56,7 @@
    "casa": "Sagginale",
    "ospite": "San Godenzo",
    "ora": "14:30",
-   "stato": "Partita in corso (10')",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": null,
    "tuttocampo": "1-0",
    "almanacco": null,
@@ -71,7 +71,7 @@
    "casa": "Leccese",
    "ospite": "Londa 1974",
    "ora": "14:30",
-   "stato": "Partita in corso (10')",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -86,7 +86,7 @@
    "casa": "Reconquista",
    "ospite": "Firenzuola",
    "ora": "14:30",
-   "stato": "Partita in corso (10')",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -116,7 +116,7 @@
    "casa": "Sesto Imolese",
    "ospite": "Marradese",
    "ora": "14:30",
-   "stato": "Partita in corso (10')",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": null,
    "tuttocampo": "1-0",
    "almanacco": null,
@@ -125,20 +125,56 @@
   "7.5_TO.3.B.FI": {
    "annunciati": [
     0,
-    0
+    2
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Quinto",
    "ospite": "Cavallina Calcio",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-2",
    "almanacco": null,
    "verifica": false
   }
  },
  "gol": [
+  {
+   "id": "7.5_TO.3.B.FI-0-2",
+   "ora": "14:46",
+   "partita": "7.5_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Quinto",
+   "ospite": "Cavallina Calcio",
+   "punteggio": "0-2",
+   "totale": 2,
+   "squadra": "Cavallina Calcio",
+   "idSquadra": 1099296,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
+   "id": "7.5_TO.3.B.FI-0-1",
+   "ora": "14:46",
+   "partita": "7.5_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Quinto",
+   "ospite": "Cavallina Calcio",
+   "punteggio": "0-1",
+   "totale": 1,
+   "squadra": "Cavallina Calcio",
+   "idSquadra": 1099296,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Cresti Alessandro",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:46"
+  },
   {
    "id": "7.7_TO.1.C-1-0",
    "ora": "14:41",
@@ -152,10 +188,10 @@
    "idSquadra": 69460,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Paggetti Lorenzo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:46"
   },
   {
    "id": "8.6_ER.2.M.RA-1-0",
