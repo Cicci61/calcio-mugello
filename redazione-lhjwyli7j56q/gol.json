@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-01T14:36:28",
+ "aggiornato": "2026-11-01T14:41:39",
  "data": "2026-11-01",
  "partite": {
   "8.6_TO.E.B": {
@@ -11,7 +11,7 @@
    "casa": "Poggibonsi",
    "ospite": "Audax Rufina",
    "ora": "14:30",
-   "stato": "Partita in corso (6')",
+   "stato": "Partita in corso (10')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -27,9 +27,9 @@
    "ospite": "Luco",
    "ora": "14:30",
    "stato": "",
-   "titoloAlmanacco": null,
+   "titoloAlmanacco": "Fortis Juventus-Luco",
    "tuttocampo": null,
-   "almanacco": null,
+   "almanacco": "0-0",
    "verifica": false
   },
   "7.6_TO.1.C": {
@@ -49,16 +49,16 @@
   },
   "7.7_TO.1.C": {
    "annunciati": [
-    0,
+    1,
     0
    ],
    "girone": "Prima Categoria · Girone C",
    "casa": "Sagginale",
    "ospite": "San Godenzo",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (10')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "1-0",
    "almanacco": null,
    "verifica": false
   },
@@ -71,9 +71,9 @@
    "casa": "Leccese",
    "ospite": "Londa 1974",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (10')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
@@ -86,7 +86,7 @@
    "casa": "Reconquista",
    "ospite": "Firenzuola",
    "ora": "14:30",
-   "stato": "Partita in corso (6')",
+   "stato": "Partita in corso (10')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -116,7 +116,7 @@
    "casa": "Sesto Imolese",
    "ospite": "Marradese",
    "ora": "14:30",
-   "stato": "Partita in corso (6')",
+   "stato": "Partita in corso (10')",
    "titoloAlmanacco": null,
    "tuttocampo": "1-0",
    "almanacco": null,
@@ -139,6 +139,24 @@
   }
  },
  "gol": [
+  {
+   "id": "7.7_TO.1.C-1-0",
+   "ora": "14:41",
+   "partita": "7.7_TO.1.C",
+   "girone": "Prima Categoria · Girone C",
+   "casa": "Sagginale",
+   "ospite": "San Godenzo",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Sagginale",
+   "idSquadra": 69460,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "8.6_ER.2.M.RA-1-0",
    "ora": "14:36",
