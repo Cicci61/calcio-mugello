@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-01T16:21:36",
+ "aggiornato": "2026-11-01T16:42:52",
  "data": "2026-11-01",
  "partite": {
   "8.6_TO.E.B": {
@@ -11,7 +11,7 @@
    "casa": "Poggibonsi",
    "ospite": "Audax Rufina",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": "Poggibonsi-Audax Rufina",
    "tuttocampo": "1-0",
    "almanacco": "1-0",
@@ -26,7 +26,7 @@
    "casa": "Fortis Juventus 1909",
    "ospite": "Luco",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": "Fortis Juventus-Luco",
    "tuttocampo": "0-0",
    "almanacco": "0-0",
@@ -71,7 +71,7 @@
    "casa": "Leccese",
    "ospite": "Londa 1974",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "2-1",
    "almanacco": null,
@@ -86,7 +86,7 @@
    "casa": "Reconquista",
    "ospite": "Firenzuola",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "0-2",
    "almanacco": null,
@@ -101,7 +101,7 @@
    "casa": "Scarperia 1920",
    "ospite": "Vaglia",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -206,10 +206,10 @@
    "idSquadra": 1079487,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Rapi Giuliano",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:42"
   },
   {
    "id": "7.7_TO.1.C-5-1",
