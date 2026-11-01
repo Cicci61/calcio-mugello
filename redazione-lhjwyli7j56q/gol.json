@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-01T15:18:35",
+ "aggiornato": "2026-11-01T15:29:08",
  "data": "2026-11-01",
  "partite": {
   "8.6_TO.E.B": {
@@ -11,7 +11,7 @@
    "casa": "Poggibonsi",
    "ospite": "Audax Rufina",
    "ora": "14:30",
-   "stato": "Partita in corso (45+')",
+   "stato": "Partita in corso (Int.)",
    "titoloAlmanacco": null,
    "tuttocampo": "1-0",
    "almanacco": null,
@@ -26,7 +26,7 @@
    "casa": "Fortis Juventus 1909",
    "ospite": "Luco",
    "ora": "14:30",
-   "stato": "Partita in corso (45+')",
+   "stato": "Partita in corso (Int.)",
    "titoloAlmanacco": "Fortis Juventus-Luco",
    "tuttocampo": "0-0",
    "almanacco": "0-0",
@@ -41,7 +41,7 @@
    "casa": "Real Peretola",
    "ospite": "Gallianese",
    "ora": "14:30",
-   "stato": "Partita in corso (45+')",
+   "stato": "Partita in corso (Int.)",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -56,7 +56,7 @@
    "casa": "Sagginale",
    "ospite": "San Godenzo",
    "ora": "14:30",
-   "stato": "Partita in corso (45+')",
+   "stato": "Partita in corso (Int.)",
    "titoloAlmanacco": null,
    "tuttocampo": "3-1",
    "almanacco": null,
@@ -71,7 +71,7 @@
    "casa": "Leccese",
    "ospite": "Londa 1974",
    "ora": "14:30",
-   "stato": "Partita in corso (45+')",
+   "stato": "Partita in corso (Int.)",
    "titoloAlmanacco": null,
    "tuttocampo": "2-1",
    "almanacco": null,
@@ -86,7 +86,7 @@
    "casa": "Reconquista",
    "ospite": "Firenzuola",
    "ora": "14:30",
-   "stato": "Partita in corso (45+')",
+   "stato": "Partita in corso (Int.)",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -101,24 +101,24 @@
    "casa": "Scarperia 1920",
    "ospite": "Vaglia",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (Int.)",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
   "8.6_ER.2.M.RA": {
    "annunciati": [
-    2,
+    3,
     0
    ],
    "girone": "Seconda Categoria · Girone M Ravenna",
    "casa": "Sesto Imolese",
    "ospite": "Marradese",
    "ora": "14:30",
-   "stato": "Partita in corso (45+')",
+   "stato": "Partita in corso (Int.)",
    "titoloAlmanacco": null,
-   "tuttocampo": "2-0",
+   "tuttocampo": "3-0",
    "almanacco": null,
    "verifica": false
   },
@@ -131,7 +131,7 @@
    "casa": "Quinto",
    "ospite": "Cavallina Calcio",
    "ora": "14:30",
-   "stato": "Partita in corso (45+')",
+   "stato": "Partita in corso (Int.)",
    "titoloAlmanacco": null,
    "tuttocampo": "0-2",
    "almanacco": null,
@@ -139,6 +139,24 @@
   }
  },
  "gol": [
+  {
+   "id": "8.6_ER.2.M.RA-3-0",
+   "ora": "15:29",
+   "partita": "8.6_ER.2.M.RA",
+   "girone": "Seconda Categoria · Girone M Ravenna",
+   "casa": "Sesto Imolese",
+   "ospite": "Marradese",
+   "punteggio": "3-0",
+   "totale": 3,
+   "squadra": "Sesto Imolese",
+   "idSquadra": 912107,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": "Stanziani Riccardo",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "15:29"
+  },
   {
    "id": "7.3_TO.2.D-2-1",
    "ora": "15:18",
@@ -188,10 +206,10 @@
    "idSquadra": 1170480,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Bevicini Fausto",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "15:29"
   },
   {
    "id": "7.6_TO.1.C-0-1",
@@ -206,10 +224,10 @@
    "idSquadra": 20520,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Cristiani Jacopo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "15:29"
   },
   {
    "id": "8.6_TO.E.B-1-0",
