@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-07T19:16:04",
+ "aggiornato": "2026-11-07T19:21:12",
  "data": "2026-11-07",
  "partite": {
   "8.4_TO.3.B.FI": {
@@ -26,7 +26,7 @@
    "casa": "Cobra Kai",
    "ospite": "Lions Fortis Juventus",
    "ora": "18:30",
-   "stato": "Partita in corso (45+')",
+   "stato": "Partita in corso (Int.)",
    "titoloAlmanacco": null,
    "tuttocampo": "1-2",
    "almanacco": null,
@@ -47,10 +47,10 @@
    "idSquadra": 1325836,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Paoli Lapo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "19:21"
   },
   {
    "id": "8.3_TO.3.B.FI-1-1",
