@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-07T16:27:38",
+ "aggiornato": "2026-11-07T18:50:28",
  "data": "2026-11-07",
  "partite": {
   "8.4_TO.3.B.FI": {
@@ -16,9 +16,42 @@
    "tuttocampo": "3-0",
    "almanacco": null,
    "verifica": false
+  },
+  "8.3_TO.3.B.FI": {
+   "annunciati": [
+    0,
+    1
+   ],
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Cobra Kai",
+   "ospite": "Lions Fortis Juventus",
+   "ora": "18:30",
+   "stato": "Partita in corso (20')",
+   "titoloAlmanacco": null,
+   "tuttocampo": "0-1",
+   "almanacco": null,
+   "verifica": false
   }
  },
  "gol": [
+  {
+   "id": "8.3_TO.3.B.FI-0-1",
+   "ora": "18:50",
+   "partita": "8.3_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Cobra Kai",
+   "ospite": "Lions Fortis Juventus",
+   "punteggio": "0-1",
+   "totale": 1,
+   "squadra": "Lions Fortis Juventus",
+   "idSquadra": 1325836,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Bonavolta Lapo",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "18:50"
+  },
   {
    "id": "8.4_TO.3.B.FI-3-0",
    "ora": "16:27",
