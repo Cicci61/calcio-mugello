@@ -1,24 +1,42 @@
 {
- "aggiornato": "2026-11-07T15:26:28",
+ "aggiornato": "2026-11-07T16:27:38",
  "data": "2026-11-07",
  "partite": {
   "8.4_TO.3.B.FI": {
    "annunciati": [
-    2,
+    3,
     0
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Rontese",
    "ospite": "Pian di San Bartolo",
    "ora": "15:00",
-   "stato": "Partita in corso (26')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
-   "tuttocampo": "2-0",
+   "tuttocampo": "3-0",
    "almanacco": null,
    "verifica": false
   }
  },
  "gol": [
+  {
+   "id": "8.4_TO.3.B.FI-3-0",
+   "ora": "16:27",
+   "partita": "8.4_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Rontese",
+   "ospite": "Pian di San Bartolo",
+   "punteggio": "3-0",
+   "totale": 3,
+   "squadra": "Rontese",
+   "idSquadra": 60915,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Panerai Lapo",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:27"
+  },
   {
    "id": "8.4_TO.3.B.FI-2-0",
    "ora": "15:26",
