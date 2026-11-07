@@ -1,23 +1,60 @@
 {
- "aggiornato": "2026-11-07T14:45:34",
+ "aggiornato": "2026-11-07T15:26:28",
  "data": "2026-11-07",
  "partite": {
   "8.4_TO.3.B.FI": {
    "annunciati": [
-    0,
+    2,
     0
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Rontese",
    "ospite": "Pian di San Bartolo",
    "ora": "15:00",
-   "stato": "",
+   "stato": "Partita in corso (26')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "2-0",
    "almanacco": null,
    "verifica": false
   }
  },
- "gol": [],
+ "gol": [
+  {
+   "id": "8.4_TO.3.B.FI-2-0",
+   "ora": "15:26",
+   "partita": "8.4_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Rontese",
+   "ospite": "Pian di San Bartolo",
+   "punteggio": "2-0",
+   "totale": 2,
+   "squadra": "Rontese",
+   "idSquadra": 60915,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Rosari Cesare",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "15:26"
+  },
+  {
+   "id": "8.4_TO.3.B.FI-1-0",
+   "ora": "15:26",
+   "partita": "8.4_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Rontese",
+   "ospite": "Pian di San Bartolo",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Rontese",
+   "idSquadra": 60915,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Rosari Cesare",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "15:26"
+  }
+ ],
  "almanacco": {}
 }
