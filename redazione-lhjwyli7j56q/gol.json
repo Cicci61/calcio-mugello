@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-08T16:56:05",
+ "aggiornato": "2026-11-08T17:06:05",
  "data": "2026-11-08",
  "partite": {
   "9.2_TO.E.B": {
@@ -524,10 +524,10 @@
    "idSquadra": 1023743,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Bartolozzi Lapo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "17:06"
   },
   {
    "id": "8.7_TO.1.C-2-0",
