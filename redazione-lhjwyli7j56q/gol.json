@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-08T14:59:30",
+ "aggiornato": "2026-11-08T15:02:12",
  "data": "2026-11-08",
  "partite": {
   "9.2_TO.E.B": {
@@ -65,7 +65,7 @@
   "9.8_TO.P.C": {
    "annunciati": [
     1,
-    0
+    1
    ],
    "girone": "Promozione · Girone C",
    "casa": "Pontassieve",
@@ -74,7 +74,7 @@
    "stato": "Partita in corso (28')",
    "titoloAlmanacco": "Pontassieve-Sinalunghese",
    "tuttocampo": "1-0",
-   "almanacco": "1-0",
+   "almanacco": "1-1",
    "verifica": false
   },
   "8.2_TO.1.C": {
@@ -259,6 +259,24 @@
   }
  },
  "gol": [
+  {
+   "id": "9.8_TO.P.C-1-1",
+   "ora": "15:02",
+   "partita": "9.8_TO.P.C",
+   "girone": "Promozione · Girone C",
+   "casa": "Pontassieve",
+   "ospite": "Sinalunghese",
+   "punteggio": "1-1",
+   "totale": 2,
+   "squadra": "Sinalunghese",
+   "idSquadra": 49380,
+   "nostra": false,
+   "fonte": "Almanacco",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "9.4_ER.2.M.RA-0-1",
    "ora": "14:59",
