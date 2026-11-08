@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-08T14:54:30",
+ "aggiornato": "2026-11-08T14:59:30",
  "data": "2026-11-08",
  "partite": {
   "9.2_TO.E.B": {
@@ -11,7 +11,7 @@
    "casa": "Audax Rufina",
    "ospite": "Lastrigiana",
    "ora": "14:30",
-   "stato": "Partita in corso (18')",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -26,7 +26,7 @@
    "casa": "Fortis Juventus 1909",
    "ospite": "Atletico Lucca",
    "ora": "14:30",
-   "stato": "Partita in corso (18')",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": "Fortis Juventus-Atletico Lucca",
    "tuttocampo": "0-0",
    "almanacco": "0-0",
@@ -41,7 +41,7 @@
    "casa": "Luco",
    "ospite": "Montignoso",
    "ora": "14:30",
-   "stato": "Partita in corso (18')",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": "Luco-Ac Montignoso",
    "tuttocampo": "0-0",
    "almanacco": "0-0",
@@ -56,9 +56,9 @@
    "casa": "Ideal Club Incisa",
    "ospite": "AG Dicomano",
    "ora": "14:30",
-   "stato": "Partita in corso (18')",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": "Ideal Club Incisa-A.g. Dicomano",
-   "tuttocampo": "0-0",
+   "tuttocampo": "0-1",
    "almanacco": "0-1",
    "verifica": false
   },
@@ -71,7 +71,7 @@
    "casa": "Pontassieve",
    "ospite": "Sinalunghese",
    "ora": "14:30",
-   "stato": "Partita in corso (18')",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": "Pontassieve-Sinalunghese",
    "tuttocampo": "1-0",
    "almanacco": "1-0",
@@ -86,7 +86,7 @@
    "casa": "Capraia",
    "ospite": "Barberino Calcio 1927",
    "ora": "14:30",
-   "stato": "Partita in corso (18')",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -101,7 +101,7 @@
    "casa": "Ginestra Fiorentina",
    "ospite": "Sagginale",
    "ora": "14:30",
-   "stato": "Partita in corso (18')",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -140,15 +140,15 @@
   "8.5_TO.2.D": {
    "annunciati": [
     0,
-    0
+    1
    ],
    "girone": "Seconda Categoria · Girone D",
    "casa": "Londa 1974",
    "ospite": "Ludus '90 Valle dell'Arno",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-1",
    "almanacco": null,
    "verifica": false
   },
@@ -161,7 +161,7 @@
    "casa": "Atletica Castello",
    "ospite": "Reconquista",
    "ora": "14:30",
-   "stato": "Partita in corso (18')",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": null,
    "tuttocampo": "1-0",
    "almanacco": null,
@@ -215,15 +215,15 @@
   "9.4_ER.2.M.RA": {
    "annunciati": [
     0,
-    0
+    1
    ],
    "girone": "Seconda Categoria · Girone M Ravenna",
    "casa": "Marradese",
    "ospite": "San Rocco 2001 Faenza",
    "ora": "14:30",
-   "stato": "Partita in corso (18')",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": null,
-   "tuttocampo": "0-0",
+   "tuttocampo": "0-1",
    "almanacco": null,
    "verifica": false
   },
@@ -260,6 +260,42 @@
  },
  "gol": [
   {
+   "id": "9.4_ER.2.M.RA-0-1",
+   "ora": "14:59",
+   "partita": "9.4_ER.2.M.RA",
+   "girone": "Seconda Categoria · Girone M Ravenna",
+   "casa": "Marradese",
+   "ospite": "San Rocco 2001 Faenza",
+   "punteggio": "0-1",
+   "totale": 1,
+   "squadra": "San Rocco 2001 Faenza",
+   "idSquadra": 630233,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": "Camorani Alessio",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:59"
+  },
+  {
+   "id": "8.5_TO.2.D-0-1",
+   "ora": "14:59",
+   "partita": "8.5_TO.2.D",
+   "girone": "Seconda Categoria · Girone D",
+   "casa": "Londa 1974",
+   "ospite": "Ludus '90 Valle dell'Arno",
+   "punteggio": "0-1",
+   "totale": 1,
+   "squadra": "Ludus '90 Valle dell'Arno",
+   "idSquadra": 913813,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
    "id": "9.6_TO.P.C-0-1",
    "ora": "14:54",
    "partita": "9.6_TO.P.C",
@@ -272,10 +308,10 @@
    "idSquadra": 1028179,
    "nostra": true,
    "fonte": "Almanacco",
-   "marcatore": null,
+   "marcatore": "Nardoni Samuele",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:59"
   },
   {
    "id": "8.4_TO.1.C-0-1",
