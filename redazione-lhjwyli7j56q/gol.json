@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-08T14:15:55",
+ "aggiornato": "2026-11-08T14:38:12",
  "data": "2026-11-08",
  "partite": {
   "9.2_TO.E.B": {
@@ -11,9 +11,9 @@
    "casa": "Audax Rufina",
    "ospite": "Lastrigiana",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (8')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
@@ -27,9 +27,9 @@
    "ospite": "Atletico Lucca",
    "ora": "14:30",
    "stato": "",
-   "titoloAlmanacco": null,
+   "titoloAlmanacco": "Fortis Juventus-Atletico Lucca",
    "tuttocampo": null,
-   "almanacco": null,
+   "almanacco": "0-0",
    "verifica": false
   },
   "9.6_TO.P.A": {
@@ -42,9 +42,9 @@
    "ospite": "Montignoso",
    "ora": "14:30",
    "stato": "",
-   "titoloAlmanacco": null,
+   "titoloAlmanacco": "Luco-Ac Montignoso",
    "tuttocampo": null,
-   "almanacco": null,
+   "almanacco": "0-0",
    "verifica": false
   },
   "9.6_TO.P.C": {
@@ -56,10 +56,10 @@
    "casa": "Ideal Club Incisa",
    "ospite": "AG Dicomano",
    "ora": "14:30",
-   "stato": "",
-   "titoloAlmanacco": null,
-   "tuttocampo": null,
-   "almanacco": null,
+   "stato": "Partita in corso (8')",
+   "titoloAlmanacco": "Ideal Club Incisa-A.g. Dicomano",
+   "tuttocampo": "0-0",
+   "almanacco": "0-0",
    "verifica": false
   },
   "9.8_TO.P.C": {
@@ -72,9 +72,9 @@
    "ospite": "Sinalunghese",
    "ora": "14:30",
    "stato": "",
-   "titoloAlmanacco": null,
+   "titoloAlmanacco": "Pontassieve-Sinalunghese",
    "tuttocampo": null,
-   "almanacco": null,
+   "almanacco": "0-0",
    "verifica": false
   },
   "8.2_TO.1.C": {
@@ -86,9 +86,9 @@
    "casa": "Capraia",
    "ospite": "Barberino Calcio 1927",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (8')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
@@ -154,16 +154,16 @@
   },
   "8.1_TO.2.F": {
    "annunciati": [
-    0,
+    1,
     0
    ],
    "girone": "Seconda Categoria · Girone F",
    "casa": "Atletica Castello",
    "ospite": "Reconquista",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (8')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "1-0",
    "almanacco": null,
    "verifica": false
   },
@@ -221,9 +221,9 @@
    "casa": "Marradese",
    "ospite": "San Rocco 2001 Faenza",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (8')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
@@ -258,7 +258,26 @@
    "verifica": false
   }
  },
- "gol": [],
+ "gol": [
+  {
+   "id": "8.1_TO.2.F-1-0",
+   "ora": "14:38",
+   "partita": "8.1_TO.2.F",
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Atletica Castello",
+   "ospite": "Reconquista",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Atletica Castello",
+   "idSquadra": 70554,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": "Boanini Niccolo",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:38"
+  }
+ ],
  "almanacco": {
   "pro": "https://almanaccocalciotoscano.it/live-diretta-e-tabellini-della-9a-giornata-di-promozione-domenica-8-novembre-2026/"
  }
