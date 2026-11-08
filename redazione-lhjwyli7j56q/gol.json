@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-08T16:23:37",
+ "aggiornato": "2026-11-08T16:31:07",
  "data": "2026-11-08",
  "partite": {
   "9.2_TO.E.B": {
@@ -42,7 +42,7 @@
    "ospite": "Montignoso",
    "ora": "14:30",
    "stato": "Partita in corso (90+')",
-   "titoloAlmanacco": "Luco-Ac Montignoso",
+   "titoloAlmanacco": "Luco-Montignoso",
    "tuttocampo": "1-0",
    "almanacco": "1-0",
    "verifica": false
@@ -57,7 +57,7 @@
    "ospite": "AG Dicomano",
    "ora": "14:30",
    "stato": "Partita in corso (90+')",
-   "titoloAlmanacco": "Ideal Club Incisa-A.g. Dicomano",
+   "titoloAlmanacco": "Ideal Club Incisa-A.G.Dicomano",
    "tuttocampo": "1-2",
    "almanacco": "1-2",
    "verifica": false
@@ -290,10 +290,10 @@
    "idSquadra": 1028179,
    "nostra": true,
    "fonte": "Almanacco",
-   "marcatore": null,
+   "marcatore": "Mati",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Almanacco",
+   "trovato": "16:31"
   },
   {
    "id": "9.4_ER.2.M.RA-0-2",
