@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-08T16:33:38",
+ "aggiornato": "2026-11-08T16:44:51",
  "data": "2026-11-08",
  "partite": {
   "9.2_TO.E.B": {
@@ -176,7 +176,7 @@
    "casa": "Firenzuola",
    "ospite": "San Lorenzo Campi Giovani",
    "ora": "14:30",
-   "stato": "Partita in corso",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "2-2",
    "almanacco": null,
@@ -184,16 +184,16 @@
   },
   "8.7_TO.2.F": {
    "annunciati": [
-    1,
-    2
+    2,
+    4
    ],
    "girone": "Seconda Categoria · Girone F",
    "casa": "Scarperia 1920",
    "ospite": "Mezzana",
    "ora": "14:30",
-   "stato": "Partita in corso",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
-   "tuttocampo": "1-2",
+   "tuttocampo": "2-4",
    "almanacco": null,
    "verifica": false
   },
@@ -236,7 +236,7 @@
    "casa": "Cavallina Calcio",
    "ospite": "Tosi",
    "ora": "14:30",
-   "stato": "Partita in corso",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "0-2",
    "almanacco": null,
@@ -251,7 +251,7 @@
    "casa": "SV Vicchio",
    "ospite": "Quinto",
    "ora": "14:30",
-   "stato": "Partita in corso",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -259,6 +259,60 @@
   }
  },
  "gol": [
+  {
+   "id": "8.7_TO.2.F-2-4",
+   "ora": "16:44",
+   "partita": "8.7_TO.2.F",
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Scarperia 1920",
+   "ospite": "Mezzana",
+   "punteggio": "2-4",
+   "totale": 6,
+   "squadra": "Mezzana",
+   "idSquadra": 920661,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
+   "id": "8.7_TO.2.F-2-3",
+   "ora": "16:44",
+   "partita": "8.7_TO.2.F",
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Scarperia 1920",
+   "ospite": "Mezzana",
+   "punteggio": "2-3",
+   "totale": 5,
+   "squadra": "Mezzana",
+   "idSquadra": 920661,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
+   "id": "8.7_TO.2.F-2-2",
+   "ora": "16:44",
+   "partita": "8.7_TO.2.F",
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Scarperia 1920",
+   "ospite": "Mezzana",
+   "punteggio": "2-2",
+   "totale": 4,
+   "squadra": "Scarperia 1920",
+   "idSquadra": 48480,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "8.5_TO.2.D-2-3",
    "ora": "16:33",
@@ -362,10 +416,10 @@
    "idSquadra": 1079487,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Pompili Alessio",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:44"
   },
   {
    "id": "8.2_TO.2.F-2-2",
