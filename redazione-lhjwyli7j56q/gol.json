@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-08T15:14:40",
+ "aggiornato": "2026-11-08T15:18:30",
  "data": "2026-11-08",
  "partite": {
   "9.2_TO.E.B": {
@@ -11,7 +11,7 @@
    "casa": "Audax Rufina",
    "ospite": "Lastrigiana",
    "ora": "14:30",
-   "stato": "Partita in corso (38')",
+   "stato": "Partita in corso (45+')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -230,15 +230,15 @@
   "8.2_TO.3.B.FI": {
    "annunciati": [
     0,
-    0
+    1
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Cavallina Calcio",
    "ospite": "Tosi",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (45+')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-1",
    "almanacco": null,
    "verifica": false
   },
@@ -251,14 +251,32 @@
    "casa": "SV Vicchio",
    "ospite": "Quinto",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (45+')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   }
  },
  "gol": [
+  {
+   "id": "8.2_TO.3.B.FI-0-1",
+   "ora": "15:18",
+   "partita": "8.2_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Cavallina Calcio",
+   "ospite": "Tosi",
+   "punteggio": "0-1",
+   "totale": 1,
+   "squadra": "Tosi",
+   "idSquadra": 921006,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "9.6_TO.P.C-1-1",
    "ora": "15:14",
