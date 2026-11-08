@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-08T15:42:18",
+ "aggiornato": "2026-11-08T15:46:03",
  "data": "2026-11-08",
  "partite": {
   "9.2_TO.E.B": {
@@ -34,7 +34,7 @@
   },
   "9.6_TO.P.A": {
    "annunciati": [
-    0,
+    1,
     0
    ],
    "girone": "Promozione · Girone A",
@@ -44,7 +44,7 @@
    "stato": "Partita in corso (54')",
    "titoloAlmanacco": "Luco-Ac Montignoso",
    "tuttocampo": "0-0",
-   "almanacco": "0-0",
+   "almanacco": "1-0",
    "verifica": false
   },
   "9.6_TO.P.C": {
@@ -259,6 +259,24 @@
   }
  },
  "gol": [
+  {
+   "id": "9.6_TO.P.A-1-0",
+   "ora": "15:46",
+   "partita": "9.6_TO.P.A",
+   "girone": "Promozione · Girone A",
+   "casa": "Luco",
+   "ospite": "Montignoso",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Luco",
+   "idSquadra": 67707,
+   "nostra": true,
+   "fonte": "Almanacco",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "8.7_TO.2.F-1-2",
    "ora": "15:30",
