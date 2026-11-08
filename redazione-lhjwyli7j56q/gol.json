@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-08T16:02:17",
+ "aggiornato": "2026-11-08T16:03:34",
  "data": "2026-11-08",
  "partite": {
   "9.2_TO.E.B": {
@@ -155,30 +155,30 @@
   "8.1_TO.2.F": {
    "annunciati": [
     2,
-    0
+    1
    ],
    "girone": "Seconda Categoria · Girone F",
    "casa": "Atletica Castello",
    "ospite": "Reconquista",
    "ora": "14:30",
-   "stato": "Partita in corso (64')",
+   "stato": "Partita in corso (74')",
    "titoloAlmanacco": null,
-   "tuttocampo": "2-0",
+   "tuttocampo": "2-1",
    "almanacco": null,
    "verifica": false
   },
   "8.2_TO.2.F": {
    "annunciati": [
-    1,
+    2,
     1
    ],
    "girone": "Seconda Categoria · Girone F",
    "casa": "Firenzuola",
    "ospite": "San Lorenzo Campi Giovani",
    "ora": "14:30",
-   "stato": "Partita in corso (64')",
+   "stato": "Partita in corso (74')",
    "titoloAlmanacco": null,
-   "tuttocampo": "1-1",
+   "tuttocampo": "2-1",
    "almanacco": null,
    "verifica": false
   },
@@ -191,7 +191,7 @@
    "casa": "Scarperia 1920",
    "ospite": "Mezzana",
    "ora": "14:30",
-   "stato": "Partita in corso (64')",
+   "stato": "Partita in corso (74')",
    "titoloAlmanacco": null,
    "tuttocampo": "1-2",
    "almanacco": null,
@@ -206,7 +206,7 @@
    "casa": "Vaglia",
    "ospite": "Florence Sporting Club",
    "ora": "14:30",
-   "stato": "Partita in corso (64')",
+   "stato": "Partita in corso (74')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -221,7 +221,7 @@
    "casa": "Marradese",
    "ospite": "San Rocco 2001 Faenza",
    "ora": "14:30",
-   "stato": "Partita in corso (64')",
+   "stato": "Partita in corso (74')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -259,6 +259,42 @@
   }
  },
  "gol": [
+  {
+   "id": "8.2_TO.2.F-2-1",
+   "ora": "16:03",
+   "partita": "8.2_TO.2.F",
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Firenzuola",
+   "ospite": "San Lorenzo Campi Giovani",
+   "punteggio": "2-1",
+   "totale": 3,
+   "squadra": "Firenzuola",
+   "idSquadra": 65937,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
+   "id": "8.1_TO.2.F-2-1",
+   "ora": "16:03",
+   "partita": "8.1_TO.2.F",
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Atletica Castello",
+   "ospite": "Reconquista",
+   "punteggio": "2-1",
+   "totale": 3,
+   "squadra": "Reconquista",
+   "idSquadra": 1103441,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "8.5_TO.2.D-1-3",
    "ora": "16:02",
