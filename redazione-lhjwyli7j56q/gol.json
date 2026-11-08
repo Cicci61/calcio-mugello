@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-08T14:44:25",
+ "aggiornato": "2026-11-08T14:49:26",
  "data": "2026-11-08",
  "partite": {
   "9.2_TO.E.B": {
@@ -11,7 +11,7 @@
    "casa": "Audax Rufina",
    "ospite": "Lastrigiana",
    "ora": "14:30",
-   "stato": "Partita in corso (8')",
+   "stato": "Partita in corso (18')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -26,9 +26,9 @@
    "casa": "Fortis Juventus 1909",
    "ospite": "Atletico Lucca",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (18')",
    "titoloAlmanacco": "Fortis Juventus-Atletico Lucca",
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": "0-0",
    "verifica": false
   },
@@ -41,9 +41,9 @@
    "casa": "Luco",
    "ospite": "Montignoso",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (18')",
    "titoloAlmanacco": "Luco-Ac Montignoso",
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": "0-0",
    "verifica": false
   },
@@ -56,7 +56,7 @@
    "casa": "Ideal Club Incisa",
    "ospite": "AG Dicomano",
    "ora": "14:30",
-   "stato": "Partita in corso (8')",
+   "stato": "Partita in corso (18')",
    "titoloAlmanacco": "Ideal Club Incisa-A.g. Dicomano",
    "tuttocampo": "0-0",
    "almanacco": "0-0",
@@ -71,39 +71,39 @@
    "casa": "Pontassieve",
    "ospite": "Sinalunghese",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (18')",
    "titoloAlmanacco": "Pontassieve-Sinalunghese",
-   "tuttocampo": null,
+   "tuttocampo": "1-0",
    "almanacco": "1-0",
    "verifica": false
   },
   "8.2_TO.1.C": {
    "annunciati": [
     0,
-    0
+    1
    ],
    "girone": "Prima Categoria · Girone C",
    "casa": "Capraia",
    "ospite": "Barberino Calcio 1927",
    "ora": "14:30",
-   "stato": "Partita in corso (8')",
+   "stato": "Partita in corso (18')",
    "titoloAlmanacco": null,
-   "tuttocampo": "0-0",
+   "tuttocampo": "0-1",
    "almanacco": null,
    "verifica": false
   },
   "8.4_TO.1.C": {
    "annunciati": [
     0,
-    0
+    1
    ],
    "girone": "Prima Categoria · Girone C",
    "casa": "Ginestra Fiorentina",
    "ospite": "Sagginale",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (18')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-1",
    "almanacco": null,
    "verifica": false
   },
@@ -161,7 +161,7 @@
    "casa": "Atletica Castello",
    "ospite": "Reconquista",
    "ora": "14:30",
-   "stato": "Partita in corso (8')",
+   "stato": "Partita in corso (18')",
    "titoloAlmanacco": null,
    "tuttocampo": "1-0",
    "almanacco": null,
@@ -221,7 +221,7 @@
    "casa": "Marradese",
    "ospite": "San Rocco 2001 Faenza",
    "ora": "14:30",
-   "stato": "Partita in corso (8')",
+   "stato": "Partita in corso (18')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -260,6 +260,42 @@
  },
  "gol": [
   {
+   "id": "8.4_TO.1.C-0-1",
+   "ora": "14:49",
+   "partita": "8.4_TO.1.C",
+   "girone": "Prima Categoria · Girone C",
+   "casa": "Ginestra Fiorentina",
+   "ospite": "Sagginale",
+   "punteggio": "0-1",
+   "totale": 1,
+   "squadra": "Sagginale",
+   "idSquadra": 69460,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Ermini Mattia",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:49"
+  },
+  {
+   "id": "8.2_TO.1.C-0-1",
+   "ora": "14:49",
+   "partita": "8.2_TO.1.C",
+   "girone": "Prima Categoria · Girone C",
+   "casa": "Capraia",
+   "ospite": "Barberino Calcio 1927",
+   "punteggio": "0-1",
+   "totale": 1,
+   "squadra": "Barberino Calcio 1927",
+   "idSquadra": 935709,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Patti Andrea",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:49"
+  },
+  {
    "id": "9.8_TO.P.C-1-0",
    "ora": "14:44",
    "partita": "9.8_TO.P.C",
@@ -272,10 +308,10 @@
    "idSquadra": 750657,
    "nostra": true,
    "fonte": "Almanacco",
-   "marcatore": null,
+   "marcatore": "Di Vico Mattia",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:49"
   },
   {
    "id": "8.1_TO.2.F-1-0",
