@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-08T14:49:26",
+ "aggiornato": "2026-11-08T14:54:30",
  "data": "2026-11-08",
  "partite": {
   "9.2_TO.E.B": {
@@ -50,7 +50,7 @@
   "9.6_TO.P.C": {
    "annunciati": [
     0,
-    0
+    1
    ],
    "girone": "Promozione · Girone C",
    "casa": "Ideal Club Incisa",
@@ -59,7 +59,7 @@
    "stato": "Partita in corso (18')",
    "titoloAlmanacco": "Ideal Club Incisa-A.g. Dicomano",
    "tuttocampo": "0-0",
-   "almanacco": "0-0",
+   "almanacco": "0-1",
    "verifica": false
   },
   "9.8_TO.P.C": {
@@ -259,6 +259,24 @@
   }
  },
  "gol": [
+  {
+   "id": "9.6_TO.P.C-0-1",
+   "ora": "14:54",
+   "partita": "9.6_TO.P.C",
+   "girone": "Promozione · Girone C",
+   "casa": "Ideal Club Incisa",
+   "ospite": "AG Dicomano",
+   "punteggio": "0-1",
+   "totale": 1,
+   "squadra": "AG Dicomano",
+   "idSquadra": 1028179,
+   "nostra": true,
+   "fonte": "Almanacco",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "8.4_TO.1.C-0-1",
    "ora": "14:49",
