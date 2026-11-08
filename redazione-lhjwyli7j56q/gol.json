@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-08T16:44:51",
+ "aggiornato": "2026-11-08T16:56:05",
  "data": "2026-11-08",
  "partite": {
   "9.2_TO.E.B": {
@@ -272,10 +272,10 @@
    "idSquadra": 920661,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Lastrucci Lorenzo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:56"
   },
   {
    "id": "8.7_TO.2.F-2-3",
@@ -290,10 +290,10 @@
    "idSquadra": 920661,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Avallone christian",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:56"
   },
   {
    "id": "8.7_TO.2.F-2-2",
@@ -308,10 +308,10 @@
    "idSquadra": 48480,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "De Meco Niccolo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:56"
   },
   {
    "id": "8.5_TO.2.D-2-3",
