@@ -1,24 +1,42 @@
 {
- "aggiornato": "2026-11-14T19:11:59",
+ "aggiornato": "2026-11-14T19:22:15",
  "data": "2026-11-14",
  "partite": {
   "9.3_TO.3.B.FI": {
    "annunciati": [
-    1,
+    2,
     1
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Lions Fortis Juventus",
    "ospite": "Caldine",
    "ora": "18:30",
-   "stato": "Partita in corso (40')",
+   "stato": "Partita in corso (Int.)",
    "titoloAlmanacco": null,
-   "tuttocampo": "1-1",
+   "tuttocampo": "2-1",
    "almanacco": null,
    "verifica": false
   }
  },
  "gol": [
+  {
+   "id": "9.3_TO.3.B.FI-2-1",
+   "ora": "19:22",
+   "partita": "9.3_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Lions Fortis Juventus",
+   "ospite": "Caldine",
+   "punteggio": "2-1",
+   "totale": 3,
+   "squadra": "Lions Fortis Juventus",
+   "idSquadra": 1325836,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Cerbai Juri",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "19:22"
+  },
   {
    "id": "9.3_TO.3.B.FI-1-1",
    "ora": "19:11",
