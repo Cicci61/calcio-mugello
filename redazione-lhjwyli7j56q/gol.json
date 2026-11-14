@@ -1,23 +1,60 @@
 {
- "aggiornato": "2026-11-14T18:15:46",
+ "aggiornato": "2026-11-14T19:11:59",
  "data": "2026-11-14",
  "partite": {
   "9.3_TO.3.B.FI": {
    "annunciati": [
-    0,
-    0
+    1,
+    1
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Lions Fortis Juventus",
    "ospite": "Caldine",
    "ora": "18:30",
-   "stato": "",
+   "stato": "Partita in corso (40')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "1-1",
    "almanacco": null,
    "verifica": false
   }
  },
- "gol": [],
+ "gol": [
+  {
+   "id": "9.3_TO.3.B.FI-1-1",
+   "ora": "19:11",
+   "partita": "9.3_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Lions Fortis Juventus",
+   "ospite": "Caldine",
+   "punteggio": "1-1",
+   "totale": 2,
+   "squadra": "Caldine",
+   "idSquadra": 1023741,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
+   "id": "9.3_TO.3.B.FI-1-0",
+   "ora": "19:11",
+   "partita": "9.3_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Lions Fortis Juventus",
+   "ospite": "Caldine",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Lions Fortis Juventus",
+   "idSquadra": 1325836,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Diop Fallou",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "19:11"
+  }
+ ],
  "almanacco": {}
 }
