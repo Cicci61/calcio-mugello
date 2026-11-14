@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-14T20:23:38",
+ "aggiornato": "2026-11-14T21:19:55",
  "data": "2026-11-14",
  "partite": {
   "9.3_TO.3.B.FI": {
@@ -11,7 +11,7 @@
    "casa": "Lions Fortis Juventus",
    "ospite": "Caldine",
    "ora": "18:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "2-4",
    "almanacco": null,
@@ -50,10 +50,10 @@
    "idSquadra": 1023741,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Paolini Matteo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "21:19"
   },
   {
    "id": "9.3_TO.3.B.FI-2-2",
@@ -68,10 +68,10 @@
    "idSquadra": 1023741,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Bertini",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "21:19"
   },
   {
    "id": "9.3_TO.3.B.FI-2-1",
@@ -104,10 +104,10 @@
    "idSquadra": 1023741,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Bertini",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "21:19"
   },
   {
    "id": "9.3_TO.3.B.FI-1-0",
