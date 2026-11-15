@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-15T16:50:09",
+ "aggiornato": "2026-11-15T17:00:25",
  "data": "2026-11-15",
  "partite": {
   "10.2_TO.E.B": {
@@ -395,10 +395,10 @@
    "idSquadra": 65937,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Comelli Riccardo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "17:00"
   },
   {
    "id": "9.4_TO.2.F-1-4",
@@ -1061,10 +1061,10 @@
    "idSquadra": 75786,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Brogi Edoardo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "17:00"
   },
   {
    "id": "10.3_TO.P.C-1-0",
