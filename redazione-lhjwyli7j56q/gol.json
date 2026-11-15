@@ -1,132 +1,278 @@
 {
- "aggiornato": "2026-11-14T21:19:55",
- "data": "2026-11-14",
+ "aggiornato": "2026-11-15T14:15:46",
+ "data": "2026-11-15",
  "partite": {
-  "9.3_TO.3.B.FI": {
+  "10.2_TO.E.B": {
    "annunciati": [
-    2,
-    4
+    0,
+    0
+   ],
+   "girone": "Eccellenza · Girone B",
+   "casa": "Baldaccio Bruni",
+   "ospite": "Audax Rufina",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "10.7_TO.P.A": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Promozione · Girone A",
+   "casa": "Massese 1919",
+   "ospite": "Fortis Juventus 1909",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "10.8_TO.P.A": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Promozione · Girone A",
+   "casa": "Pontebuggianese",
+   "ospite": "Luco",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "10.3_TO.P.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Promozione · Girone C",
+   "casa": "AG Dicomano",
+   "ospite": "Centro Storico Lebowski",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "10.8_TO.P.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Promozione · Girone C",
+   "casa": "Settignanese",
+   "ospite": "Pontassieve",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "9.1_TO.1.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Prima Categoria · Girone C",
+   "casa": "Barberino Calcio 1927",
+   "ospite": "Daytona Calcio",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "9.4_TO.1.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Prima Categoria · Girone C",
+   "casa": "Gallianese",
+   "ospite": "Calcio Albacarraia 1997",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "9.7_TO.1.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Prima Categoria · Girone C",
+   "casa": "Real Peretola",
+   "ospite": "San Godenzo",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "9.8_TO.1.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Prima Categoria · Girone C",
+   "casa": "Sagginale",
+   "ospite": "San Piero a Sieve",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "9.7_TO.2.D": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone D",
+   "casa": "Sancat",
+   "ospite": "Londa 1974",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "9.1_TO.2.F": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Atletico Esperia",
+   "ospite": "Vaglia",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "9.4_TO.2.F": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Paperino San Giorgio",
+   "ospite": "Firenzuola",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "9.5_TO.2.F": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Reconquista",
+   "ospite": "Laurenziana",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "9.7_TO.2.F": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "San Giusto",
+   "ospite": "Scarperia 1920",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "10.6_ER.2.M.RA": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone M Ravenna",
+   "casa": "Vatra",
+   "ospite": "Marradese",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "9.1_TO.3.B.FI": {
+   "annunciati": [
+    0,
+    0
    ],
    "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Lions Fortis Juventus",
-   "ospite": "Caldine",
-   "ora": "18:30",
-   "stato": "Partita terminata",
+   "casa": "Carbonile",
+   "ospite": "Cavallina Calcio",
+   "ora": "14:30",
+   "stato": "",
    "titoloAlmanacco": null,
-   "tuttocampo": "2-4",
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "9.2_TO.3.B.FI": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "La Massa",
+   "ospite": "Rontese",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "9.7_TO.3.B.FI": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Santa Brigida",
+   "ospite": "SV Vicchio",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
    "almanacco": null,
    "verifica": false
   }
  },
- "gol": [
-  {
-   "id": "9.3_TO.3.B.FI-2-4",
-   "ora": "20:23",
-   "partita": "9.3_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Lions Fortis Juventus",
-   "ospite": "Caldine",
-   "punteggio": "2-4",
-   "totale": 6,
-   "squadra": "Caldine",
-   "idSquadra": 1023741,
-   "nostra": false,
-   "fonte": "Tuttocampo",
-   "marcatore": null,
-   "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
-  },
-  {
-   "id": "9.3_TO.3.B.FI-2-3",
-   "ora": "19:58",
-   "partita": "9.3_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Lions Fortis Juventus",
-   "ospite": "Caldine",
-   "punteggio": "2-3",
-   "totale": 5,
-   "squadra": "Caldine",
-   "idSquadra": 1023741,
-   "nostra": false,
-   "fonte": "Tuttocampo",
-   "marcatore": "Paolini Matteo",
-   "minuto": null,
-   "fonteMarcatore": "Tuttocampo",
-   "trovato": "21:19"
-  },
-  {
-   "id": "9.3_TO.3.B.FI-2-2",
-   "ora": "19:42",
-   "partita": "9.3_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Lions Fortis Juventus",
-   "ospite": "Caldine",
-   "punteggio": "2-2",
-   "totale": 4,
-   "squadra": "Caldine",
-   "idSquadra": 1023741,
-   "nostra": false,
-   "fonte": "Tuttocampo",
-   "marcatore": "Bertini",
-   "minuto": null,
-   "fonteMarcatore": "Tuttocampo",
-   "trovato": "21:19"
-  },
-  {
-   "id": "9.3_TO.3.B.FI-2-1",
-   "ora": "19:22",
-   "partita": "9.3_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Lions Fortis Juventus",
-   "ospite": "Caldine",
-   "punteggio": "2-1",
-   "totale": 3,
-   "squadra": "Lions Fortis Juventus",
-   "idSquadra": 1325836,
-   "nostra": true,
-   "fonte": "Tuttocampo",
-   "marcatore": "Cerbai Juri",
-   "minuto": null,
-   "fonteMarcatore": "Tuttocampo",
-   "trovato": "19:22"
-  },
-  {
-   "id": "9.3_TO.3.B.FI-1-1",
-   "ora": "19:11",
-   "partita": "9.3_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Lions Fortis Juventus",
-   "ospite": "Caldine",
-   "punteggio": "1-1",
-   "totale": 2,
-   "squadra": "Caldine",
-   "idSquadra": 1023741,
-   "nostra": false,
-   "fonte": "Tuttocampo",
-   "marcatore": "Bertini",
-   "minuto": null,
-   "fonteMarcatore": "Tuttocampo",
-   "trovato": "21:19"
-  },
-  {
-   "id": "9.3_TO.3.B.FI-1-0",
-   "ora": "19:11",
-   "partita": "9.3_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Lions Fortis Juventus",
-   "ospite": "Caldine",
-   "punteggio": "1-0",
-   "totale": 1,
-   "squadra": "Lions Fortis Juventus",
-   "idSquadra": 1325836,
-   "nostra": true,
-   "fonte": "Tuttocampo",
-   "marcatore": "Diop Fallou",
-   "minuto": null,
-   "fonteMarcatore": "Tuttocampo",
-   "trovato": "19:11"
-  }
- ],
+ "gol": [],
  "almanacco": {}
 }
