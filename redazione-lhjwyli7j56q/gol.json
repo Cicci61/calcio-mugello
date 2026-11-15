@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-15T16:29:36",
+ "aggiornato": "2026-11-15T16:39:48",
  "data": "2026-11-15",
  "partite": {
   "10.2_TO.E.B": {
@@ -26,7 +26,7 @@
    "casa": "Massese 1919",
    "ospite": "Fortis Juventus 1909",
    "ora": "14:30",
-   "stato": "Partita in corso",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "1-1",
    "almanacco": null,
@@ -41,7 +41,7 @@
    "casa": "Pontebuggianese",
    "ospite": "Luco",
    "ora": "14:30",
-   "stato": "Partita in corso",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "2-0",
    "almanacco": null,
@@ -56,7 +56,7 @@
    "casa": "AG Dicomano",
    "ospite": "Centro Storico Lebowski",
    "ora": "14:30",
-   "stato": "Partita in corso",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "1-1",
    "almanacco": null,
@@ -221,7 +221,7 @@
    "casa": "Vatra",
    "ospite": "Marradese",
    "ora": "14:30",
-   "stato": "Partita in corso",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "1-0",
    "almanacco": null,
@@ -260,20 +260,38 @@
   "9.7_TO.3.B.FI": {
    "annunciati": [
     4,
-    2
+    3
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Santa Brigida",
    "ospite": "SV Vicchio",
    "ora": "14:30",
-   "stato": "Partita in corso",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
-   "tuttocampo": "4-2",
+   "tuttocampo": "4-3",
    "almanacco": null,
    "verifica": false
   }
  },
  "gol": [
+  {
+   "id": "9.7_TO.3.B.FI-4-3",
+   "ora": "16:39",
+   "partita": "9.7_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Santa Brigida",
+   "ospite": "SV Vicchio",
+   "punteggio": "4-3",
+   "totale": 7,
+   "squadra": "SV Vicchio",
+   "idSquadra": 1124962,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "9.7_TO.3.B.FI-4-2",
    "ora": "16:29",
@@ -341,10 +359,10 @@
    "idSquadra": 1164767,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Xhija Franz",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:39"
   },
   {
    "id": "9.7_TO.2.F-3-2",
@@ -1115,10 +1133,10 @@
    "idSquadra": 61259,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Allegri Lorenzo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:39"
   },
   {
    "id": "9.7_TO.2.F-0-1",
