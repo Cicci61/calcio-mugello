@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-15T14:15:46",
+ "aggiornato": "2026-11-15T14:36:18",
  "data": "2026-11-15",
  "partite": {
   "10.2_TO.E.B": {
@@ -11,9 +11,9 @@
    "casa": "Baldaccio Bruni",
    "ospite": "Audax Rufina",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (6')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
@@ -86,9 +86,9 @@
    "casa": "Barberino Calcio 1927",
    "ospite": "Daytona Calcio",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (6')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
@@ -116,9 +116,9 @@
    "casa": "Real Peretola",
    "ospite": "San Godenzo",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (6')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
@@ -131,9 +131,9 @@
    "casa": "Sagginale",
    "ospite": "San Piero a Sieve",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (6')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
@@ -191,9 +191,9 @@
    "casa": "Reconquista",
    "ospite": "Laurenziana",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (6')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
@@ -245,15 +245,15 @@
   "9.2_TO.3.B.FI": {
    "annunciati": [
     0,
-    0
+    1
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "La Massa",
    "ospite": "Rontese",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (6')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-1",
    "almanacco": null,
    "verifica": false
   },
@@ -273,6 +273,25 @@
    "verifica": false
   }
  },
- "gol": [],
+ "gol": [
+  {
+   "id": "9.2_TO.3.B.FI-0-1",
+   "ora": "14:36",
+   "partita": "9.2_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "La Massa",
+   "ospite": "Rontese",
+   "punteggio": "0-1",
+   "totale": 1,
+   "squadra": "Rontese",
+   "idSquadra": 60915,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Kuka Samuele",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:36"
+  }
+ ],
  "almanacco": {}
 }
