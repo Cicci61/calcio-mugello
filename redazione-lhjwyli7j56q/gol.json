@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-15T17:00:25",
+ "aggiornato": "2026-11-15T17:21:14",
  "data": "2026-11-15",
  "partite": {
   "10.2_TO.E.B": {
@@ -341,10 +341,10 @@
    "idSquadra": 19300,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Serotti Elia",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "17:21"
   },
   {
    "id": "10.6_ER.2.M.RA-1-0",
