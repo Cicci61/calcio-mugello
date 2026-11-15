@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-15T16:39:48",
+ "aggiornato": "2026-11-15T16:50:09",
  "data": "2026-11-15",
  "partite": {
   "10.2_TO.E.B": {
@@ -503,10 +503,10 @@
    "idSquadra": 1124962,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Borselli Andrea",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:50"
   },
   {
    "id": "9.7_TO.3.B.FI-2-1",
