@@ -1,16 +1,31 @@
 {
- "aggiornato": "2026-11-20T20:45:57",
- "data": "2026-11-20",
+ "aggiornato": "2026-11-21T14:15:40",
+ "data": "2026-11-21",
  "partite": {
-  "10.4_TO.3.B.FI": {
+  "11.6_TO.P.A": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Promozione · Girone A",
+   "casa": "Luco",
+   "ospite": "Lanciotto Campi",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "10.5_TO.3.B.FI": {
    "annunciati": [
     0,
     0
    ],
    "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Pian di San Bartolo",
-   "ospite": "Lions Fortis Juventus",
-   "ora": "21:00",
+   "casa": "Rontese",
+   "ospite": "Santa Brigida",
+   "ora": "14:30",
    "stato": "",
    "titoloAlmanacco": null,
    "tuttocampo": null,
@@ -19,5 +34,7 @@
   }
  },
  "gol": [],
- "almanacco": {}
+ "almanacco": {
+  "pro": "https://almanaccocalciotoscano.it/live-diretta-e-tabellini-degli-anticipi-di-eccellenza-e-promozione-sabato-21-novembre-2026/"
+ }
 }
