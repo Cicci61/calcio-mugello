@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-21T14:15:40",
+ "aggiornato": "2026-11-21T16:20:21",
  "data": "2026-11-21",
  "partite": {
   "11.6_TO.P.A": {
@@ -19,21 +19,40 @@
   },
   "10.5_TO.3.B.FI": {
    "annunciati": [
-    0,
+    1,
     0
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Rontese",
    "ospite": "Santa Brigida",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (90+')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "1-0",
    "almanacco": null,
    "verifica": false
   }
  },
- "gol": [],
+ "gol": [
+  {
+   "id": "10.5_TO.3.B.FI-1-0",
+   "ora": "16:20",
+   "partita": "10.5_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Rontese",
+   "ospite": "Santa Brigida",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Rontese",
+   "idSquadra": 60915,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Maretti Tommaso",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:20"
+  }
+ ],
  "almanacco": {
   "pro": "https://almanaccocalciotoscano.it/live-diretta-e-tabellini-degli-anticipi-di-eccellenza-e-promozione-sabato-21-novembre-2026/"
  }
