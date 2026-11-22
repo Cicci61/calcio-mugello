@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-22T14:57:15",
+ "aggiornato": "2026-11-22T14:58:36",
  "data": "2026-11-22",
  "partite": {
   "11.1_TO.E.B": {
@@ -11,7 +11,7 @@
    "casa": "Audax Rufina",
    "ospite": "Castiglionese 1919",
    "ora": "14:30",
-   "stato": "Partita in corso (16')",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -26,7 +26,7 @@
    "casa": "Fortis Juventus 1909",
    "ospite": "Montignoso",
    "ora": "14:30",
-   "stato": "Partita in corso (16')",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": "Fortis Juventus-Ac Montignoso",
    "tuttocampo": "0-0",
    "almanacco": "0-0",
@@ -41,9 +41,9 @@
    "casa": "Cubino",
    "ospite": "AG Dicomano",
    "ora": "14:30",
-   "stato": "Partita in corso (16')",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": "F.c. Cubino-A.g. Dicomano",
-   "tuttocampo": "0-0",
+   "tuttocampo": "1-1",
    "almanacco": "1-1",
    "verifica": false
   },
@@ -56,9 +56,9 @@
    "casa": "Pontassieve",
    "ospite": "Resco Reggello",
    "ora": "14:30",
-   "stato": "Partita in corso (16')",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": "Pontassieve-Resco Reggello",
-   "tuttocampo": "0-0",
+   "tuttocampo": "1-0",
    "almanacco": "1-0",
    "verifica": false
   },
@@ -86,7 +86,7 @@
    "casa": "Gambassi",
    "ospite": "Barberino Calcio 1927",
    "ora": "14:30",
-   "stato": "Partita in corso (16')",
+   "stato": "Partita sospesa",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -184,31 +184,31 @@
   },
   "10.6_TO.2.F": {
    "annunciati": [
-    0,
-    0
+    1,
+    2
    ],
    "girone": "Seconda Categoria · Girone F",
    "casa": "Vaglia",
    "ospite": "Sesto Calcio 2010",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "1-2",
    "almanacco": null,
    "verifica": false
   },
   "11.6_ER.2.M.RA": {
    "annunciati": [
-    0,
+    1,
     0
    ],
    "girone": "Seconda Categoria · Girone M Ravenna",
    "casa": "Vita 1907",
    "ospite": "Marradese",
    "ora": "14:30",
-   "stato": "Partita in corso (18')",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": null,
-   "tuttocampo": "0-0",
+   "tuttocampo": "1-0",
    "almanacco": null,
    "verifica": false
   },
@@ -221,7 +221,7 @@
    "casa": "Cavallina Calcio",
    "ospite": "La Massa",
    "ora": "14:30",
-   "stato": "Partita in corso (18')",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": null,
    "tuttocampo": "1-0",
    "almanacco": null,
@@ -236,14 +236,86 @@
    "casa": "SV Vicchio",
    "ospite": "Carbonile",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (28')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   }
  },
  "gol": [
+  {
+   "id": "11.6_ER.2.M.RA-1-0",
+   "ora": "14:58",
+   "partita": "11.6_ER.2.M.RA",
+   "girone": "Seconda Categoria · Girone M Ravenna",
+   "casa": "Vita 1907",
+   "ospite": "Marradese",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Vita 1907",
+   "idSquadra": 912800,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
+   "id": "10.6_TO.2.F-1-2",
+   "ora": "14:58",
+   "partita": "10.6_TO.2.F",
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Vaglia",
+   "ospite": "Sesto Calcio 2010",
+   "punteggio": "1-2",
+   "totale": 3,
+   "squadra": "Sesto Calcio 2010",
+   "idSquadra": 932322,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
+   "id": "10.6_TO.2.F-1-1",
+   "ora": "14:58",
+   "partita": "10.6_TO.2.F",
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Vaglia",
+   "ospite": "Sesto Calcio 2010",
+   "punteggio": "1-1",
+   "totale": 2,
+   "squadra": "Sesto Calcio 2010",
+   "idSquadra": 932322,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
+   "id": "10.6_TO.2.F-1-0",
+   "ora": "14:58",
+   "partita": "10.6_TO.2.F",
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Vaglia",
+   "ospite": "Sesto Calcio 2010",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Vaglia",
+   "idSquadra": 1079487,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "11.4_TO.P.C-1-1",
    "ora": "14:57",
@@ -257,10 +329,10 @@
    "idSquadra": 1007106,
    "nostra": false,
    "fonte": "Almanacco",
-   "marcatore": null,
+   "marcatore": "Ulivi Simone",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:58"
   },
   {
    "id": "11.7_TO.P.C-1-0",
@@ -275,10 +347,10 @@
    "idSquadra": 750657,
    "nostra": true,
    "fonte": "Almanacco",
-   "marcatore": null,
+   "marcatore": "Cragno Andrea",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:58"
   },
   {
    "id": "11.4_TO.P.C-0-1",
@@ -293,10 +365,10 @@
    "idSquadra": 1028179,
    "nostra": true,
    "fonte": "Almanacco",
-   "marcatore": null,
+   "marcatore": "Bachi Matteo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "14:58"
   },
   {
    "id": "10.2_TO.3.B.FI-1-0",
