@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-22T16:57:55",
+ "aggiornato": "2026-11-22T17:41:20",
  "data": "2026-11-22",
  "partite": {
   "11.1_TO.E.B": {
@@ -563,10 +563,10 @@
    "idSquadra": 1124962,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Paladini Elia",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "17:41"
   },
   {
    "id": "10.8_TO.2.F-0-1",
@@ -725,10 +725,10 @@
    "idSquadra": 1124962,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Pieri Gabriele",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "17:41"
   },
   {
    "id": "11.6_ER.2.M.RA-2-0",
