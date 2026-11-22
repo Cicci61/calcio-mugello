@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-22T16:36:05",
+ "aggiornato": "2026-11-22T16:57:55",
  "data": "2026-11-22",
  "partite": {
   "11.1_TO.E.B": {
@@ -26,8 +26,8 @@
    "casa": "Fortis Juventus 1909",
    "ospite": "Montignoso",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
-   "titoloAlmanacco": "Fortis Juventus-Ac Montignoso",
+   "stato": "Partita terminata",
+   "titoloAlmanacco": "Fortis Juventus-Montignoso",
    "tuttocampo": "1-2",
    "almanacco": "1-2",
    "verifica": false
@@ -71,7 +71,7 @@
    "casa": "Capraia",
    "ospite": "Sagginale",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -86,7 +86,7 @@
    "casa": "Gambassi",
    "ospite": "Barberino Calcio 1927",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "1-0",
    "almanacco": null,
@@ -101,7 +101,7 @@
    "casa": "San Godenzo",
    "ospite": "Chianti Nord",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "2-0",
    "almanacco": null,
@@ -154,16 +154,16 @@
   },
   "10.7_TO.2.F": {
    "annunciati": [
-    0,
+    1,
     0
    ],
    "girone": "Seconda Categoria · Girone F",
    "casa": "Rinascita Doccia",
    "ospite": "Reconquista",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "1-0",
    "almanacco": null,
    "verifica": false
   },
@@ -245,6 +245,24 @@
  },
  "gol": [
   {
+   "id": "10.7_TO.2.F-1-0",
+   "ora": "16:57",
+   "partita": "10.7_TO.2.F",
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Rinascita Doccia",
+   "ospite": "Reconquista",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Rinascita Doccia",
+   "idSquadra": 915410,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
    "id": "10.2_TO.2.F-2-2",
    "ora": "16:26",
    "partita": "10.2_TO.2.F",
@@ -311,10 +329,10 @@
    "idSquadra": 1079487,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Benvenuti Federico",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:57"
   },
   {
    "id": "11.4_TO.P.A-1-2",
@@ -743,10 +761,10 @@
    "idSquadra": 1079487,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Romano Oscar",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:57"
   },
   {
    "id": "10.2_TO.2.F-1-1",
@@ -959,10 +977,10 @@
    "idSquadra": 1079487,
    "nostra": true,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Merolla Lorenzo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:57"
   },
   {
    "id": "11.4_TO.P.C-1-1",
