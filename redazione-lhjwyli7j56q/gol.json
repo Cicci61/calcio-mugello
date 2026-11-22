@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-22T16:26:06",
+ "aggiornato": "2026-11-22T16:36:05",
  "data": "2026-11-22",
  "partite": {
   "11.1_TO.E.B": {
@@ -176,7 +176,7 @@
    "casa": "Scarperia 1920",
    "ospite": "Florence Sporting Club",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -191,7 +191,7 @@
    "casa": "Vaglia",
    "ospite": "Sesto Calcio 2010",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "3-2",
    "almanacco": null,
@@ -206,7 +206,7 @@
    "casa": "Vita 1907",
    "ospite": "Marradese",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "2-2",
    "almanacco": null,
@@ -221,7 +221,7 @@
    "casa": "Cavallina Calcio",
    "ospite": "La Massa",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "2-0",
    "almanacco": null,
@@ -347,10 +347,10 @@
    "idSquadra": 1099737,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Ripanti Filippo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:36"
   },
   {
    "id": "11.1_TO.E.B-2-0",
@@ -761,10 +761,10 @@
    "idSquadra": 1099737,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Erami Badr Eddine",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:36"
   },
   {
    "id": "10.2_TO.2.F-1-0",
