@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-22T14:49:12",
+ "aggiornato": "2026-11-22T14:51:52",
  "data": "2026-11-22",
  "partite": {
   "11.1_TO.E.B": {
@@ -49,7 +49,7 @@
   },
   "11.7_TO.P.C": {
    "annunciati": [
-    0,
+    1,
     0
    ],
    "girone": "Promozione · Girone C",
@@ -59,7 +59,7 @@
    "stato": "Partita in corso (16')",
    "titoloAlmanacco": "Pontassieve-Resco Reggello",
    "tuttocampo": "0-0",
-   "almanacco": "0-0",
+   "almanacco": "1-0",
    "verifica": false
   },
   "10.1_TO.1.C": {
@@ -244,6 +244,24 @@
   }
  },
  "gol": [
+  {
+   "id": "11.7_TO.P.C-1-0",
+   "ora": "14:51",
+   "partita": "11.7_TO.P.C",
+   "girone": "Promozione · Girone C",
+   "casa": "Pontassieve",
+   "ospite": "Resco Reggello",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Pontassieve",
+   "idSquadra": 750657,
+   "nostra": true,
+   "fonte": "Almanacco",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "11.4_TO.P.C-0-1",
    "ora": "14:49",
