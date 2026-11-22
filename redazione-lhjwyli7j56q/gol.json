@@ -1,15 +1,15 @@
 {
- "aggiornato": "2026-11-21T16:20:21",
- "data": "2026-11-21",
+ "aggiornato": "2026-11-22T14:15:53",
+ "data": "2026-11-22",
  "partite": {
-  "11.6_TO.P.A": {
+  "11.1_TO.E.B": {
    "annunciati": [
     0,
     0
    ],
-   "girone": "Promozione · Girone A",
-   "casa": "Luco",
-   "ospite": "Lanciotto Campi",
+   "girone": "Eccellenza · Girone B",
+   "casa": "Audax Rufina",
+   "ospite": "Castiglionese 1919",
    "ora": "14:30",
    "stato": "",
    "titoloAlmanacco": null,
@@ -17,43 +17,235 @@
    "almanacco": null,
    "verifica": false
   },
-  "10.5_TO.3.B.FI": {
+  "11.4_TO.P.A": {
    "annunciati": [
-    1,
+    0,
+    0
+   ],
+   "girone": "Promozione · Girone A",
+   "casa": "Fortis Juventus 1909",
+   "ospite": "Montignoso",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "11.4_TO.P.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Promozione · Girone C",
+   "casa": "Cubino",
+   "ospite": "AG Dicomano",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "11.7_TO.P.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Promozione · Girone C",
+   "casa": "Pontassieve",
+   "ospite": "Resco Reggello",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "10.1_TO.1.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Prima Categoria · Girone C",
+   "casa": "Capraia",
+   "ospite": "Sagginale",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "10.3_TO.1.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Prima Categoria · Girone C",
+   "casa": "Gambassi",
+   "ospite": "Barberino Calcio 1927",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "10.6_TO.1.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Prima Categoria · Girone C",
+   "casa": "San Godenzo",
+   "ospite": "Chianti Nord",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "10.7_TO.1.C": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Prima Categoria · Girone C",
+   "casa": "San Piero a Sieve",
+   "ospite": "Gallianese",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "10.6_TO.2.D": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone D",
+   "casa": "Londa 1974",
+   "ospite": "Rignano Calcio",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "10.2_TO.2.F": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Firenzuola",
+   "ospite": "San Giusto",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "10.7_TO.2.F": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Rinascita Doccia",
+   "ospite": "Reconquista",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "10.8_TO.2.F": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Scarperia 1920",
+   "ospite": "Florence Sporting Club",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "10.6_TO.2.F": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone F",
+   "casa": "Vaglia",
+   "ospite": "Sesto Calcio 2010",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "11.6_ER.2.M.RA": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Seconda Categoria · Girone M Ravenna",
+   "casa": "Vita 1907",
+   "ospite": "Marradese",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "10.2_TO.3.B.FI": {
+   "annunciati": [
+    0,
     0
    ],
    "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Rontese",
-   "ospite": "Santa Brigida",
+   "casa": "Cavallina Calcio",
+   "ospite": "La Massa",
    "ora": "14:30",
-   "stato": "Partita in corso (90+')",
+   "stato": "",
    "titoloAlmanacco": null,
-   "tuttocampo": "1-0",
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "10.8_TO.3.B.FI": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "SV Vicchio",
+   "ospite": "Carbonile",
+   "ora": "14:30",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
    "almanacco": null,
    "verifica": false
   }
  },
- "gol": [
-  {
-   "id": "10.5_TO.3.B.FI-1-0",
-   "ora": "16:20",
-   "partita": "10.5_TO.3.B.FI",
-   "girone": "Terza Categoria · Girone B Firenze",
-   "casa": "Rontese",
-   "ospite": "Santa Brigida",
-   "punteggio": "1-0",
-   "totale": 1,
-   "squadra": "Rontese",
-   "idSquadra": 60915,
-   "nostra": true,
-   "fonte": "Tuttocampo",
-   "marcatore": "Maretti Tommaso",
-   "minuto": null,
-   "fonteMarcatore": "Tuttocampo",
-   "trovato": "16:20"
-  }
- ],
+ "gol": [],
  "almanacco": {
-  "pro": "https://almanaccocalciotoscano.it/live-diretta-e-tabellini-degli-anticipi-di-eccellenza-e-promozione-sabato-21-novembre-2026/"
+  "ecc": "https://almanaccocalciotoscano.it/live-diretta-e-tabellini-della-11a-giornata-di-eccellenza-domenica-22-novembre-2026/",
+  "pro": "https://almanaccocalciotoscano.it/live-diretta-e-tabellini-della-11a-giornata-di-promozione-domenica-22-novembre-2026/"
  }
 }
