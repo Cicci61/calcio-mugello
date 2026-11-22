@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-22T15:20:46",
+ "aggiornato": "2026-11-22T15:31:43",
  "data": "2026-11-22",
  "partite": {
   "11.1_TO.E.B": {
@@ -383,10 +383,10 @@
    "idSquadra": 1124939,
    "nostra": false,
    "fonte": "Almanacco",
-   "marcatore": null,
+   "marcatore": "Bertuccelli Giuseppe",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "15:31"
   },
   {
    "id": "10.8_TO.3.B.FI-1-2",
