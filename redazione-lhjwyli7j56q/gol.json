@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-22T17:41:20",
+ "aggiornato": "2026-11-22T17:52:04",
  "data": "2026-11-22",
  "partite": {
   "11.1_TO.E.B": {
@@ -229,8 +229,8 @@
   },
   "10.8_TO.3.B.FI": {
    "annunciati": [
-    3,
-    2
+    4,
+    3
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "SV Vicchio",
@@ -238,12 +238,48 @@
    "ora": "14:30",
    "stato": "Partita sospesa",
    "titoloAlmanacco": null,
-   "tuttocampo": "3-2",
+   "tuttocampo": "4-3",
    "almanacco": null,
    "verifica": false
   }
  },
  "gol": [
+  {
+   "id": "10.8_TO.3.B.FI-4-3",
+   "ora": "17:52",
+   "partita": "10.8_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "SV Vicchio",
+   "ospite": "Carbonile",
+   "punteggio": "4-3",
+   "totale": 7,
+   "squadra": "Carbonile",
+   "idSquadra": 1079696,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
+   "id": "10.8_TO.3.B.FI-4-2",
+   "ora": "17:52",
+   "partita": "10.8_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "SV Vicchio",
+   "ospite": "Carbonile",
+   "punteggio": "4-2",
+   "totale": 6,
+   "squadra": "SV Vicchio",
+   "idSquadra": 1124962,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "10.7_TO.2.F-1-0",
    "ora": "16:57",
