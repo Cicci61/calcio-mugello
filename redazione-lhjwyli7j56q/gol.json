@@ -1,11 +1,11 @@
 {
- "aggiornato": "2026-11-22T16:14:59",
+ "aggiornato": "2026-11-22T16:21:54",
  "data": "2026-11-22",
  "partite": {
   "11.1_TO.E.B": {
    "annunciati": [
-    2,
-    0
+    3,
+    1
    ],
    "girone": "Eccellenza · Girone B",
    "casa": "Audax Rufina",
@@ -14,7 +14,7 @@
    "stato": "Partita in corso (86')",
    "titoloAlmanacco": "Audax Rufina-Castiglionese A.s.d.",
    "tuttocampo": "2-0",
-   "almanacco": "2-0",
+   "almanacco": "3-1",
    "verifica": false
   },
   "11.4_TO.P.A": {
@@ -244,6 +244,42 @@
   }
  },
  "gol": [
+  {
+   "id": "11.1_TO.E.B-3-1",
+   "ora": "16:21",
+   "partita": "11.1_TO.E.B",
+   "girone": "Eccellenza · Girone B",
+   "casa": "Audax Rufina",
+   "ospite": "Castiglionese 1919",
+   "punteggio": "3-1",
+   "totale": 4,
+   "squadra": "Castiglionese 1919",
+   "idSquadra": 11520,
+   "nostra": false,
+   "fonte": "Almanacco",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
+  {
+   "id": "11.1_TO.E.B-3-0",
+   "ora": "16:21",
+   "partita": "11.1_TO.E.B",
+   "girone": "Eccellenza · Girone B",
+   "casa": "Audax Rufina",
+   "ospite": "Castiglionese 1919",
+   "punteggio": "3-0",
+   "totale": 3,
+   "squadra": "Audax Rufina",
+   "idSquadra": 4190,
+   "nostra": true,
+   "fonte": "Almanacco",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "10.6_TO.2.F-3-2",
    "ora": "16:14",
