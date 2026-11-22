@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-22T14:15:53",
+ "aggiornato": "2026-11-22T14:47:48",
  "data": "2026-11-22",
  "partite": {
   "11.1_TO.E.B": {
@@ -11,9 +11,9 @@
    "casa": "Audax Rufina",
    "ospite": "Castiglionese 1919",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
@@ -26,10 +26,10 @@
    "casa": "Fortis Juventus 1909",
    "ospite": "Montignoso",
    "ora": "14:30",
-   "stato": "",
-   "titoloAlmanacco": null,
-   "tuttocampo": null,
-   "almanacco": null,
+   "stato": "Partita in corso (16')",
+   "titoloAlmanacco": "Fortis Juventus-Ac Montignoso",
+   "tuttocampo": "0-0",
+   "almanacco": "0-0",
    "verifica": false
   },
   "11.4_TO.P.C": {
@@ -41,10 +41,10 @@
    "casa": "Cubino",
    "ospite": "AG Dicomano",
    "ora": "14:30",
-   "stato": "",
-   "titoloAlmanacco": null,
-   "tuttocampo": null,
-   "almanacco": null,
+   "stato": "Partita in corso (16')",
+   "titoloAlmanacco": "F.c. Cubino-A.g. Dicomano",
+   "tuttocampo": "0-0",
+   "almanacco": "0-0",
    "verifica": false
   },
   "11.7_TO.P.C": {
@@ -56,10 +56,10 @@
    "casa": "Pontassieve",
    "ospite": "Resco Reggello",
    "ora": "14:30",
-   "stato": "",
-   "titoloAlmanacco": null,
-   "tuttocampo": null,
-   "almanacco": null,
+   "stato": "Partita in corso (16')",
+   "titoloAlmanacco": "Pontassieve-Resco Reggello",
+   "tuttocampo": "0-0",
+   "almanacco": "0-0",
    "verifica": false
   },
   "10.1_TO.1.C": {
@@ -86,9 +86,9 @@
    "casa": "Gambassi",
    "ospite": "Barberino Calcio 1927",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (16')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
@@ -206,24 +206,24 @@
    "casa": "Vita 1907",
    "ospite": "Marradese",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (18')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   },
   "10.2_TO.3.B.FI": {
    "annunciati": [
-    0,
+    1,
     0
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Cavallina Calcio",
    "ospite": "La Massa",
    "ora": "14:30",
-   "stato": "",
+   "stato": "Partita in corso (18')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "1-0",
    "almanacco": null,
    "verifica": false
   },
@@ -243,7 +243,26 @@
    "verifica": false
   }
  },
- "gol": [],
+ "gol": [
+  {
+   "id": "10.2_TO.3.B.FI-1-0",
+   "ora": "14:47",
+   "partita": "10.2_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Cavallina Calcio",
+   "ospite": "La Massa",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Cavallina Calcio",
+   "idSquadra": 1099296,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  }
+ ],
  "almanacco": {
   "ecc": "https://almanaccocalciotoscano.it/live-diretta-e-tabellini-della-11a-giornata-di-eccellenza-domenica-22-novembre-2026/",
   "pro": "https://almanaccocalciotoscano.it/live-diretta-e-tabellini-della-11a-giornata-di-promozione-domenica-22-novembre-2026/"
