@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-22T15:42:27",
+ "aggiornato": "2026-11-22T15:45:08",
  "data": "2026-11-22",
  "partite": {
   "11.1_TO.E.B": {
@@ -20,7 +20,7 @@
   "11.4_TO.P.A": {
    "annunciati": [
     0,
-    1
+    2
    ],
    "girone": "Promozione · Girone A",
    "casa": "Fortis Juventus 1909",
@@ -29,7 +29,7 @@
    "stato": "Partita in corso (54')",
    "titoloAlmanacco": "Fortis Juventus-Ac Montignoso",
    "tuttocampo": "0-1",
-   "almanacco": "0-1",
+   "almanacco": "0-2",
    "verifica": false
   },
   "11.4_TO.P.C": {
@@ -244,6 +244,24 @@
   }
  },
  "gol": [
+  {
+   "id": "11.4_TO.P.A-0-2",
+   "ora": "15:45",
+   "partita": "11.4_TO.P.A",
+   "girone": "Promozione · Girone A",
+   "casa": "Fortis Juventus 1909",
+   "ospite": "Montignoso",
+   "punteggio": "0-2",
+   "totale": 2,
+   "squadra": "Montignoso",
+   "idSquadra": 1124939,
+   "nostra": false,
+   "fonte": "Almanacco",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "11.6_ER.2.M.RA-2-1",
    "ora": "15:42",
