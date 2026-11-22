@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-22T15:31:43",
+ "aggiornato": "2026-11-22T15:39:40",
  "data": "2026-11-22",
  "partite": {
   "11.1_TO.E.B": {
@@ -35,7 +35,7 @@
   "11.4_TO.P.C": {
    "annunciati": [
     2,
-    2
+    3
    ],
    "girone": "Promozione · Girone C",
    "casa": "Cubino",
@@ -44,7 +44,7 @@
    "stato": "Partita in corso (Int.)",
    "titoloAlmanacco": "F.c. Cubino-A.g. Dicomano",
    "tuttocampo": "2-2",
-   "almanacco": "2-2",
+   "almanacco": "2-3",
    "verifica": false
   },
   "11.7_TO.P.C": {
@@ -244,6 +244,24 @@
   }
  },
  "gol": [
+  {
+   "id": "11.4_TO.P.C-2-3",
+   "ora": "15:39",
+   "partita": "11.4_TO.P.C",
+   "girone": "Promozione · Girone C",
+   "casa": "Cubino",
+   "ospite": "AG Dicomano",
+   "punteggio": "2-3",
+   "totale": 5,
+   "squadra": "AG Dicomano",
+   "idSquadra": 1028179,
+   "nostra": true,
+   "fonte": "Almanacco",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  },
   {
    "id": "10.8_TO.3.B.FI-3-2",
    "ora": "15:20",
