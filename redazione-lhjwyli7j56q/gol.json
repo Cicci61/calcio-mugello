@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-23T22:37:39",
+ "aggiornato": "2026-11-23T22:42:46",
  "data": "2026-11-23",
  "partite": {
   "10.4_TO.3.B.FI": {
@@ -11,7 +11,7 @@
    "casa": "Pian di San Bartolo",
    "ospite": "Lions Fortis Juventus",
    "ora": "20:45",
-   "stato": "Partita in corso (90+')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "3-1",
    "almanacco": null,
@@ -32,10 +32,10 @@
    "idSquadra": 1079698,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Cianferoni Lorenzo",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "22:42"
   },
   {
    "id": "10.4_TO.3.B.FI-2-1",
