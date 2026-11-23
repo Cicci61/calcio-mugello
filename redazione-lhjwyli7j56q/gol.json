@@ -1,23 +1,60 @@
 {
- "aggiornato": "2026-11-23T20:45:09",
+ "aggiornato": "2026-11-23T21:26:12",
  "data": "2026-11-23",
  "partite": {
   "10.4_TO.3.B.FI": {
    "annunciati": [
-    0,
-    0
+    1,
+    1
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Pian di San Bartolo",
    "ospite": "Lions Fortis Juventus",
    "ora": "20:45",
-   "stato": "",
+   "stato": "Partita in corso (41')",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "1-1",
    "almanacco": null,
    "verifica": false
   }
  },
- "gol": [],
+ "gol": [
+  {
+   "id": "10.4_TO.3.B.FI-1-1",
+   "ora": "21:26",
+   "partita": "10.4_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Pian di San Bartolo",
+   "ospite": "Lions Fortis Juventus",
+   "punteggio": "1-1",
+   "totale": 2,
+   "squadra": "Lions Fortis Juventus",
+   "idSquadra": 1325836,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Tagliaferri Alessandro",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "21:26"
+  },
+  {
+   "id": "10.4_TO.3.B.FI-1-0",
+   "ora": "21:26",
+   "partita": "10.4_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Pian di San Bartolo",
+   "ospite": "Lions Fortis Juventus",
+   "punteggio": "1-0",
+   "totale": 1,
+   "squadra": "Pian di San Bartolo",
+   "idSquadra": 1079698,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": "Isiksun Niccolò",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "21:26"
+  }
+ ],
  "almanacco": {}
 }
