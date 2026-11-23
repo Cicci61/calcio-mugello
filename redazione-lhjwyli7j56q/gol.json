@@ -1,24 +1,42 @@
 {
- "aggiornato": "2026-11-23T21:26:12",
+ "aggiornato": "2026-11-23T22:27:26",
  "data": "2026-11-23",
  "partite": {
   "10.4_TO.3.B.FI": {
    "annunciati": [
-    1,
+    2,
     1
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Pian di San Bartolo",
    "ospite": "Lions Fortis Juventus",
    "ora": "20:45",
-   "stato": "Partita in corso (41')",
+   "stato": "Partita in corso (83')",
    "titoloAlmanacco": null,
-   "tuttocampo": "1-1",
+   "tuttocampo": "2-1",
    "almanacco": null,
    "verifica": false
   }
  },
  "gol": [
+  {
+   "id": "10.4_TO.3.B.FI-2-1",
+   "ora": "22:27",
+   "partita": "10.4_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Pian di San Bartolo",
+   "ospite": "Lions Fortis Juventus",
+   "punteggio": "2-1",
+   "totale": 3,
+   "squadra": "Pian di San Bartolo",
+   "idSquadra": 1079698,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": "Bonciani Leonardo",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "22:27"
+  },
   {
    "id": "10.4_TO.3.B.FI-1-1",
    "ora": "21:26",
