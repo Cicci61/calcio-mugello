@@ -28,6 +28,11 @@
   .testo { font-size:14px; line-height:1.5; border:1px solid #eef0f3; border-radius:8px; padding:10px 12px; background:#fbfcfd; }
   .testo p { margin:0 0 10px; } .testo p:last-child { margin:0; }
   .riga-mancante { display:inline-block; background:#fff3e0; border-radius:4px; padding:1px 4px; }
+  .punteggio { white-space:nowrap; cursor:pointer; border-bottom:1px dashed #9aa3ad; padding:0 2px; }
+  .punteggio:hover { background:#e8f1ff; }
+  .riga-corretta { display:inline-block; background:#e8f1ff; border-radius:4px; padding:1px 4px; }
+  .riga-corretta input { width:34px; font-size:14px; text-align:center; padding:1px 2px; border:1px solid #1f4fa3; border-radius:4px; }
+  .riga-corretta .nota { color:#1f4fa3; font-size:12px; }
   .riga-mancante input { width:34px; font-size:14px; text-align:center; padding:1px 2px; border:1px solid var(--arancio); border-radius:4px; }
   .riga-mancante .nota { color:var(--arancio); font-size:12px; }
   .avviso { font-size:13px; color:var(--rosso); }
@@ -51,6 +56,7 @@
     <span class="tappa">2</span> In WordPress apri l'articolo del girone
     <span class="freccia">→</span>
     <span class="tappa">3</span> <b>Ctrl+A</b> due volte, <b>Ctrl+V</b>, <b>Aggiorna</b>
+    <span style="flex-basis:100%;font-size:14px;color:var(--tenue)">Un risultato è sbagliato? Cliccaci sopra e scrivi quello giusto: la classifica si corregge da sola.</span>
   </div>
   <div class="griglia" id="griglia"></div>
 </main>
@@ -62,6 +68,7 @@ const MESI = ["gennaio","febbraio","marzo","aprile","maggio","giugno","luglio","
 const stato = {};            // per girone: giornata scelta a mano (null = quella in corso)
 const MAN_KEY = "risultati-rm-a-mano";
 const aMano = JSON.parse(localStorage.getItem(MAN_KEY) || "{}");   // id partita -> [gc, go]
+const inModifica = new Set();                                    // risultati aperti per correggerli
 
 const nome = n => (CFG.nomi[n] || n);
 const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
@@ -143,19 +150,27 @@ async function caricaGirone(g, i) {
 function costruisci(g, i, d) {
   const partite = [...d.giornata.partite].sort((a, b) => ordina(nome(a.casa), nome(b.casa)));
   const ferma = p => /rinviat|sospes|annullat/i.test(p.titolo);        // rinviata o sospesa: non manca niente
-  const mancano = partite.filter(p => !p.finita && !ferma(p) && !(aMano[p.id] && aMano[p.id][0] !== "" && aMano[p.id][1] !== ""));
-  // classifica: quella di Tuttocampo + i risultati scritti a mano (Tuttocampo conta solo le partite terminate)
+  const scritto = p => { const m = aMano[p.id]; return m && m[0] !== "" && m[1] !== "" ? [+m[0], +m[1]] : null; };
+  // risultato scritto a mano su una partita che Tuttocampo dà per finita con un altro punteggio = correzione
+  const corretto = p => { const m = scritto(p); return p.finita && m && (m[0] !== +p.gc || m[1] !== +p.go) ? m : null; };
+  const mancano = partite.filter(p => !p.finita && !ferma(p) && !scritto(p));
+
+  // classifica: quella di Tuttocampo, più i risultati scritti a mano, meno quelli corretti
   const cl = d.classifica.map(r => ({...r}));
   let ricalcolata = false;
-  for (const p of partite) {
-    const m = aMano[p.id];
-    if (p.finita || !m || m[0] === "" || m[1] === "") continue;
+  const conta = (p, x, y, segno) => {                 // segno +1 aggiunge una partita, -1 la toglie
     const a = cl.find(r => r.nome === p.casa), b = cl.find(r => r.nome === p.ospite);
-    if (!a || !b) continue;
-    const x = +m[0], y = +m[1];
-    a.g++; b.g++; a.gf += x; a.gs += y; b.gf += y; b.gs += x;
-    if (x > y) { a.pt += 3; a.vt++; } else if (x < y) { b.pt += 3; b.vt++; } else { a.pt++; b.pt++; a.pa++; b.pa++; }
+    if (!a || !b) return;
+    a.g += segno; b.g += segno; a.gf += segno * x; a.gs += segno * y; b.gf += segno * y; b.gs += segno * x;
+    if (x > y) { a.pt += 3 * segno; a.vt += segno; } else if (x < y) { b.pt += 3 * segno; b.vt += segno; }
+    else { a.pt += segno; b.pt += segno; a.pa += segno; b.pa += segno; }
     ricalcolata = true;
+  };
+  for (const p of partite) {
+    const c = corretto(p);
+    if (c) { conta(p, +p.gc, +p.go, -1); conta(p, c[0], c[1], +1); continue; }
+    const m = scritto(p);
+    if (!p.finita && !ferma(p) && m) conta(p, m[0], m[1], +1);
   }
   if (ricalcolata) cl.forEach((r, k) => r.k = k), cl.sort((a, b) => b.pt - a.pt || a.k - b.k);
 
@@ -163,17 +178,27 @@ function costruisci(g, i, d) {
   const righeVista = [], righeWP = [];
   for (const p of partite) {
     const base = esc(nome(p.casa)) + " – " + esc(nome(p.ospite));
-    if (p.finita) { righeVista.push(base + " " + p.gc + "-" + p.go); righeWP.push(base + " " + p.gc + "-" + p.go); continue; }
     const m = aMano[p.id] || ["", "", ""];
-    const caselle = '<span style="white-space:nowrap"><input data-id="' + esc(p.id) + '" data-k="0" value="' + esc(m[0]) + '" inputmode="numeric">-<input data-id="' + esc(p.id) + '" data-k="1" value="' + esc(m[1]) + '" inputmode="numeric"></span>';
-    const punteggio = m[0] !== "" && m[1] !== "" ? " " + m[0] + "-" + m[1] : "";
+    const caselle = (v0, v1) => '<span style="white-space:nowrap"><input data-id="' + esc(p.id) + '" data-k="0" value="' + esc(v0) + '" inputmode="numeric">-<input data-id="' + esc(p.id) + '" data-k="1" value="' + esc(v1) + '" inputmode="numeric"></span>';
     if (ferma(p)) {
       const scritta = /rinviat/i.test(p.titolo) ? "Rinviata" : /sospes/i.test(p.titolo) ? "Sospesa" : "Annullata";
       righeVista.push(base + " " + scritta); righeWP.push(base + " " + scritta);
       continue;
     }
-    righeVista.push('<span class="riga-mancante">' + base + ' ' + caselle + ' <span class="nota">← scrivi il risultato</span></span>');
-    righeWP.push(base + punteggio);
+    if (p.finita) {
+      const c = corretto(p);
+      if (c || inModifica.has(p.id)) {
+        const v = c || [p.gc, p.go];
+        righeVista.push('<span class="riga-corretta">' + base + ' ' + caselle(v[0], v[1]) + ' <span class="nota">Tuttocampo: ' + p.gc + '-' + p.go + '</span></span>');
+        righeWP.push(base + " " + v[0] + "-" + v[1]);
+      } else {
+        righeVista.push(base + ' <span class="punteggio" data-id="' + esc(p.id) + '" title="Clicca per correggere">' + p.gc + "-" + p.go + '</span>');
+        righeWP.push(base + " " + p.gc + "-" + p.go);
+      }
+      continue;
+    }
+    righeVista.push('<span class="riga-mancante">' + base + ' ' + caselle(m[0], m[1]) + ' <span class="nota">← scrivi il risultato</span></span>');
+    righeWP.push(base + (scritto(p) ? " " + m[0] + "-" + m[1] : ""));
   }
   const tit1 = esc(intestazione(d.num, partite));
   const clRighe = cl.map(r => {
@@ -211,11 +236,16 @@ function disegna(i, g, d, err) {
     '<div class="testo">' + c.vista + '</div>' +
     '<button class="copia">📋 Copia</button>';
   card.querySelectorAll("input").forEach(inp => inp.addEventListener("change", () => {
-    const id = inp.dataset.id, k = +inp.dataset.k; aMano[id] = aMano[id] || ["", "", ""];
-    aMano[id][k] = k === 2 ? inp.value.trim() : inp.value.trim().replace(/\D/g, "");
+    // salva sempre tutte e due le caselline della partita, così una correzione a metà non si perde
+    const id = inp.dataset.id; aMano[id] = aMano[id] || ["", "", ""];
+    card.querySelectorAll('input[data-id="' + id + '"]').forEach(x => aMano[id][+x.dataset.k] = x.value.trim().replace(/\D/g, ""));
     localStorage.setItem(MAN_KEY, JSON.stringify(aMano));
     disegna(i, g, d);
   }));
+  card.querySelectorAll(".punteggio").forEach(s => s.onclick = () => {
+    inModifica.add(s.dataset.id); disegna(i, g, d);
+    const inp = card.querySelector('input[data-id="' + s.dataset.id + '"]'); if (inp) { inp.focus(); inp.select(); }
+  });
   card.querySelector(".copia").onclick = async (e) => {
     const html = card._wp, testo = html.replace(/<br>/g, "\n").replace(/<\/p>\s*/g, "\n").replace(/<[^>]+>/g, "").replace(/&amp;/g, "&");
     try {

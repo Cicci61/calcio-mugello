@@ -21,11 +21,14 @@
   kbd { font:700 15px/1 ui-monospace, Menlo, Consolas, monospace; background:#fff; border:1px solid #b8bec7; border-bottom-width:2px; border-radius:5px; padding:2px 6px; }
   .arancio { background:#fff7ec; border:1px solid #f0c98f; border-left:6px solid var(--arancio); border-radius:12px; padding:12px 16px; margin-top:6px; }
   .arancio p { margin:4px 0; }
+  .blu { background:#eef4ff; border:1px solid #b9cdf0; border-left:6px solid #1f4fa3; border-radius:12px; padding:12px 16px; margin-top:12px; }
+  .blu p { margin:4px 0 8px; }
+  .blu img { width:300px; max-width:100%; border:1px solid var(--bordo); border-radius:8px; background:#fff; }
   .figura img { width:100%; border:1px solid var(--bordo); border-radius:10px; }
   .piede { margin-top:18px; font-size:15px; color:var(--tenue); }
   .no-stampa a { color:#1f4fa3; }
   @media (max-width:700px) { .corpo { grid-template-columns:1fr; } .figura { max-width:320px; } }
-  @media print { body { background:#fff; font-size:14pt; } main { padding:0; } .no-stampa { display:none; } .corpo { grid-template-columns:1fr 240px; } }
+  @media print { body { background:#fff; font-size:12.5pt; } h1 { font-size:22pt; } .passo { padding:10px 14px; margin-bottom:8px; } .blu img { width:230px; } main { padding:0; } .no-stampa { display:none; } .corpo { grid-template-columns:1fr 240px; } }
   @page { size:A4; margin:14mm; }
 </style>
 </head>
@@ -57,11 +60,16 @@
       <div class="arancio">
         <p><b>Se il girone è arancione</b> («manca 1 risultato»), Tuttocampo non ha ancora quel risultato. Scrivilo nelle due caselline, poi premi Copia. La classifica si sistema da sola.</p>
       </div>
+
+      <div class="blu">
+        <p><b>Se un risultato è sbagliato</b>, cliccaci sopra e scrivi quello giusto nelle due caselline. La classifica si corregge da sola. Poi premi Copia.</p>
+        <img src="img/correzione.png" alt="Cubino-Dicomano corretto da 2-3 a 2-2">
+      </div>
     </div>
     <div class="figura"><img src="img/verde.png" alt="Un girone pronto con il tasto Copia"></div>
   </div>
 
-  <p class="piede">Se un numero non torna, correggilo in WordPress come hai sempre fatto. Per i problemi senti Fabio Ceseri.</p>
+  <p class="piede">Per i problemi senti Fabio Ceseri.</p>
 </main>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c3d1efb37b4743fd94dd1b3652e3d3d8"}'></script><!-- End Cloudflare Web Analytics -->
 </body>
