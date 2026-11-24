@@ -15,7 +15,9 @@
   header .guida-link { margin-left:auto; color:#1f4fa3; font-weight:600; text-decoration:none; }
   main { max-width:1180px; margin:0 auto; padding:18px 20px 60px; }
   .guida { background:#fff; border:1px solid var(--bordo); border-radius:10px; padding:12px 16px; margin-bottom:18px; font-size:15px; }
-  .guida ol { margin:6px 0 0; padding-left:20px; }
+  .guida { font-size:16px; display:flex; flex-wrap:wrap; align-items:center; gap:8px; }
+  .tappa { display:inline-flex; width:26px; height:26px; border-radius:50%; background:var(--verde); color:#fff; font-weight:700; align-items:center; justify-content:center; }
+  .freccia { color:var(--tenue); margin:0 4px; }
   .griglia { display:grid; grid-template-columns:repeat(auto-fill, minmax(360px, 1fr)); gap:16px; }
   .card { background:#fff; border:1px solid var(--bordo); border-radius:10px; padding:14px 16px; display:flex; flex-direction:column; gap:10px; }
   .card h2 { font-size:16px; margin:0; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
@@ -31,7 +33,7 @@
   .avviso { font-size:13px; color:var(--rosso); }
   .info { font-size:13px; color:var(--tenue); }
   button { font:inherit; cursor:pointer; border:1px solid var(--bordo); background:#fff; border-radius:8px; padding:7px 12px; }
-  button.copia { background:var(--verde); color:#fff; border-color:var(--verde); font-weight:600; padding:9px 14px; }
+  button.copia { background:var(--verde); color:#fff; border-color:var(--verde); font-weight:700; font-size:18px; padding:12px 14px; width:100%; }
   button.copia.fatto { background:#0d4f22; }
   .bottoni { display:flex; gap:8px; flex-wrap:wrap; }
 </style>
@@ -41,16 +43,14 @@
   <h1>⚽ Risultati della domenica</h1>
   <span class="stato" id="stato">Carico…</span>
   <a class="guida-link" href="guida/" target="_blank">❓ Come si usa</a>
-  <button id="aggiorna">↻ Aggiorna ora</button>
 </header>
 <main>
   <div class="guida">
-    <strong>Come si usa</strong> (<a href="guida/" target="_blank">guida completa con le figure</a>). La pagina legge da sola risultati, classifiche e prossimo turno da Tuttocampo e si aggiorna ogni 2 minuti.
-    <ol>
-      <li>Se un girone è <b style="color:var(--arancio)">arancione</b>, manca qualche risultato: scrivilo nelle caselline (la classifica si ricalcola da sola).</li>
-      <li>Premi <b>Copia</b> sul girone.</li>
-      <li>In WordPress apri l'articolo del girone, seleziona tutto il testo (Ctrl+A due volte), cancella e incolla (Ctrl+V). Aggiorna.</li>
-    </ol>
+    <span class="tappa">1</span> Premi <b>📋 Copia</b> sul girone
+    <span class="freccia">→</span>
+    <span class="tappa">2</span> In WordPress apri l'articolo del girone
+    <span class="freccia">→</span>
+    <span class="tappa">3</span> <b>Ctrl+A</b> due volte, <b>Ctrl+V</b>, <b>Aggiorna</b>
   </div>
   <div class="griglia" id="griglia"></div>
 </main>
@@ -168,15 +168,11 @@ function costruisci(g, i, d) {
     const caselle = '<span style="white-space:nowrap"><input data-id="' + esc(p.id) + '" data-k="0" value="' + esc(m[0]) + '" inputmode="numeric">-<input data-id="' + esc(p.id) + '" data-k="1" value="' + esc(m[1]) + '" inputmode="numeric"></span>';
     const punteggio = m[0] !== "" && m[1] !== "" ? " " + m[0] + "-" + m[1] : "";
     if (ferma(p)) {
-      // la scritta che finisce sul sito si può completare (es. «Sospesa per impraticabilità di campo al 45′ (0-1)»)
-      const scritta = m[2] !== undefined && m[2] !== "" ? m[2] : (/rinviat/i.test(p.titolo) ? "Rinviata" : /sospes/i.test(p.titolo) ? "Sospesa" : "Annullata");
-      righeVista.push('<span class="riga-mancante" style="background:#eef3ff">' + base + ' <input data-id="' + esc(p.id) + '" data-k="2" value="' + esc(scritta) + '" style="width:230px;text-align:left;border-color:#7a8bb0"> <span class="nota" style="color:#4a5a80">' + esc(p.titolo) + ' (oppure scrivi il risultato: ' + caselle + ')</span></span>');
-      righeWP.push(base + (punteggio || " " + esc(scritta)));
+      const scritta = /rinviat/i.test(p.titolo) ? "Rinviata" : /sospes/i.test(p.titolo) ? "Sospesa" : "Annullata";
+      righeVista.push(base + " " + scritta); righeWP.push(base + " " + scritta);
       continue;
     }
-    const nota = p.titolo && !/terminata/i.test(p.titolo) ? p.titolo : (p.gc !== "" ? "in corso" : "manca il risultato");
-    const parziale = p.gc !== "" ? " (Tuttocampo: " + p.gc + "-" + p.go + ")" : "";
-    righeVista.push('<span class="riga-mancante">' + base + ' ' + caselle + ' <span class="nota">' + esc(nota + parziale) + '</span></span>');
+    righeVista.push('<span class="riga-mancante">' + base + ' ' + caselle + ' <span class="nota">← scrivi il risultato</span></span>');
     righeWP.push(base + punteggio);
   }
   const tit1 = esc(intestazione(d.num, partite));
@@ -208,13 +204,12 @@ function disegna(i, g, d, err) {
   }
   const c = costruisci(g, i, d);
   card._wp = c.wp;
-  const badge = c.mancano ? '<span class="badge manca">mancano ' + c.mancano + ' su ' + c.totale + '</span>' : '<span class="badge ok">' + c.totale + ' su ' + c.totale + ' ✓</span>';
+  const badge = c.mancano ? '<span class="badge manca">' + (c.mancano === 1 ? "manca 1 risultato" : "mancano " + c.mancano + " risultati") + '</span>' : '<span class="badge ok">✓ pronto</span>';
   card.innerHTML =
     '<h2>' + esc(g.titolo) + ' ' + badge +
-    '<span class="nav"><button data-nav="-1" title="giornata prima">◀</button>G. ' + d.num + '<button data-nav="1" title="giornata dopo">▶</button></span></h2>' +
+    '</h2>' +
     '<div class="testo">' + c.vista + '</div>' +
-    (c.ricalcolata ? '<div class="info">Classifica ricalcolata con i risultati scritti a mano.</div>' : '') +
-    '<div class="bottoni"><button class="copia">📋 Copia</button><button class="codice" title="per l\'editor di codice di WordPress">Copia codice HTML</button></div>';
+    '<button class="copia">📋 Copia</button>';
   card.querySelectorAll("input").forEach(inp => inp.addEventListener("change", () => {
     const id = inp.dataset.id, k = +inp.dataset.k; aMano[id] = aMano[id] || ["", "", ""];
     aMano[id][k] = k === 2 ? inp.value.trim() : inp.value.trim().replace(/\D/g, "");
@@ -228,8 +223,6 @@ function disegna(i, g, d, err) {
     } catch (_) { await navigator.clipboard.writeText(testo); }
     segna(e.target, "✓ Copiato");
   };
-  card.querySelector(".codice").onclick = async (e) => { await navigator.clipboard.writeText(card._wp); segna(e.target, "✓ Copiato"); };
-  card.querySelectorAll("[data-nav]").forEach(b => b.onclick = () => { stato[i] = d.num + +b.dataset.nav; aggiornaUno(i); });
 }
 
 function segna(btn, testo) { const prima = btn.textContent; btn.textContent = testo; btn.classList.add("fatto"); setTimeout(() => { btn.textContent = prima; btn.classList.remove("fatto"); }, 2500); }
@@ -251,7 +244,6 @@ async function aggiornaTutto() {
 }
 
 CFG.gironi.forEach((g, i) => disegna(i, g, null, "carico"));
-document.getElementById("aggiorna").onclick = aggiornaTutto;
 aggiornaTutto();
 setInterval(aggiornaTutto, 120000);
 </script>
