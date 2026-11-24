@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Risultati della domenica · pronti da incollare</title>
+<style>
+  :root { --verde:#1f7a3a; --arancio:#b85c00; --rosso:#b3261e; --bordo:#d9dde3; --fondo:#f4f6f8; --testo:#1c1f24; --tenue:#5b6470; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:16px/1.45 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background:var(--fondo); color:var(--testo); }
+  header { position:sticky; top:0; z-index:5; background:#fff; border-bottom:1px solid var(--bordo); padding:12px 20px; display:flex; flex-wrap:wrap; gap:10px 20px; align-items:center; }
+  header h1 { font-size:19px; margin:0; }
+  header .stato { color:var(--tenue); font-size:14px; }
+  header button { margin-left:auto; }
+  main { max-width:1180px; margin:0 auto; padding:18px 20px 60px; }
+  .guida { background:#fff; border:1px solid var(--bordo); border-radius:10px; padding:12px 16px; margin-bottom:18px; font-size:15px; }
+  .guida ol { margin:6px 0 0; padding-left:20px; }
+  .griglia { display:grid; grid-template-columns:repeat(auto-fill, minmax(360px, 1fr)); gap:16px; }
+  .card { background:#fff; border:1px solid var(--bordo); border-radius:10px; padding:14px 16px; display:flex; flex-direction:column; gap:10px; }
+  .card h2 { font-size:16px; margin:0; display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  .badge { font-size:13px; font-weight:600; padding:2px 9px; border-radius:20px; color:#fff; }
+  .ok { background:var(--verde); } .manca { background:var(--arancio); } .errore { background:var(--rosso); }
+  .nav { margin-left:auto; display:flex; gap:4px; align-items:center; font-size:13px; color:var(--tenue); font-weight:400; }
+  .nav button { padding:2px 8px; font-size:13px; }
+  .testo { font-size:14px; line-height:1.5; border:1px solid #eef0f3; border-radius:8px; padding:10px 12px; background:#fbfcfd; }
+  .testo p { margin:0 0 10px; } .testo p:last-child { margin:0; }
+  .riga-mancante { background:#fff3e0; border-radius:4px; padding:0 4px; }
+  .riga-mancante input { width:34px; font-size:14px; text-align:center; padding:1px 2px; border:1px solid var(--arancio); border-radius:4px; }
+  .riga-mancante .nota { color:var(--arancio); font-size:12px; }
+  .avviso { font-size:13px; color:var(--rosso); }
+  .info { font-size:13px; color:var(--tenue); }
+  button { font:inherit; cursor:pointer; border:1px solid var(--bordo); background:#fff; border-radius:8px; padding:7px 12px; }
+  button.copia { background:var(--verde); color:#fff; border-color:var(--verde); font-weight:600; padding:9px 14px; }
+  button.copia.fatto { background:#0d4f22; }
+  .bottoni { display:flex; gap:8px; flex-wrap:wrap; }
+</style>
+</head>
+<body>
+<header>
+  <h1>⚽ Risultati della domenica</h1>
+  <span class="stato" id="stato">Carico…</span>
+  <button id="aggiorna">↻ Aggiorna ora</button>
+</header>
+<main>
+  <div class="guida">
+    <strong>Come si usa.</strong> La pagina legge da sola risultati, classifiche e prossimo turno da Tuttocampo e si aggiorna ogni 2 minuti.
+    <ol>
+      <li>Se un girone è <b style="color:var(--arancio)">arancione</b>, manca qualche risultato: scrivilo nelle caselline (la classifica si ricalcola da sola).</li>
+      <li>Premi <b>Copia</b> sul girone.</li>
+      <li>In WordPress apri l'articolo del girone, seleziona tutto il testo (Ctrl+A due volte), cancella e incolla (Ctrl+V). Aggiorna.</li>
+    </ol>
+  </div>
+  <div class="griglia" id="griglia"></div>
+</main>
+<script>const CFG={"stagione": "2026-27", "gironi": [{"titolo": "ECCELLENZA Girone B", "widget": "b807cdae-0536-45dd-b08e-3f5d90fc5c3e"}, {"titolo": "PROMOZIONE Girone A", "widget": "131f2cf7-9c31-447c-b4c4-2c20e1050563"}, {"titolo": "PROMOZIONE Girone C", "widget": "fed94f68-d18c-429c-ad19-98688adfe232"}, {"titolo": "PRIMA CATEGORIA Girone C", "widget": "228bd06f-a142-496f-ac7f-6cb166859024"}, {"titolo": "SECONDA CATEGORIA Girone D", "widget": "4c6a7581-258e-4cbe-88e3-c5ae386e1aad"}, {"titolo": "SECONDA CATEGORIA Girone F", "widget": "57a67696-9dc7-4d5c-822c-231cbbb53995"}, {"titolo": "SECONDA CATEGORIA Girone M Ravenna", "widget": "c3ca6b69-1744-4ba8-82b3-d87b36f36fcd"}, {"titolo": "TERZA CATEGORIA Girone B Firenze", "widget": "5e4a51a8-6edb-4679-af99-4e7de49527c2"}], "nomi": {"A. Placci Bubano Mordano": "A.P. Bubano Mordano", "AG Dicomano": "A.G. DICOMANO", "AM Aglianese": "AM Aglianese", "Acquaviva": "Acquaviva", "Affrico": "Affrico", "Albereta San Salvi": "Albereta San Salvi", "Alberoro 1977": "Alberoro", "Antella '99": "Antella 99", "Antellese Calcio": "Antellese", "Asta 1965": "Asta", "Atletica Castello": "Atletica Castello", "Atletico Esperia": "Atletico Esperia", "Atletico Lucca": "Atletico Lucca", "Audace Galluzzo": "Audace Galluzzo Oltrarno", "Audax Rufina": "AUDAX RUFINA", "Bagno a Ripoli": "Bagno a Ripoli", "Baldaccio Bruni": "Baldaccio Bruni", "Baracca Lugo": "Baracca Lugo", "Barberino Calcio 1927": "BARBERINO", "Barberino Tavarnelle": "Barberino Tavarnelle", "Borgo Tuliero": "Borgo Tuliero", "Brisighella Val Lamone": "Brisighella Val Lamone", "Calcio Albacarraia 1997": "Albacarraia", "Caldine": "Caldine", "Calenzano Calcio": "Calenzano", "Capraia": "Capraia", "Carbonile": "Carbonile", "Carrarese Giovani": "Carrarese Giovani", "Casentino": "Casentino Academy", "Castiglionese 1919": "Castiglionese", "Cavallina Calcio": "CAVALLINA", "Centro Storico Lebowski": "Centro Storico Lebowski", "Chianti Nord": "Chianti Nord", "Cobra Kai": "Cobra Kai", "Colligiana": "Colligiana", "Cortona Camucia Calcio": "Cortona Camucia", "Cubino": "Cubino", "Daytona Calcio": "Daytona", "Duccio Dini": "Duccio Dini", "Fiesole Calcio": "Fiesole", "Figline 1965": "Figline", "Firenzuola": "FIRENZUOLA", "Florence Sporting Club": "Florence", "Floriagafir Bellariva": "Floriagafir Bellariva", "Forte dei Marmi 2015": "Forte dei Marmi", "Fortis Juventus 1909": "FORTIS JUVENTUS", "Gallianese": "GALLIANESE", "Gambassi": "Gambassi", "Ginestra Fiorentina": "Ginestra Fiorentina", "Giovanili Santerno": "Giovanili Santerno", "Ideal Club Incisa": "Ideal Club Incisa", "Isolotto": "Isolotto", "Jolo Calcio": "Jolo", "La Massa": "La Massa", "Lanciotto Campi": "Lanciotto Campi", "Lastrigiana": "Lastrigiana", "Laurenziana": "Laurenziana", "Leccese": "Leccese", "Lions Fortis Juventus": "LIONS FORTIS J.", "Londa 1974": "LONDA", "Luco": "LUCO", "Ludus '90 Valle dell'Arno": "Ludus ‘90 Valle dell’Arno", "Marradese": "MARRADESE", "Mezzana": "Mezzana", "Molinense": "Molinense", "Montagnano 1966": "Montagnano", "Montelupo": "Montelupo", "Montemignaio": "Montemignaio", "Montespertoli": "Montespertoli", "Montignoso": "Montignoso", "Naldi": "Naldi", "Novoli": "La Nuova Novoli", "Nuova Foiano": "Nuova Foiano", "Paperino San Giorgio": "Paperino San Giorgio", "Pelago": "Pelago", "Pian di San Bartolo": "Pian di San Bartolo", "Poggibonsi": "Poggibonsi", "Polisportiva Camerlona": "Camerlona", "Polisportiva Sieci": "Sieci", "Pontassieve": "Pontassieve", "Pontebuggianese": "Pontebuggianese", "Quinto": "Quinto", "Real Peretola": "Real Peretola", "Real Voltanese": "Real Voltanese", "Reconquista": "RECONQUISTA", "Resco Reggello": "Resco Reggello", "Rignano Calcio": "Rignano", "Rinascita Doccia": "Rinascita Doccia", "Rontese": "RONTESE", "SV Vicchio": "VICCHIO S.V.", "Sagginale": "SAGGINALE", "Sales": "Sales", "San Clemente": "San Clemente", "San Giusto": "San Giusto", "San Godenzo": "SAN GODENZO", "San Lorenzo Campi Giovani": "San Lorenzo Campi Giovani", "San Marco Avenza 1926": "San Marco Avenza", "San Piero a Sieve": "SAN PIERO A SIEVE", "San Rocco 2001 Faenza": "San Rocco Faenza", "San Salvi Sancat": "San Salvi Sancat", "Sancat": "Sancat", "Sangiovannese 1927": "Sangiovannese", "Sansovino": "Sansovino", "Santa Brigida": "Santa Brigida", "Santagata Sport": "Santagata Sport", "Scarperia 1920": "SCARPERIA", "Sestese Calcio": "Sestese", "Sesto Calcio 2010": "Sesto Calcio", "Sesto Imolese": "Sesto Imolese", "Settignanese": "Settignanese", "Settimello": "Settimello", "Signa 1914": "Signa", "Sinalunghese": "Sinalunghese", "Sporting Arno": "Sporting Arno", "Tosi": "Tosi", "Vaglia": "VAGLIA", "Valentino Mazzola Siena": "V. Mazzola", "Vatra": "Vatra", "Veltro dal Giglio": "Veltro dal Giglio", "Virtus Bronzetto 1963": "Virtus Bronzetto", "Virtus Comeana": "Virtus Comeana", "Virtus Lilliano": "Virtus Lilliano", "Vita 1907": "Vita", "Wild Bagnara": "Wild Bagnara", "Massese 1919": "Massese", "Intercomunale Monsummano": "Intercomunale Monsummano"}};</script>
+<script>
+"use strict";
+const TC = "https://www.tuttocampo.it/WidgetV2/";
+const MESI = ["gennaio","febbraio","marzo","aprile","maggio","giugno","luglio","agosto","settembre","ottobre","novembre","dicembre"];
+const stato = {};            // per girone: giornata scelta a mano (null = quella in corso)
+const MAN_KEY = "risultati-rm-a-mano";
+const aMano = JSON.parse(localStorage.getItem(MAN_KEY) || "{}");   // id partita -> [gc, go]
+
+const nome = n => (CFG.nomi[n] || n);
+const esc = s => String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+const pulisci = s => s.replace(/\s+/g," ").trim();
+const ordina = (a, b) => a.localeCompare(b, "it", {sensitivity:"base"});
+
+async function scarica(url) {
+  const r = await fetch(url, {cache:"no-store"});
+  if (!r.ok) throw new Error("Tuttocampo risponde " + r.status);
+  return new DOMParser().parseFromString(await r.text(), "text/html");
+}
+
+function anno(mese) {           // stagione 2026-27: da agosto a dicembre è il primo anno
+  const [a1, a2] = CFG.stagione.split("-");
+  return mese >= 7 ? +a1 : 2000 + +a2;
+}
+
+function leggiGiornata(doc) {
+  const sel = doc.querySelector(".swiper-slide.selected span");
+  const numeri = [...doc.querySelectorAll(".swiper-slide span")].map(s => +s.textContent);
+  const partite = []; let data = null;
+  for (const tr of doc.querySelectorAll("tr")) {
+    if (tr.classList.contains("date")) {
+      const m = pulisci(tr.textContent).match(/(\d{1,2}) (\w+)/);
+      if (m) { const mese = MESI.indexOf(m[2].toLowerCase()); data = new Date(anno(mese), mese, +m[1]); }
+      continue;
+    }
+    if (!tr.classList.contains("match")) continue;
+    const squadre = [...tr.querySelectorAll("a.team-name")].map(a => pulisci(a.textContent));
+    if (squadre.length < 2) continue;
+    const gol = [...tr.querySelectorAll("span.goal")];
+    const titolo = gol.length ? (gol[0].getAttribute("title") || "") : "";
+    const link = tr.querySelector("a[href*='/Partita/']");
+    const id = link ? link.getAttribute("href").match(/Partita\/([^?]+)/)[1] : squadre.join("-");
+    const ora = pulisci(tr.querySelector(".match-time")?.textContent || "");
+    const gc = gol[0] ? pulisci(gol[0].textContent) : "", go = gol[1] ? pulisci(gol[1].textContent) : "";
+    partite.push({ id, casa: squadre[0], ospite: squadre[1], data, ora,
+                   finita: /terminata/i.test(titolo) && gc !== "" && go !== "",
+                   titolo, gc, go });
+  }
+  return { numero: sel ? +sel.textContent : null, ultima: Math.max(0, ...numeri), partite };
+}
+
+function leggiClassifica(doc) {
+  const righe = [];
+  for (const tr of doc.querySelectorAll("tbody tr")) {
+    const a = tr.querySelector("td.team a"); if (!a) continue;
+    const v = c => +(tr.querySelector("td." + c)?.textContent || 0);
+    righe.push({ nome: pulisci(a.textContent), pt: v("pt"), g: v("pg"), vt: v("vt"), pa: v("pa"), gf: v("gf"), gs: v("gs") });
+  }
+  return righe;
+}
+
+function intestazione(num, partite) {
+  const conta = (arr) => { const c = {}; arr.forEach(x => c[x] = (c[x] || 0) + 1); return Object.entries(c).sort((a,b) => b[1]-a[1])[0]?.[0]; };
+  const giorni = partite.filter(p => p.data).map(p => p.data.getTime());
+  // la data del turno è quella con più partite (di solito la domenica)
+  const d = giorni.length ? new Date(+conta(giorni)) : null;
+  const ora = conta(partite.map(p => p.ora).filter(o => /^\d{1,2}:\d{2}$/.test(o)));
+  let t = "Giornata " + num;
+  if (d) t += " – " + String(d.getDate()).padStart(2,"0") + "/" + String(d.getMonth()+1).padStart(2,"0") + "/" + String(d.getFullYear()).slice(2);
+  if (ora) t += " Ore " + ora;
+  return t;
+}
+
+async function caricaGirone(g, i) {
+  const scelta = stato[i];
+  const docR = await scarica(TC + "Risultati/" + g.widget + (scelta ? "/" + scelta + "?y=" + CFG.stagione : ""));
+  const giornata = leggiGiornata(docR);
+  const num = giornata.numero || scelta;
+  const [docC, docP] = await Promise.all([
+    scarica(TC + "Classifica/" + g.widget),
+    scarica(TC + "Risultati/" + g.widget + "/" + (num + 1) + "?y=" + CFG.stagione).catch(() => null),
+  ]);
+  const prossima = docP ? leggiGiornata(docP) : null;
+  return { giornata, num, classifica: leggiClassifica(docC), prossima: prossima && prossima.partite.length ? prossima : null };
+}
+
+function costruisci(g, i, d) {
+  const partite = [...d.giornata.partite].sort((a, b) => ordina(nome(a.casa), nome(b.casa)));
+  const ferma = p => /rinviat|sospes|annullat/i.test(p.titolo);        // rinviata o sospesa: non manca niente
+  const mancano = partite.filter(p => !p.finita && !ferma(p) && !(aMano[p.id] && aMano[p.id][0] !== "" && aMano[p.id][1] !== ""));
+  // classifica: quella di Tuttocampo + i risultati scritti a mano (Tuttocampo conta solo le partite terminate)
+  const cl = d.classifica.map(r => ({...r}));
+  let ricalcolata = false;
+  for (const p of partite) {
+    const m = aMano[p.id];
+    if (p.finita || !m || m[0] === "" || m[1] === "") continue;
+    const a = cl.find(r => r.nome === p.casa), b = cl.find(r => r.nome === p.ospite);
+    if (!a || !b) continue;
+    const x = +m[0], y = +m[1];
+    a.g++; b.g++; a.gf += x; a.gs += y; b.gf += y; b.gs += x;
+    if (x > y) { a.pt += 3; a.vt++; } else if (x < y) { b.pt += 3; b.vt++; } else { a.pt++; b.pt++; a.pa++; b.pa++; }
+    ricalcolata = true;
+  }
+  if (ricalcolata) cl.forEach((r, k) => r.k = k), cl.sort((a, b) => b.pt - a.pt || a.k - b.k);
+
+  // ---- vista sulla pagina (con le caselline) e HTML per WordPress (senza)
+  const righeVista = [], righeWP = [];
+  for (const p of partite) {
+    const base = esc(nome(p.casa)) + " – " + esc(nome(p.ospite));
+    if (p.finita) { righeVista.push(base + " " + p.gc + "-" + p.go); righeWP.push(base + " " + p.gc + "-" + p.go); continue; }
+    const m = aMano[p.id] || ["", "", ""];
+    const caselle = '<input data-id="' + esc(p.id) + '" data-k="0" value="' + esc(m[0]) + '" inputmode="numeric">-<input data-id="' + esc(p.id) + '" data-k="1" value="' + esc(m[1]) + '" inputmode="numeric">';
+    const punteggio = m[0] !== "" && m[1] !== "" ? " " + m[0] + "-" + m[1] : "";
+    if (ferma(p)) {
+      // la scritta che finisce sul sito si può completare (es. «Sospesa per impraticabilità di campo al 45′ (0-1)»)
+      const scritta = m[2] !== undefined && m[2] !== "" ? m[2] : (/rinviat/i.test(p.titolo) ? "Rinviata" : /sospes/i.test(p.titolo) ? "Sospesa" : "Annullata");
+      righeVista.push('<span class="riga-mancante" style="background:#eef3ff">' + base + ' <input data-id="' + esc(p.id) + '" data-k="2" value="' + esc(scritta) + '" style="width:230px;text-align:left;border-color:#7a8bb0"> <span class="nota" style="color:#4a5a80">' + esc(p.titolo) + ' (oppure scrivi il risultato: ' + caselle + ')</span></span>');
+      righeWP.push(base + (punteggio || " " + esc(scritta)));
+      continue;
+    }
+    const nota = p.titolo && !/terminata/i.test(p.titolo) ? p.titolo : (p.gc !== "" ? "in corso" : "manca il risultato");
+    const parziale = p.gc !== "" ? " (Tuttocampo: " + p.gc + "-" + p.go + ")" : "";
+    righeVista.push('<span class="riga-mancante">' + base + ' ' + caselle + ' <span class="nota">' + esc(nota + parziale) + '</span></span>');
+    righeWP.push(base + punteggio);
+  }
+  const tit1 = esc(intestazione(d.num, partite));
+  const clRighe = cl.map(r => {
+    const pen = r.pt - (3 * r.vt + r.pa);           // Tuttocampo toglie i punti di penalizzazione dal totale
+    return esc(nome(r.nome)) + " " + r.pt + (pen < 0 ? " (" + pen + " p.)" : "");
+  });
+  const pr = d.prossima;
+  const prRighe = pr ? [...pr.partite].sort((a, b) => ordina(nome(a.casa), nome(b.casa))).map(p => esc(nome(p.casa)) + " – " + esc(nome(p.ospite))) : [];
+  const blocco = (tit, righe) => "<p><strong>" + tit + "</strong><br>" + righe.join("<br>") + "</p>";
+  const wp = blocco(tit1, righeWP) + "\n\n" + blocco("CLASSIFICA", clRighe) + (pr ? "\n\n" + blocco(esc(intestazione(d.num + 1, pr.partite)), prRighe) : "");
+  const vista = blocco(tit1, righeVista) + blocco("CLASSIFICA", clRighe) + (pr ? blocco(esc(intestazione(d.num + 1, pr.partite)), prRighe) : "");
+  return { wp, vista, mancano: mancano.length, totale: partite.length, ricalcolata };
+}
+
+function disegna(i, g, d, err) {
+  let card = document.getElementById("g" + i);
+  if (!card) {
+    card = document.createElement("section"); card.className = "card"; card.id = "g" + i;
+    document.getElementById("griglia").appendChild(card);
+  }
+  if (err) {
+    card.innerHTML = '<h2>' + esc(g.titolo) + ' <span class="badge errore">non letto</span></h2><div class="avviso">' + esc(err) + '. Riprovo al prossimo aggiornamento.</div>';
+    return;
+  }
+  const c = costruisci(g, i, d);
+  card._wp = c.wp;
+  const badge = c.mancano ? '<span class="badge manca">mancano ' + c.mancano + ' su ' + c.totale + '</span>' : '<span class="badge ok">' + c.totale + ' su ' + c.totale + ' ✓</span>';
+  card.innerHTML =
+    '<h2>' + esc(g.titolo) + ' ' + badge +
+    '<span class="nav"><button data-nav="-1" title="giornata prima">◀</button>G. ' + d.num + '<button data-nav="1" title="giornata dopo">▶</button></span></h2>' +
+    '<div class="testo">' + c.vista + '</div>' +
+    (c.ricalcolata ? '<div class="info">Classifica ricalcolata con i risultati scritti a mano.</div>' : '') +
+    '<div class="bottoni"><button class="copia">📋 Copia</button><button class="codice" title="per l\'editor di codice di WordPress">Copia codice HTML</button></div>';
+  card.querySelectorAll("input").forEach(inp => inp.addEventListener("change", () => {
+    const id = inp.dataset.id, k = +inp.dataset.k; aMano[id] = aMano[id] || ["", "", ""];
+    aMano[id][k] = k === 2 ? inp.value.trim() : inp.value.trim().replace(/\D/g, "");
+    localStorage.setItem(MAN_KEY, JSON.stringify(aMano));
+    disegna(i, g, d);
+  }));
+  card.querySelector(".copia").onclick = async (e) => {
+    const html = card._wp, testo = html.replace(/<br>/g, "\n").replace(/<\/p>\s*/g, "\n").replace(/<[^>]+>/g, "").replace(/&amp;/g, "&");
+    try {
+      await navigator.clipboard.write([new ClipboardItem({ "text/html": new Blob([html], {type:"text/html"}), "text/plain": new Blob([testo], {type:"text/plain"}) })]);
+    } catch (_) { await navigator.clipboard.writeText(testo); }
+    segna(e.target, "✓ Copiato");
+  };
+  card.querySelector(".codice").onclick = async (e) => { await navigator.clipboard.writeText(card._wp); segna(e.target, "✓ Copiato"); };
+  card.querySelectorAll("[data-nav]").forEach(b => b.onclick = () => { stato[i] = d.num + +b.dataset.nav; aggiornaUno(i); });
+}
+
+function segna(btn, testo) { const prima = btn.textContent; btn.textContent = testo; btn.classList.add("fatto"); setTimeout(() => { btn.textContent = prima; btn.classList.remove("fatto"); }, 2500); }
+
+const ultimo = {};
+async function aggiornaUno(i) {
+  const g = CFG.gironi[i];
+  try { ultimo[i] = await caricaGirone(g, i); disegna(i, g, ultimo[i]); }
+  catch (e) { if (ultimo[i]) disegna(i, g, ultimo[i]); else disegna(i, g, null, e.message || String(e)); }
+}
+
+async function aggiornaTutto() {
+  // non ridisegnare mentre qualcuno sta scrivendo un risultato
+  if (document.activeElement && document.activeElement.tagName === "INPUT") return;
+  document.getElementById("stato").textContent = "Aggiorno…";
+  for (let i = 0; i < CFG.gironi.length; i++) await aggiornaUno(i);
+  const ora = new Date().toLocaleTimeString("it-IT", {hour:"2-digit", minute:"2-digit"});
+  document.getElementById("stato").textContent = "Aggiornato alle " + ora + " · si aggiorna da solo ogni 2 minuti";
+}
+
+CFG.gironi.forEach((g, i) => disegna(i, g, null, "Carico"));
+document.getElementById("aggiorna").onclick = aggiornaTutto;
+aggiornaTutto();
+setInterval(aggiornaTutto, 120000);
+</script>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c3d1efb37b4743fd94dd1b3652e3d3d8"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
