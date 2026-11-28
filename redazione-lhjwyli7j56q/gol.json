@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-28T16:29:05",
+ "aggiornato": "2026-11-28T16:39:26",
  "data": "2026-11-28",
  "partite": {
   "11.1_TO.1.C": {
@@ -20,15 +20,15 @@
   "11.3_TO.3.B.FI": {
    "annunciati": [
     1,
-    2
+    3
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Lions Fortis Juventus",
    "ospite": "Rontese",
    "ora": "15:00",
-   "stato": "Partita in corso (70')",
+   "stato": "Partita in corso (80')",
    "titoloAlmanacco": null,
-   "tuttocampo": "1-2",
+   "tuttocampo": "1-3",
    "almanacco": null,
    "verifica": false
   },
@@ -41,7 +41,7 @@
    "casa": "Polisportiva Sieci",
    "ospite": "Cavallina Calcio",
    "ora": "15:00",
-   "stato": "Partita in corso (70')",
+   "stato": "Partita in corso (80')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -49,6 +49,24 @@
   }
  },
  "gol": [
+  {
+   "id": "11.3_TO.3.B.FI-1-3",
+   "ora": "16:39",
+   "partita": "11.3_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Lions Fortis Juventus",
+   "ospite": "Rontese",
+   "punteggio": "1-3",
+   "totale": 4,
+   "squadra": "Rontese",
+   "idSquadra": 60915,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Brocchi Saul",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:39"
+  },
   {
    "id": "11.3_TO.3.B.FI-1-2",
    "ora": "16:29",
