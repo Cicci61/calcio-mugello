@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-28T15:16:30",
+ "aggiornato": "2026-11-28T15:57:57",
  "data": "2026-11-28",
  "partite": {
   "11.1_TO.1.C": {
@@ -11,7 +11,7 @@
    "casa": "Barberino Calcio 1927",
    "ospite": "Sporting Arno",
    "ora": "14:30",
-   "stato": "Partita in corso (42')",
+   "stato": "Partita in corso (64')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -19,16 +19,16 @@
   },
   "11.3_TO.3.B.FI": {
    "annunciati": [
-    0,
+    1,
     1
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Lions Fortis Juventus",
    "ospite": "Rontese",
    "ora": "15:00",
-   "stato": "Partita in corso (16')",
+   "stato": "Partita in corso (Int.)",
    "titoloAlmanacco": null,
-   "tuttocampo": "0-1",
+   "tuttocampo": "1-1",
    "almanacco": null,
    "verifica": false
   },
@@ -41,14 +41,32 @@
    "casa": "Polisportiva Sieci",
    "ospite": "Cavallina Calcio",
    "ora": "15:00",
-   "stato": "",
+   "stato": "Partita in corso (Int.)",
    "titoloAlmanacco": null,
-   "tuttocampo": null,
+   "tuttocampo": "0-0",
    "almanacco": null,
    "verifica": false
   }
  },
  "gol": [
+  {
+   "id": "11.3_TO.3.B.FI-1-1",
+   "ora": "15:57",
+   "partita": "11.3_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Lions Fortis Juventus",
+   "ospite": "Rontese",
+   "punteggio": "1-1",
+   "totale": 2,
+   "squadra": "Lions Fortis Juventus",
+   "idSquadra": 1325836,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Casini Benvenuti Lorenzo",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "15:57"
+  },
   {
    "id": "11.3_TO.3.B.FI-0-1",
    "ora": "15:16",
