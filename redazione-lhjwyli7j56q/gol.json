@@ -1,16 +1,46 @@
 {
- "aggiornato": "2026-11-28T14:15:30",
+ "aggiornato": "2026-11-28T14:51:19",
  "data": "2026-11-28",
  "partite": {
   "11.1_TO.1.C": {
    "annunciati": [
     0,
-    0
+    1
    ],
    "girone": "Prima Categoria · Girone C",
    "casa": "Barberino Calcio 1927",
    "ospite": "Sporting Arno",
    "ora": "14:30",
+   "stato": "Partita in corso (20')",
+   "titoloAlmanacco": null,
+   "tuttocampo": "0-1",
+   "almanacco": null,
+   "verifica": false
+  },
+  "11.3_TO.3.B.FI": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Lions Fortis Juventus",
+   "ospite": "Rontese",
+   "ora": "15:00",
+   "stato": "",
+   "titoloAlmanacco": null,
+   "tuttocampo": null,
+   "almanacco": null,
+   "verifica": false
+  },
+  "11.7_TO.3.B.FI": {
+   "annunciati": [
+    0,
+    0
+   ],
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Polisportiva Sieci",
+   "ospite": "Cavallina Calcio",
+   "ora": "15:00",
    "stato": "",
    "titoloAlmanacco": null,
    "tuttocampo": null,
@@ -18,6 +48,25 @@
    "verifica": false
   }
  },
- "gol": [],
+ "gol": [
+  {
+   "id": "11.1_TO.1.C-0-1",
+   "ora": "14:51",
+   "partita": "11.1_TO.1.C",
+   "girone": "Prima Categoria · Girone C",
+   "casa": "Barberino Calcio 1927",
+   "ospite": "Sporting Arno",
+   "punteggio": "0-1",
+   "totale": 1,
+   "squadra": "Sporting Arno",
+   "idSquadra": 67703,
+   "nostra": false,
+   "fonte": "Tuttocampo",
+   "marcatore": null,
+   "minuto": null,
+   "fonteMarcatore": null,
+   "trovato": null
+  }
+ ],
  "almanacco": {}
 }
