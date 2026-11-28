@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-28T14:51:19",
+ "aggiornato": "2026-11-28T15:01:50",
  "data": "2026-11-28",
  "partite": {
   "11.1_TO.1.C": {
@@ -11,7 +11,7 @@
    "casa": "Barberino Calcio 1927",
    "ospite": "Sporting Arno",
    "ora": "14:30",
-   "stato": "Partita in corso (20')",
+   "stato": "Partita in corso (30')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -62,10 +62,10 @@
    "idSquadra": 67703,
    "nostra": false,
    "fonte": "Tuttocampo",
-   "marcatore": null,
+   "marcatore": "Poggiolini Davide",
    "minuto": null,
-   "fonteMarcatore": null,
-   "trovato": null
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "15:01"
   }
  ],
  "almanacco": {}
