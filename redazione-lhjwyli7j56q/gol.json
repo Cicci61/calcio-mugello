@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-28T15:57:57",
+ "aggiornato": "2026-11-28T16:29:05",
  "data": "2026-11-28",
  "partite": {
   "11.1_TO.1.C": {
@@ -11,7 +11,7 @@
    "casa": "Barberino Calcio 1927",
    "ospite": "Sporting Arno",
    "ora": "14:30",
-   "stato": "Partita in corso (64')",
+   "stato": "Partita terminata",
    "titoloAlmanacco": null,
    "tuttocampo": "0-1",
    "almanacco": null,
@@ -20,15 +20,15 @@
   "11.3_TO.3.B.FI": {
    "annunciati": [
     1,
-    1
+    2
    ],
    "girone": "Terza Categoria · Girone B Firenze",
    "casa": "Lions Fortis Juventus",
    "ospite": "Rontese",
    "ora": "15:00",
-   "stato": "Partita in corso (Int.)",
+   "stato": "Partita in corso (70')",
    "titoloAlmanacco": null,
-   "tuttocampo": "1-1",
+   "tuttocampo": "1-2",
    "almanacco": null,
    "verifica": false
   },
@@ -41,7 +41,7 @@
    "casa": "Polisportiva Sieci",
    "ospite": "Cavallina Calcio",
    "ora": "15:00",
-   "stato": "Partita in corso (Int.)",
+   "stato": "Partita in corso (70')",
    "titoloAlmanacco": null,
    "tuttocampo": "0-0",
    "almanacco": null,
@@ -49,6 +49,24 @@
   }
  },
  "gol": [
+  {
+   "id": "11.3_TO.3.B.FI-1-2",
+   "ora": "16:29",
+   "partita": "11.3_TO.3.B.FI",
+   "girone": "Terza Categoria · Girone B Firenze",
+   "casa": "Lions Fortis Juventus",
+   "ospite": "Rontese",
+   "punteggio": "1-2",
+   "totale": 3,
+   "squadra": "Rontese",
+   "idSquadra": 60915,
+   "nostra": true,
+   "fonte": "Tuttocampo",
+   "marcatore": "Maretti Tommaso",
+   "minuto": null,
+   "fonteMarcatore": "Tuttocampo",
+   "trovato": "16:29"
+  },
   {
    "id": "11.3_TO.3.B.FI-1-1",
    "ora": "15:57",
